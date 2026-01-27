@@ -2,7 +2,8 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #17171717
+  
 }
 
 @theme inline {
@@ -12,15 +13,71 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+*{
+  font-family: Futura;
+  font-weight: 1px;
+  color: black;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header{
+  border: 1px solid white;
+  
+  
+}
+.banner-title{
+  font-size: 2rem;
+  margin: 1em 0;
+}
+
+.nav-bar{
+  background-color: black;
+  padding: 1em 0 1em 3em;
+  
+}
+
+.nav-link{
+  margin-right: 5%;
+  color: white;
+  font-size: 1rem;
+}
+.nav-link:hover{
+  color: rgb(254, 254, 119);
+}
+
+.section-container{
+  padding-top: 1rem;
+  border: 2px solid white;
+  
+}
+.section-title{
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+
+}
+
+
+.footer{
+  display: flex;
+  margin: auto 0 0 0;
+  text-align: center;
+  padding: 1em;
+
+  justify-content: center;
+  justify-items: center;
+
+  align-items: center;
+  align-content: center;
+  
+  border-top: 1px solid whitesmoke;
 }

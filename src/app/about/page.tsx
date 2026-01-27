@@ -1,9 +1,9 @@
 export default function ContactPage(){
 
      return(
-        <main>
-            <h1>About</h1>
-
+        <>
+        <main className="section-container">
+            <h1 className="section-title">About</h1>
             <div>
                 <ul>
                     <li>Eric Laudrum</li>
@@ -13,5 +13,6 @@ export default function ContactPage(){
             </div>
 
         </main>
+        </>
     )
 }

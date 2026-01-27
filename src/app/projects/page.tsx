@@ -9,8 +9,8 @@ export default function ProjectPage(){
     ];
 
     return(
-        <main>
-            <h1>Projects</h1>
+        <main className="section-container">
+            <h1 className="section-title">Projects</h1>
 
             <div>
                 { projects.map(( project, index ) => (
