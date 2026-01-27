@@ -66,6 +66,51 @@ body {
 
 }
 
+.project-grid{
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax( 200px, 1fr ));
+  gap: 1em;
+}
+
+
+
+.project-container{
+  display: flex;
+  flex-direction: column;
+  white-space: normal;
+  border-radius: 20px;
+  background-color: aliceblue;
+  margin: 1em;
+  padding: 2em;
+  transition: transform 0.3s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 8px rgba(49, 48, 48, 0.2);
+}
+
+.project-container:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  
+
+}
+
+
+.project-img{
+  height: 150px;
+  width: 150px;
+  border: 5px solid rgba(255, 255, 255, 0.403);
+}
+.project-title{
+  margin: 1em 0;
+}
+.project-description{
+  margin: 1em 0;
+}
+.project-tags{
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+}
+
 
 .footer{
   display: flex;
