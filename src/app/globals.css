@@ -17,42 +17,48 @@
 *{
   font-family: Futura;
   font-weight: 1px;
-  color: black;
+  color: rgb(25, 25, 25);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  padding: 0 4rem 0 4rem;
+  padding: 1rem 6.5rem 0 6.5rem;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
 .header{
-  border: 1px solid white;
-  
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+
   
 }
 .banner-title{
   font-size: 2rem;
   margin: 1em 0;
+
 }
 
 .nav-bar{
-  background-color: black;
-  padding: 1em 0 1em 3em;
   
 }
 
 .nav-link{
-  margin-right: 5%;
-  color: white;
+  margin-right: 1em;
   font-size: 1rem;
 }
+
 .nav-link:hover{
-  color: rgb(254, 254, 119);
+  transition: 0.8s;
+  transform: translateY(-1px);
+  text-shadow: 4px 3px  rgba(117, 206, 212, 0.356);
+
 }
 
 .section-container{
@@ -83,14 +89,11 @@ body {
   margin: 1em;
   padding: 2em;
   transition: transform 0.3s ease, box-shadow 0.2s ease;
-  box-shadow: 0 4px 8px rgba(49, 48, 48, 0.2);
+  
 }
-
 .project-container:hover{
-  transform: translateY(-1px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-
-
+  transform: translateY(-3px);
+  box-shadow: 10px 10px rgb(42, 118, 156);
 }
 
 
