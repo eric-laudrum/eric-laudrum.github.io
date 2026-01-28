@@ -138,3 +138,31 @@ body {
   
   border-top: 1px solid whitesmoke;
 }
+
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+}
+
+.form-field{
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.form-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.submit-button{
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 6rem;
+  padding: 0.5em;
+}
+.submit-button:hover{
+    transition: transform 0.3s ease, box-shadow 0.2s ease;
+
+}
