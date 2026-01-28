@@ -89,7 +89,7 @@ body {
 .project-container:hover{
   transform: translateY(-1px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  
+
 
 }
 
@@ -97,6 +97,7 @@ body {
 .project-img{
   height: 150px;
   width: 150px;
+  align-self: center;
   border: 5px solid rgba(255, 255, 255, 0.403);
 }
 .project-title{
