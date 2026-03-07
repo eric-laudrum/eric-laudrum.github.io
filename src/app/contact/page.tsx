@@ -6,7 +6,6 @@ export default function ContactPage(){
         <main className="section-container">
             <h1 className="section-title">Contact</h1>
 
-
             <ContactForm />
 
         </main>

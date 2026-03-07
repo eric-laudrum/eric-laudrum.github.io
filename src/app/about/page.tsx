@@ -7,7 +7,6 @@ export default function ContactPage(){
             <img className="headshot-img" src="src/assets/img.jpg" alt="no image"/>
             <div>
                 <ul className="about-details">
-                    <li>Eric Laudrum</li>
                     <li>Full-Stack Developer</li>
                     <p>I'm a full stack developer</p>
                 </ul>

@@ -1,6 +1,12 @@
 export default function ProjectPage(){
     const projects = [
         {
+            title: "Trellis",
+            description: "A real-time 16-step sequencer built with Node.js, Socket.io, and Tone.js.",
+            tags: ["Node.js", "Socket.io", "Tone.js"],
+            link: "#"
+        },
+        {
             title: "Adventure Club",
             description: "A full-stack application for a seniors outdoor recreation group.",
             tags: ["MongoDB", "Express", "React", "Node.js"],
