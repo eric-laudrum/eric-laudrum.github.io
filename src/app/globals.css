@@ -56,8 +56,13 @@ body {
 }
 
 .section-container{
-  padding-top: 1rem;
-  border: 2px solid white;
+  padding: 2rem;
+  margin: 20px;
+
+  background-color: rgba(241, 246, 251, 0.5);
+  border-radius: 10px;
+  /*border: 1px solid rgba(0, 0, 0, 0.073);*/
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.005);
   
 }
 .section-title{
@@ -84,12 +89,14 @@ body {
 
   box-sizing: border-box;
   border-radius: 20px;
-  background-color: aliceblue;
+  background-color: rgba(240, 248, 255, 0.434);
   padding: 1.5rem;
   transition: transform 0.3s ease, box-shadow 0.2s ease;
   border: 1px solid rgba(0, 0, 0, 0.09);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
 }
+
 .project-container:hover{
   transform: translateY(-3px);
   box-shadow: 10px 10px rgb(42, 118, 156);
@@ -137,6 +144,39 @@ body {
 .about-details{
   margin-top: 1rem;
 }
+
+
+
+.solo-project-container{
+  display: flex;
+
+  height: 100%;
+  width: 100%;
+}
+
+.solo-project-img{
+  border-radius: 10px;
+}
+
+
+.solo-project-title{
+  margin-bottom: 1rem;
+  
+}
+
+.solo-project-tagline{
+  margin-bottom: 1rem;
+ 
+}
+
+.solo-project-description{
+  border: 1px solid transparent;
+}
+
+
+
+
+
 .footer{
   display: flex;
   margin: auto 0 0 0;

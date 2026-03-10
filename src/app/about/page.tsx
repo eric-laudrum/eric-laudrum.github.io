@@ -1,4 +1,4 @@
-export default function ContactPage(){
+export default function AboutPage(){
 
      return(
         <>
@@ -8,7 +8,14 @@ export default function ContactPage(){
             <div>
                 <ul className="about-details">
                     <li>Full-Stack Developer</li>
-                    <p>I'm a full stack developer</p>
+                    <p>
+                        I started pushing buttons on a sequencer. 
+                        Programming music is a passion of mine that had me doing everything I could to avoid expensive sampling hardware.
+
+                        I like simple, intuitive design to facilitate complex 
+
+
+                    </p>
                 </ul>
             </div>
 

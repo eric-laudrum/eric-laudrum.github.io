@@ -1,11 +1,18 @@
 import Image from "next/image";
 import ProjectPage from "./projects/page";
+import AboutPage from "./about/page"
+import ContractorConnect from "./contractor-connect/page";
+
 
 export default function Home() {
   return (
-    <main className="section-container">
+    <main>
 
 
+      <AboutPage />
+      <hr/>
+      <ContractorConnect/>
+      <hr/>
       <ProjectPage />
       
 
