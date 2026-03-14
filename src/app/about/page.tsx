@@ -2,9 +2,8 @@ export default function AboutPage(){
 
      return(
         <>
-        <main className="section-container">
-            <h1 className="section-title">About</h1>
-            <img className="headshot-img" src="src/assets/img.jpg" alt="no image"/>
+        <main className="section-container" id="about-section">
+            <img className="headshot-img" src="assets/park.jpg" alt="no image"/>
             <div>
                 <ul className="about-details">
                     <li>Full-Stack Developer</li>

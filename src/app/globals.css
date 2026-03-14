@@ -71,6 +71,14 @@ body {
 
 }
 
+.section-sub-title{
+
+  font-size: 1rem;
+  font-weight: 501;
+  margin: 2em 0;
+
+}
+
 .project-grid{
   display: flex;
   flex-wrap: wrap;
@@ -83,7 +91,7 @@ body {
 
 .project-container{
   flex: 0 1 22%; 
-  min-width: 250px;
+  min-width: 325px;
   display: flex;
   flex-direction: column;
 
@@ -138,9 +146,15 @@ body {
 .headshot-img{
   height: 150px;
   width: 150px;
+  border-radius: 10px;
   border: 5px solid rgba(173, 216, 230, 0.142);
 }
 
+.section-container#about-section{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+}
 .about-details{
   margin-top: 1rem;
 }
@@ -256,4 +270,68 @@ body {
 .submit-button:hover{
     transition: transform 0.3s ease, box-shadow 0.2s ease;
 
+}
+
+
+
+/* Credentials */
+.section-container#academic-credentials{
+  border: 1px solid rgba(0, 0, 0, 0.025);
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.15);
+
+}
+
+.credential{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+  padding: 1em;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  margin: 0.5em;
+}
+
+.cred-left{
+
+}
+
+.cred-right{
+  display: flex;
+
+  align-items: center;
+
+}
+
+.cred-img{
+  height: 4em;
+  width: 4em;
+
+}
+
+
+.cred-title{
+  font-weight: 600;
+}
+
+.cred-detail{
+  padding: 0 5px;
+  border: 1px dashed transparent;
+
+}
+
+.cred-button:hover{
+  cursor: pointer;
+
+}
+
+.pop-up{
+  display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }

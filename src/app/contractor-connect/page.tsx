@@ -3,7 +3,6 @@ export default function ContractorConnect(){
 
     return(
 
-
         <div className="section-container">
 
             <div className="solo-project-container">
