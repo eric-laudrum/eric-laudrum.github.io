@@ -8,10 +8,8 @@ export default function AcademicCredentials(){
             <h3 className="section-sub-title">College / University</h3>
 
 
-            {/* -------- COLLEGE / UNIVERSITY --------  */}
+            {/* ------------------ COLLEGE / UNIVERSITY ------------------  */}
             <div className="credential">
-               
-
                 <div className="cred-left">
                     <h3 className="cred-title">Computer Programming & Analysis</h3>
                     <ul>
@@ -19,18 +17,15 @@ export default function AcademicCredentials(){
                         <li className="cred-detail">2024 - 2026</li>
                     </ul>
                 </div>
- 
-                
                     <button className="cred-button">
                          <img className="cred-img" src="assets/park.jpg" alt="no image"/>
                     </button>
-              
-
                 <div className="pop-up">
                     <img className="cred-img" src="assets/park.jpg" alt="no image"/>
                     <button className="back-button"/>
                 </div>
             </div>
+
 
 
             <div className="credential">
@@ -51,6 +46,7 @@ export default function AcademicCredentials(){
             </div>
 
 
+
             <div className="credential">
                 <div className="cred-left">
                     <h3 className="cred-title">BA (Hons.), Sociology</h3>
@@ -69,9 +65,44 @@ export default function AcademicCredentials(){
             </div>
 
 
+             {/* ------------------ CERTIFICATES ------------------  */}
 
-
+  
             <h2 className="section-sub-title">Certificates</h2>
+
+          {/* Dean List */}
+            <div className="credential">
+                <div className="cred-text">
+                     <div className="cred-left">
+                        <h3 className="cred-title">Dean's List</h3>
+                        <ul>
+                            <li className="cred-detail">Fall 2025</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="cred-right">
+
+                    <button className="view-doc">view</button>
+
+
+                    {/* Pop up window */}
+                    <div className="pop-up">
+                        <div className="pop-up-content">
+                            <img className="cred-img" src="assets/park.jpg" alt="no image"/>
+                            <button className="back-button">Back</button>
+                            
+                        </div>
+                       
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
 
             <div className="credential">
                 <div className="cred-text">
@@ -171,9 +202,7 @@ export default function AcademicCredentials(){
 
 
 
-
             <div className="credential">
-                
                  <div className="cred-left">
                     <h3 className="cred-title">Covid19 Data Analysis Using Python</h3>
                     <ul>
