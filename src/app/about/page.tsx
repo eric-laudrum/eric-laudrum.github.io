@@ -15,6 +15,8 @@ export default function AboutPage(){
 
 
                     </p>
+
+                    <p className="philosophy">The best tool for the job is the one available</p>
                 </ul>
             </div>
 
