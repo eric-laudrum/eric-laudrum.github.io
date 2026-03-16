@@ -11,19 +11,33 @@ export default function AcademicCredentials(){
             description: "Achieved a X.0 GPA for the semester.",
 
         },
-            {
-            icon: <img src="/assets/icons/google.png" style={{ width: '30px', height: '30px' }} alt="Google" />,
+        {
+            icon: <img src="/assets/icons/google.png" style={{ width: '40px', height: '40px' }} alt="Google" />,
             title: "Google - Digital Marketing & E-Commerce",
             date: "Fall 2024",
             fileName: "Google-DigitalMarketing&Ecommerce.jpg",
             description: "Learned all elements of E-Commerce.",
 
         },
+         {
+            icon: <img src="/assets/icons/university-of-michigan.png" style={{ width: '40px', height: '40px' }} alt="Google" />,
+            title: "Python for Everybody",
+            date: "Aug 2023",
+            fileName: "UofMPythonForEverybody.jpg",
+            description: " learned fundamental programming concepts through using the Python programming language",
+
+        },
+
+        {
+            icon: <img src="/assets/icons/linkedin.png" style={{ width: '40px', height: '40px' }} alt="Google" />,
+            title: "Hands-On Data Annotation: Applied Machine Learning",
+            date: "Jan 2026",
+            fileName: "LI-hands-on-annotation.jpg",
+            description: " learned fundamental programming concepts through using the Python programming language",
+
+        },
 
     ]
-
-
-    
 
 
     return(
