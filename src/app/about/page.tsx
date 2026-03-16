@@ -4,6 +4,7 @@ export default function AboutPage(){
         <>
         <main className="section-container" id="about-section">
             <img className="headshot-img" src="assets/park.jpg" alt="no image"/>
+            
             <div>
                 <ul className="about-details">
                     <li>Full-Stack Developer</li>
@@ -13,13 +14,11 @@ export default function AboutPage(){
 
                         I like simple, intuitive design to facilitate complex 
 
-
                     </p>
 
                     <p className="philosophy">The best tool for the job is the one available</p>
                 </ul>
             </div>
-
         </main>
         </>
     )

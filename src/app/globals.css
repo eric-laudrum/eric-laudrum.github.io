@@ -323,9 +323,6 @@ body {
 
 }
 
-.cred-frame{
-  
-}
 
 .pop-up{
   display: none;
@@ -339,7 +336,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-.popup.active {
+.pop-up.active {
     display: flex;
 }
 
@@ -352,7 +349,6 @@ body {
     border-radius: 5px;
     text-align: center;
 }
-
 
 
 .cred-img{
@@ -379,18 +375,6 @@ button.view-doc{
 .view-doc:hover{
   cursor: pointer;
 
-}
-
-.pop-up{
-  display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
 }
 
 
