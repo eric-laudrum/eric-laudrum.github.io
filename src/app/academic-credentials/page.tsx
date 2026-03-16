@@ -4,7 +4,7 @@ export default function AcademicCredentials(){
 
     const academics = [
         { 
-            icon: <img src="/assets/icons/george-brown-college.png" style={{ width: '40px', height: '30px' }} alt="George Brown" />,
+            icon: <img src="/assets/icons/gbc-logo.png"  alt="George Brown" />,
             title: "George Brown - Dean's List",
             date: "Fall 2025",
             fileName: "Dean_list_fall25.jpg",
@@ -12,7 +12,7 @@ export default function AcademicCredentials(){
 
         },
         {
-            icon: <img src="/assets/icons/google.png" style={{ width: '40px', height: '40px' }} alt="Google" />,
+            icon: <img src="/assets/icons/google-logo.png" alt="Google" />,
             title: "Google - Digital Marketing & E-Commerce",
             date: "Fall 2024",
             fileName: "Google-DigitalMarketing&Ecommerce.jpg",
@@ -20,7 +20,7 @@ export default function AcademicCredentials(){
 
         },
          {
-            icon: <img src="/assets/icons/university-of-michigan.png" style={{ width: '40px', height: '40px' }} alt="Google" />,
+            icon: <img src="/assets/icons/UofM-logo.png"  alt="Google" />,
             title: "Python for Everybody",
             date: "Aug 2023",
             fileName: "UofMPythonForEverybody.jpg",
@@ -29,7 +29,7 @@ export default function AcademicCredentials(){
         },
 
         {
-            icon: <img src="/assets/icons/linkedin.png" style={{ width: '40px', height: '40px' }} alt="Google" />,
+            icon: <img src="/assets/icons/linkedin-logo.png"  alt="Google" />,
             title: "Hands-On Data Annotation: Applied Machine Learning",
             date: "Jan 2026",
             fileName: "LI-hands-on-annotation.jpg",

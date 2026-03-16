@@ -305,7 +305,8 @@ body {
 
 .credential{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 1.5rem;
   border-radius: 4px;
   padding: 1em;
@@ -324,12 +325,19 @@ body {
 
 .cred-icon-container{
   flex-shrink: 0;
-  width: 40px;
+  width: 60px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding-top: 5px;
 }
+
+.cred-icon-container img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 
 .cred-right{
   display: flex;
@@ -467,10 +475,22 @@ button.view-doc{
 }
 
 .job-container{
+  flex-grow: 1;
+  width: 100%;
+  display: block;
   border-radius: 8px;
   padding: 1em;
-  border: 1px solid rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.03);
   margin-top: 5px;
+}
+
+.job-container ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  margin: 5px 0;
+  
 }
 
 .job-title{

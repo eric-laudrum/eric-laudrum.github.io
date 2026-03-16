@@ -24,7 +24,7 @@ const Job: React.FC<JobProps> = ({ title, employer, date, location, description,
                 </div>
             )}
 
-            <div className="cred-left">
+            <div className="job-container">
 
                 <h3 className="cred-title">{title}</h3>
                 <h4 className="emp-name">{employer}</h4>
