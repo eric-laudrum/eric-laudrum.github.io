@@ -1,4 +1,30 @@
+import Credential from '../../components/Credential';
+
 export default function AcademicCredentials(){
+
+    const academics = [
+        { 
+            icon: <img src="/assets/icons/george-brown-college.png" style={{ width: '40px', height: '30px' }} alt="George Brown" />,
+            title: "George Brown - Dean's List",
+            date: "Fall 2025",
+            fileName: "Dean_list_fall25.jpg",
+            description: "Achieved a X.0 GPA for the semester.",
+
+        },
+            {
+            icon: <img src="/assets/icons/google.png" style={{ width: '30px', height: '30px' }} alt="Google" />,
+            title: "Google - Digital Marketing & E-Commerce",
+            date: "Fall 2024",
+            fileName: "Google-DigitalMarketing&Ecommerce.jpg",
+            description: "Learned all elements of E-Commerce.",
+
+        },
+
+    ]
+
+
+    
+
 
     return(
         <div className="section-container" id="academic-credentials">
@@ -67,176 +93,25 @@ export default function AcademicCredentials(){
 
              {/* ------------------ CERTIFICATES ------------------  */}
 
-  
             <h2 className="section-sub-title">Certificates</h2>
 
-          {/* Dean List */}
-            <div className="credential">
-                <div className="cred-text">
-                     <div className="cred-left">
-                        <h3 className="cred-title">Dean's List</h3>
-                        <ul>
-                            <li className="cred-detail">Fall 2025</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div className="cred-right">
-
-                    <button className="view-doc">view</button>
-
-
-                    {/* Pop up window */}
-                    <div className="pop-up">
-                        <div className="pop-up-content">
-                            <img className="cred-img" src="assets/park.jpg" alt="no image"/>
-                            <button className="back-button">Back</button>
-                            
-                        </div>
-                       
-                    </div>
-
-                </div>
-
-
-
-
-            </div>
-
-
-            <div className="credential">
-                <div className="cred-text">
-                     <div className="cred-left">
-                        <h3 className="cred-title">Hands-On Data Annotation: Applied Machine Learning</h3>
-                        <ul>
-                            <li className="cred-detail">LinkedIn</li>
-                            <li className="cred-detail">Jan 2026</li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="cred-right">
-                    <div className="cred-frame">
-                        <button className="cred-button">
-                            <img className="cred-img" src="assets/park.jpg" alt="no image"/>
-                        </button>
-                    </div>
-                </div>
+            <div className="credentials-grid">
+                {academics.map((cert, index) => (
+                    <Credential
+                        key={index}
+                        title={cert.title}
+                        date={cert.date}
+                        fileName={cert.fileName}
+                        description={cert.description}
+                        icon={cert.icon}
+                        
+                    />
+                ))}
             </div>
 
 
 
-            <div className="credential">
-                 <div className="cred-left">
-                    <h3 className="cred-title">Programming Foundations: Software Testing/QA</h3>
-                    <ul>
-                        <li className="cred-detail">LinkedIn</li>
-                        <li className="cred-detail">Jan 2026</li>
-                    </ul>
-                </div>
-                <div className="cred-right">
-                    <div className="cred-frame">
-                        <button className="cred-button">
-                            <img className="cred-img" src="assets/park.jpg" alt="no image"/>
-                        </button>
-                    </div>
-                </div>
-            </div>
 
-            
-            <div className="credential">
-                 <div className="cred-left">
-                    <h3 className="cred-title">Python for Everybody Specialization</h3>
-                    <ul>
-                        <li className="cred-detail">Coursera</li>
-                        <li className="cred-detail">Aug 2022</li>
-                    </ul>
-                </div>
-                <div className="cred-right">
-                    <div className="cred-frame">
-                        <button className="cred-button">
-                            <img className="cred-img" src="assets/park.jpg" alt="no image"/>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-
-            <div className="credential">
-            
-                 <div className="cred-left">
-                    <h3 className="cred-title">Google Digital Marketing & E-commerce Specialization</h3>
-                
-                    <ul>
-                        <li className="cred-detail">Coursera</li>
-                        <li className="cred-detail">Aug 2023</li>
-                    </ul>
-                </div>
-                <div className="cred-right">
-                    <div className="cred-frame">
-                        <button className="cred-button">
-                            <img className="cred-img" src="assets/park.jpg" alt="no image"/>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-
-            <div className="credential">
-               
-                <div className="cred-left">
-                    <h3 className="cred-title">Applied Plotting, Charting & Data Representation in Python</h3>
-                
-                    <ul>
-                        <li className="cred-detail">University of Michigan</li>
-                        <li className="cred-detail">Jun 2021</li>
-                    </ul>
-                </div>
-                <div className="cred-right">
-                    <div className="cred-frame">
-                        <button className="cred-button">
-                            <img className="cred-img" src="assets/park.jpg" alt="no image"/>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div className="credential">
-                 <div className="cred-left">
-                    <h3 className="cred-title">Covid19 Data Analysis Using Python</h3>
-                    <ul>
-                        <li className="cred-detail">Coursera</li>
-                        <li className="cred-detail">Jun 2021</li>
-                    </ul>
-                </div> 
-                <div className="cred-right">
-                    <div className="cred-frame">
-                        <button className="cred-button">
-                            <img className="cred-img" src="assets/park.jpg" alt="no image"/>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div className="credential">
-                 <div className="cred-left">
-                    <h3 className="cred-title">The Data Scientist's Toolbox</h3>
-                    <ul>
-                        <li className="cred-detail">John Hopkins University</li>
-                        <li className="cred-detail">Dec 2020</li>
-                    </ul>
-                </div>
-                <div className="cred-right">
-                    <div className="cred-frame">
-                        <button className="cred-button">
-                            <img className="cred-img" src="assets/park.jpg" alt="no image"/>
-                        </button>
-                    </div>
-                </div>
-            </div>
         </div>
     )
 }
