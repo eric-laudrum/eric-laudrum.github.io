@@ -14,6 +14,17 @@ export default function ContractorConnect(){
                         A secure marketplace to simplify the home improvement process. 
                         Homeowners post projects, receive bids, and pick their contractor based on user ratings and transparent pricing. 
                     </p>
+
+                    <ul>Notes
+                        <li>Project Summary</li>
+                        <li>Project Vision</li>
+                        <li>Project / Business Requirements</li>
+                        <li>Project Plan</li>
+                        <li>Requirements Analysis and Design</li>
+                        <li>Wireframes/Mockups</li>
+                        <li>Status Reports</li>
+                        <li>System Implementation</li>
+                    </ul>
                 </div>
 
                 <div className="right-container">
