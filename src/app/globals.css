@@ -478,7 +478,7 @@ button.view-doc{
 .section-container#resume-container{
   display: flex;
   flex-direction: row;
-  padding: 1em 10em;
+  padding: 1em 10em 1em 20em;
   justify-content: center;
 }
 
@@ -496,7 +496,8 @@ button.view-doc{
   min-width: 12em;
   position: fixed;
   top: 150px;
-  left: 20px;
+  left: 60px;
+
   
 }
 
