@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717
+  --foreground: #171717;
   
 }
 
@@ -167,12 +167,19 @@ body {
   font-weight: bold;
   display: inline-block;
   align-self: center;    
-  font-size: 1em;    
+  font-size: 0.8em;    
 }
 .view-pdf-button:hover{
   background-color: rgb(0, 0, 0, 0.9);
   box-shadow: 5px 5px 10px 10px rbg(0, 0, 0)
 
+}
+
+.pdf-btn-container{
+  display: flex;
+  margin-top: 1.5em;
+  
+  justify-content: flex-end;
 }
 
 
@@ -203,6 +210,10 @@ body {
 }
 
 
+.section-container#projects-container{
+  margin: 0;
+}
+
 
 .solo-project-container{
   display: flex;
@@ -213,6 +224,15 @@ body {
 
 .solo-project-img{
   border-radius: 10px;
+}
+
+.solo-project-img#mockup{
+
+  padding: 10px;
+  width: 50vw;
+  height: 55vh;
+  justify-self: center;
+ 
 }
 
 

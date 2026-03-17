@@ -35,13 +35,14 @@ export default function ProjectPage(){
     ];
 
     return(
-        <main className="section-container">
+        <main className="section-container" id="projects-container">
             <h1 className="section-title">Projects</h1>
 
-
             <ContractorConnect/>
-            <TrellisSequencer />
 
+            <hr/>
+
+            <TrellisSequencer />
 
             <div className="project-grid">
                 { projects.map(( project, index ) => (

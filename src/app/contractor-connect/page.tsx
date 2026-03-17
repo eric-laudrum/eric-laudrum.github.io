@@ -1,14 +1,19 @@
 export default function ContractorConnect(){
 
+    const projectSummaryPDF = "/assets/pdf/ProjectSummary.pdf"
     const projectPlanPDF = "/assets/pdf/ProjectPlan.pdf"
     const projectVisionPDF = "/assets/pdf/ProjectVision.pdf"
     const softwareRequirementsPDF = "/assets/pdf/softwareRequirementsAnalysis.pdf"
 
     const activityDiagramPDF = "/assets/pdf/activityDiagram.pdf"
-    const dataFlowPDF = "/assets/pdf/dataFlow.pdf"
+    const dataFlowPDF = "/assets/pdf/dataFlowDiagram.pdf"
     const normalizedDataModelPDF = "/assets/pdf/normalizedDataModel.pdf"
     const sequenceDiagramPDF = "/assets/pdf/sequenceDiagram.pdf"
     const umlDiagramPDF = "/assets/pdf/umlDiagram.pdf"
+
+    const systemImplementation = "https://georgebrowncollege.sharepoint.com/:p:/r/sites/Capstone_jabeab/Shared%20Documents/General/Project%20Documents/in%20progress/System%20Implementation%201%20.pptx?d=wd6257991cc8f428091d131f3d3b8b5e1&csf=1&web=1&e=L652nz"
+
+    const figmaLink = "https://www.figma.com/proto/3oCa6OhkkkkVvA9YbuAmgZ/Contractor-Connect--Copy-?node-id=0-1&t=YKylebIu3parvFDt-1"
 
     return(
 
@@ -20,16 +25,14 @@ export default function ContractorConnect(){
                 <div className="left-container" style={{minWidth:"12em"}}>
                     <h1 className="solo-project-title">Contractor Connect</h1>
                     <h4 className="solo-project-tagline">Post Projects. Get Bids. Hire Pros.</h4>
-
-
-                    
                 </div>
 
                 <div className="right-container">
                     <img className="solo-project-img" src="./assets/contractor-connect.jpg" />
-
                 </div>
             </div>
+
+
 
             {/* ----- 2 Description ----- */}
             <hr style={{margin: "3em"}}/>
@@ -42,28 +45,54 @@ export default function ContractorConnect(){
             </div>
 
 
+
+            {/* ----- 3 Project Summary ----- */}
+            <hr style={{margin: "3em"}}/>
+            <h3 className="solo-project-title">Project Summary</h3>
+
+            <p>
+                Contractor Connect is a software website designed to create a direct channel between contractors, 
+                skilled labor workers, and clients. 
+                It helps workers gain steady access to projects while enabling customers to avoid the hassle of shopping around for prices. 
+                By simplifying and automating the estimating process, Contractor Connect ensures timely, accurate, and transparent project quotes. 
+
+            </p>
+
+            {/* Show PDF */}
+            <div className='pdf-btn-container'>
+                <a className="view-pdf-button"
+                    href={projectSummaryPDF} 
+                    target="_blank" 
+                    rel="noopener noreferrer"   
+                >
+                    View Project Summary (PDF)
+                </a>
+            </div>
+
+
+
+
             {/* ----- 3 Project Plan ----- */}
             <hr style={{margin: "3em"}}/>
             <h3 className="solo-project-title">Project Plan</h3>
 
-            <p>Contractor Connect is a digital marketplace designed to streamline the process for homeowners to connect and engage with local service professionals. By creating a centralized system for contractor information, peer reviews, and job-bidding, the platform removes the difficulties of researching contractors and gathering quotes. Our mission is to create a welcome and easily accessible environment to provide value for both homeowners and contractors. </p>
+            <p>Contractor Connect is a digital marketplace designed to streamline the process for homeowners to connect and engage with local service professionals. 
+                By creating a centralized system for contractor information, peer reviews, and job-bidding, the platform removes the difficulties of researching contractors and gathering quotes. 
+                Our mission is to create a welcome and easily accessible environment to provide value for both homeowners and contractors. 
+            </p>
 
             {/* Show PDF */}
-            <div style={{ 
-                marginTop: '1.5em',
-                display:'flex',
-                justifyContent:'flex-end',
-
-             }}>
-                    <a className="view-pdf-button"
-                        href={projectPlanPDF} 
-                        target="_blank" 
-                        rel="noopener noreferrer"   
-                    >
-                        View Full Project Plan (PDF)
-                    </a>
-                </div>
+            <div className='pdf-btn-container'>
+                <a className="view-pdf-button"
+                    href={projectPlanPDF} 
+                    target="_blank" 
+                    rel="noopener noreferrer"   
+                >
+                    View Project Plan (PDF)
+                </a>
+            </div>
         
+
             {/* ----- 4 Project Vision ----- */}
             <hr style={{margin: "3em"}}/>
             <h3 className="solo-project-title">Project Vision</h3>
@@ -77,20 +106,13 @@ export default function ContractorConnect(){
             </p>
 
             {/* Show PDF */}
-            <div style={{ 
-                marginTop: '1.5em',
-                display:'flex',
-                justifyContent:'flex-end',
-
-             }}>
-                <a 
+            <div className='pdf-btn-container'>
+                <a className="view-pdf-button"
                     href={projectVisionPDF} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="view-pdf-button"
-                
                 >
-                    View Full Project Vision (PDF)
+                    View Project Vision (PDF)
                 </a>
             </div>
 
@@ -108,19 +130,13 @@ export default function ContractorConnect(){
             </p>
 
             {/* Show PDF */}
-            <div style={{ 
-                marginTop: '1.5em',
-                display:'flex',
-                justifyContent:'flex-end',
-
-             }}>
-                <a 
+            <div className='pdf-btn-container'>
+                <a className="view-pdf-button"
                     href={softwareRequirementsPDF} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="view-pdf-button"
                 >
-                    View Full Project Requirements (PDF)
+                    View Project Requirements (PDF)
                 </a>
             </div>
 
@@ -136,31 +152,147 @@ export default function ContractorConnect(){
             </p>
 
             {/* Show PDF */}
-            <div style={{ 
-                marginTop: '1.5em',
-                display:'flex',
-                justifyContent:'flex-end',
-
-             }}>
-                <a 
-                    href={softwareRequirementsPDF} 
+            {/* UML */}
+            <div className='pdf-btn-container'>
+                <a className="view-pdf-button"
+                    href={umlDiagramPDF} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="view-pdf-button"
                 >
                     View UML Diagram (PDF)
                 </a>
             </div>
+            {/* Activity Diagram */}
+            <div className='pdf-btn-container'>
+                <a className="view-pdf-button"
+                    href={activityDiagramPDF} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
+                    View Activity Diagram (PDF)
+                </a>
+            </div>
+
+            {/* Data Flow Diagram */}
+            <div className='pdf-btn-container'>
+                <a className="view-pdf-button"
+                    href={dataFlowPDF} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
+                    View Data Flow Diagram (PDF)
+                </a>
+            </div>
+
+
+            {/* Normalized Data Model Diagram */}
+            <div className='pdf-btn-container'>
+                <a className="view-pdf-button"
+                    href={ normalizedDataModelPDF } 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
+                    View Normalized Data Model (PDF)
+                </a>
+            </div>
+
+            {/* Sequence Diagram */}
+            <div className='pdf-btn-container'>
+                <a className="view-pdf-button"
+                    href={ sequenceDiagramPDF } 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
+                    View Sequence Diagram (PDF)
+                </a>
+            </div>
+
+
+
+
+
+            {/* ----- 7 Figma ----- */}
+            <hr style={{margin: "3em"}}/>
+            <h3 className="solo-project-title">Prototype</h3>
+
+            <div className="right-container" id="mockups">
+                <img 
+                    className="solo-project-img" id="mockup"
+                    src="./assets/mockups/contractor-connect-mockup1.jpg" 
+                />
+                 <img 
+                    className="solo-project-img" id="mockup"
+                    src="./assets/mockups/contractor-connect-mockup2.jpg" 
+                />
+            </div>
+
+            {/* Show PDF */}
+            <div className='pdf-btn-container'>
+                <a className="view-pdf-button"
+                    href={figmaLink} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
+                    View Prototype (Figma)
+                </a>
+            </div>
+
+
+            {/* ----- 8 System Implementation ----- */}
+            <hr style={{margin: "3em"}}/>
+            <h3 className="solo-project-title">System Implementation</h3>
+
+
+            <img 
+                className="solo-project-img" id="mockup"
+                src="./assets/mockups/system-implementation-ppt.jpg" 
+                style={{
+                    width: "50vw",
+                    display: "flex",
+                    flexShrink: 0,
+
+                }}
+            />
+
+
+            <p>
+                 Contractor Connect is a new, self-contained web application that matches homeowners with local contractors. 
+                 Today, most people rely on word of mouth, scattered social posts, phone calls, spreadsheets or email to request quotes and keep track of work. 
+                 Our app replaces that messy process. Compared with local listing boards and gig platforms, Contractor Connect focuses on small and medium home projects, uses structured bids so prices are easy to compare, keeps reviews simple, and includes basic in-app payments. 
+                 The main stakeholders are homeowners, contractors, an administrator for moderation, the instructor, teaching assistants for review, and our development team. 
+                 In this release, we will deliver the essentials: user accounts, project posting, project browsing and search, bidding, bid review and selection, a simple dashboard, reviews, and basic payment handling.
+            </p>
+
+            {/* Show PDF */}
+            <div className='pdf-btn-container'>
+                <a className="view-pdf-button"
+                    href={ systemImplementation } 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
+                    View System Implementation (PPT)
+                </a>
+            </div>
+            
+
+
+
+
+
+
+
+
+
 
 
 
             {/* X Just notes */}
             <hr style={{margin: "3em"}}/>
             <ul>Docs to add - working notes - remove later
-                <li>Project Summary</li>
-                <li>Project Vision</li>
+                <li>X Project Summary</li>
+                <li>X Project Vision</li>
                 <li>Project / Business Requirements</li>
-                <li>Project Plan</li>
+                <li>XProject Plan</li>
                 <li>Requirements Analysis and Design</li>
                 <li>Wireframes/Mockups</li>
                 <li>Status Reports</li>
