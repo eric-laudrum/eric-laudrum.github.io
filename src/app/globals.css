@@ -26,6 +26,8 @@ body {
 
 .header{
   display: flex;
+  position: sticky;
+  top: 0;
   flex-direction: row;
   width: 100%;
   align-content: center;
@@ -305,7 +307,7 @@ body {
 
 .credential{
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-cemter;
   align-items: flex-start;
   gap: 1.5rem;
   border-radius: 4px;
@@ -319,6 +321,8 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
+
+
 .cred-left {
     flex-grow: 1;
 }
@@ -330,12 +334,16 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding-top: 5px;
+  margin-top: 1em;
+  
+
 }
 
 .cred-icon-container img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
+  border-radius: 3px;
 }
 
 
@@ -455,6 +463,8 @@ button.view-doc{
     display: block;
 }
 
+
+
 .back-button {
     background: #171717;
     color: white;
@@ -466,7 +476,15 @@ button.view-doc{
 
 /* Resume */
 .section-container#resume-container{
+  display: flex;
+  flex-direction: row;
   padding: 1em 10em;
+  justify-content: center;
+}
+
+.resume-photo{
+  
+  margin-bottom: 2em;
 }
 
 .personal-info{
@@ -474,14 +492,23 @@ button.view-doc{
 
 }
 
+.left-sidebar#resume{
+  min-width: 12em;
+  position: fixed;
+  top: 150px;
+  left: 20px;
+  
+}
+
 .job-container{
-  flex-grow: 1;
-  width: 100%;
   display: block;
-  border-radius: 8px;
+  flex-grow: 1;
+  width: 80%;
+  
+
   padding: 1em;
-  border: 1px solid rgba(0, 0, 0, 0.03);
   margin-top: 5px;
+  width: 40vw;
 }
 
 .job-container ul{

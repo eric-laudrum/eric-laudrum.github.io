@@ -27,12 +27,13 @@ const Job: React.FC<JobProps> = ({ title, employer, date, location, description,
             <div className="job-container">
 
                 <h3 className="cred-title">{title}</h3>
-                <h4 className="emp-name">{employer}</h4>
+                <h4 >{employer}</h4>
                 
-                <ul>
-                    <li className="cred-detail" style={{ fontStyle: 'italic' }}>{location}</li>
-                    <li className="cred-detail">{date}</li>
-                </ul>
+         
+                <h4 style={{ fontStyle: 'italic' }}>{location}</h4>
+                <h4>{date}</h4>
+            
+        
 
                 <p className="cred-description">
                     {description}

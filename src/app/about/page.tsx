@@ -9,6 +9,7 @@ export default function AboutPage(){
                 <ul className="about-details">
                     <li>Full-Stack Developer</li>
                     <p>
+                        
                         I started pushing buttons on a sequencer. 
                         Programming music is a passion of mine that had me doing everything I could to avoid expensive sampling hardware.
 
@@ -17,6 +18,8 @@ export default function AboutPage(){
                     </p>
 
                     <p className="philosophy">The best tool for the job is the one available</p>
+
+                    <p>Good design looks invisible</p>
                 </ul>
             </div>
         </main>
