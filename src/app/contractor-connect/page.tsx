@@ -1,30 +1,28 @@
 export default function ContractorConnect(){
 
+    const projectPlanPDF = "/assets/pdf/ProjectPlan.pdf"
+    const projectVisionPDF = "/assets/pdf/ProjectVision.pdf"
+    const softwareRequirementsPDF = "/assets/pdf/softwareRequirementsAnalysis.pdf"
+
+    const activityDiagramPDF = "/assets/pdf/activityDiagram.pdf"
+    const dataFlowPDF = "/assets/pdf/dataFlow.pdf"
+    const normalizedDataModelPDF = "/assets/pdf/normalizedDataModel.pdf"
+    const sequenceDiagramPDF = "/assets/pdf/sequenceDiagram.pdf"
+    const umlDiagramPDF = "/assets/pdf/umlDiagram.pdf"
 
     return(
 
         <div className="section-container">
 
+            {/* ----- 1 Intro ----- */}
             <div className="solo-project-container">
 
-                <div className="left-container">
+                <div className="left-container" style={{minWidth:"12em"}}>
                     <h1 className="solo-project-title">Contractor Connect</h1>
                     <h4 className="solo-project-tagline">Post Projects. Get Bids. Hire Pros.</h4>
-                    <p className="solo-project-description">
-                        A secure marketplace to simplify the home improvement process. 
-                        Homeowners post projects, receive bids, and pick their contractor based on user ratings and transparent pricing. 
-                    </p>
 
-                    <ul>Notes
-                        <li>Project Summary</li>
-                        <li>Project Vision</li>
-                        <li>Project / Business Requirements</li>
-                        <li>Project Plan</li>
-                        <li>Requirements Analysis and Design</li>
-                        <li>Wireframes/Mockups</li>
-                        <li>Status Reports</li>
-                        <li>System Implementation</li>
-                    </ul>
+
+                    
                 </div>
 
                 <div className="right-container">
@@ -32,6 +30,143 @@ export default function ContractorConnect(){
 
                 </div>
             </div>
+
+            {/* ----- 2 Description ----- */}
+            <hr style={{margin: "3em"}}/>
+
+            <div className="solo-project-container">
+                <p className="solo-project-description">
+                    Contractor Connect is a secure marketplace to simplify the home improvement process. 
+                    Homeowners post projects, receive bids, and pick their contractor based on user ratings and transparent pricing. 
+                </p>
+            </div>
+
+
+            {/* ----- 3 Project Plan ----- */}
+            <hr style={{margin: "3em"}}/>
+            <h3 className="solo-project-title">Project Plan</h3>
+
+            <p>Contractor Connect is a digital marketplace designed to streamline the process for homeowners to connect and engage with local service professionals. By creating a centralized system for contractor information, peer reviews, and job-bidding, the platform removes the difficulties of researching contractors and gathering quotes. Our mission is to create a welcome and easily accessible environment to provide value for both homeowners and contractors. </p>
+
+            {/* Show PDF */}
+            <div style={{ 
+                marginTop: '1.5em',
+                display:'flex',
+                justifyContent:'flex-end',
+
+             }}>
+                    <a className="view-pdf-button"
+                        href={projectPlanPDF} 
+                        target="_blank" 
+                        rel="noopener noreferrer"   
+                    >
+                        View Full Project Plan (PDF)
+                    </a>
+                </div>
+        
+            {/* ----- 4 Project Vision ----- */}
+            <hr style={{margin: "3em"}}/>
+            <h3 className="solo-project-title">Project Vision</h3>
+
+            <p>
+                The goal of this project is to build an online platform that connects people with local
+                contractors to get their job done quickly and professionally.
+                Users can choose their contractor from the available bidders on their task to ensure that they are connected
+                with the right person. Contractors can provide their estimates for various tasks. In addition, people receive
+                the best deals and services from local contractors.
+            </p>
+
+            {/* Show PDF */}
+            <div style={{ 
+                marginTop: '1.5em',
+                display:'flex',
+                justifyContent:'flex-end',
+
+             }}>
+                <a 
+                    href={projectVisionPDF} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="view-pdf-button"
+                
+                >
+                    View Full Project Vision (PDF)
+                </a>
+            </div>
+
+
+            {/* ----- 5 Technological Requirements ----- */}
+            <hr style={{margin: "3em"}}/>
+            <h3 className="solo-project-title">Software Requirements Analysis and Design</h3>
+
+            <p>
+                 Contractor Connect is a new, self-contained web application that matches homeowners with local contractors. 
+                 Today, most people rely on word of mouth, scattered social posts, phone calls, spreadsheets or email to request quotes and keep track of work. 
+                 Our app replaces that messy process. Compared with local listing boards and gig platforms, Contractor Connect focuses on small and medium home projects, uses structured bids so prices are easy to compare, keeps reviews simple, and includes basic in-app payments. 
+                 The main stakeholders are homeowners, contractors, an administrator for moderation, the instructor, teaching assistants for review, and our development team. 
+                 In this release, we will deliver the essentials: user accounts, project posting, project browsing and search, bidding, bid review and selection, a simple dashboard, reviews, and basic payment handling.
+            </p>
+
+            {/* Show PDF */}
+            <div style={{ 
+                marginTop: '1.5em',
+                display:'flex',
+                justifyContent:'flex-end',
+
+             }}>
+                <a 
+                    href={softwareRequirementsPDF} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="view-pdf-button"
+                >
+                    View Full Project Requirements (PDF)
+                </a>
+            </div>
+
+
+
+
+            {/* ----- 6 Diagrams ----- */}
+            <hr style={{margin: "3em"}}/>
+            <h3 className="solo-project-title">Diagrams</h3>
+
+            <p>
+                 Diagram info
+            </p>
+
+            {/* Show PDF */}
+            <div style={{ 
+                marginTop: '1.5em',
+                display:'flex',
+                justifyContent:'flex-end',
+
+             }}>
+                <a 
+                    href={softwareRequirementsPDF} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="view-pdf-button"
+                >
+                    View UML Diagram (PDF)
+                </a>
+            </div>
+
+
+
+            {/* X Just notes */}
+            <hr style={{margin: "3em"}}/>
+            <ul>Docs to add - working notes - remove later
+                <li>Project Summary</li>
+                <li>Project Vision</li>
+                <li>Project / Business Requirements</li>
+                <li>Project Plan</li>
+                <li>Requirements Analysis and Design</li>
+                <li>Wireframes/Mockups</li>
+                <li>Status Reports</li>
+                <li>System Implementation</li>
+            </ul>
+        
         </div>
     )
 }

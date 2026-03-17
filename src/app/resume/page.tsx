@@ -34,10 +34,10 @@ export default function resume(){
                 {
             // Linked In - Testing Q/A
             icon: <img src="/assets/icons/linkedin-logo.png"  alt="LinkedIn-logo" />,
-            title: "Hands-On Data Annotation: Applied Machine Learning",
+            title: "Programming Foundations: Software Testing/ QA",
             date: "Jan 2026",
             fileName: "LI-testing-qa.jpg",
-            description: " learned fundamental programming concepts through using the Python programming language",
+            description: "Learned fundamentals of software testing and quality analysis",
         },
         {
             // Linked In - Data Annotation
@@ -131,7 +131,7 @@ export default function resume(){
             
              {/* ----- Jobs ----- */}
             <div className="jobs-container">
-                <h2 className="section-title">Work Experience</h2>
+                <h2 className="section-title" id="work-experience">Work Experience</h2>
 
                 {jobs.map((job, index) => (
                     <Job
@@ -149,7 +149,7 @@ export default function resume(){
 
                 
                 {/*  ----- Education ----- */}
-                <h2 className="section-title">Education</h2>
+                <h2 className="section-title" id="education">Education</h2>
 
                 <div className="credentials-grid">
                     {education.map((edu, index) => (
@@ -167,7 +167,7 @@ export default function resume(){
 
 
                 {/*  ----- Credentials ----- */}
-                <h2 className="section-title">Credentials</h2>
+                <h2 className="section-title" id="credentials">Credentials</h2>
 
                 <div className="credentials-grid">
                     {certificates.map((cert, index) => (

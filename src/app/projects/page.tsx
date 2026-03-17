@@ -1,12 +1,8 @@
+import ContractorConnect from "../contractor-connect/page";
+import TrellisSequencer from "../trellis-sequencer/page";
+
 export default function ProjectPage(){
     const projects = [
-        {
-            title: "Trellis",
-            description: "A real-time 16-step sequencer built with Node.js, Socket.io, and Tone.js.",
-            tags: ["Node.js", "Socket.io", "Tone.js"],
-            image: "/assets/trellis-sequencer.jpg",
-            link: "#",
-        },
         {
             title: "Contractor Connect",
             description: "An online bidding platform for home improvement projects.",
@@ -14,6 +10,13 @@ export default function ProjectPage(){
             link: "https://contractorconnect.cc/",
             image: "/assets/contractor-connect.jpg",
         }, 
+                {
+            title: "Trellis",
+            description: "A real-time 16-step sequencer built with Node.js, Socket.io, and Tone.js.",
+            tags: ["Node.js", "Socket.io", "Tone.js"],
+            image: "/assets/trellis-sequencer.jpg",
+            link: "#",
+        },
         {
             title: "Adventure Club",
             description: "A full-stack application for a seniors outdoor recreation group.",
@@ -28,26 +31,17 @@ export default function ProjectPage(){
             image: "/assets/",
             link: "#"
         }, 
-        {
-            title: "Wordland",
-            description: "An android based mobile app game where users traverse to an end goal with scrabble moves.",
-            tags: ["AndroidStudio", "Kotlin"],
-            image: "/assets/",
-            link: "#"
-        },
-        {
-            title: "Huedoku",
-            description: "An android based mobile app sudoku game where users can customize tile colours",
-            tags: ["AndroidStudio", "Kotlin"],
-            image: "/assets/",
-            link: "#"
-        }, 
 
     ];
 
     return(
         <main className="section-container">
             <h1 className="section-title">Projects</h1>
+
+
+            <ContractorConnect/>
+            <TrellisSequencer />
+
 
             <div className="project-grid">
                 { projects.map(( project, index ) => (

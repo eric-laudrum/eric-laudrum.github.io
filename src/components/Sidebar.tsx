@@ -17,9 +17,9 @@ export default function Sidebar(){
 
                 <div className="resume-nav" style={{ display:"flex", flexDirection:"column", marginTop: "1em"}}>
 
-                    <a className="resume-link" href="#">Work Experience</a>
-                    <a className="resume-link" href="#">Education</a>
-                    <a className="resume-link" href="#">Credentials</a>
+                    <a className="resume-link" href="#work-experience">Work Experience</a>
+                    <a className="resume-link" href="#education">Education</a>
+                    <a className="resume-link" href="#credentials">Credentials</a>
 
                 </div>
                 

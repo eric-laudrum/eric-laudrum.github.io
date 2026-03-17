@@ -11,8 +11,9 @@ export default function Home() {
 
 
       <AboutPage />
-      <TrellisSequencer />
       <ContractorConnect/>
+      <TrellisSequencer />
+
       <ProjectPage />
       
 
