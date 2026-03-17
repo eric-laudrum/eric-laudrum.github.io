@@ -11,9 +11,18 @@ export default function Sidebar(){
 
                 <img className="resume-photo" src="assets/park.jpg" alt="no image" style={{ height:"8em"}}/>
                 
-                <h3 className="sub-title" style={{marginTop:"1em"}}>Eric Laudrum</h3>
+                <h3 className="sub-title" style={{marginTop:"1em", fontSize:"1.5em"}}>Eric Laudrum</h3>
                 <p>Web Developer</p>
                 <p>Kitchener, ON, Canada</p>
+
+                <div className="resume-nav" style={{ display:"flex", flexDirection:"column", marginTop: "1em"}}>
+
+                    <a className="resume-link" href="#">Work Experience</a>
+                    <a className="resume-link" href="#">Education</a>
+                    <a className="resume-link" href="#">Credentials</a>
+
+                </div>
+                
             
 
             </div>   

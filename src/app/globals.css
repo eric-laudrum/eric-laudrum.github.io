@@ -498,7 +498,13 @@ button.view-doc{
   top: 150px;
   left: 60px;
 
-  
+}
+
+.resume-link{
+
+}
+.resume-link:hover{
+  font-weight: 550;
 }
 
 .job-container{

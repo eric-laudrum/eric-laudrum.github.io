@@ -1,8 +1,19 @@
 import Credential from '../../components/Credential';
+import Education from '@/components/Education';
 
 export default function AcademicCredentials(){
 
-    const academics = [
+    const education = [
+        {
+            icon: <img src="/assets/icons/gbc-logo.png"  alt="George Brown" />,
+            title: "BA Sociology",
+            school: "Toronto Metropolitan University (TMU)",
+            date: "2011",
+        }
+    ]
+
+
+    const certificates = [
           { 
             // GB Dean's List
             icon: <img src="/assets/icons/gbc-logo.png"  alt="George Brown" />,
@@ -49,14 +60,27 @@ export default function AcademicCredentials(){
     return(
         <div >
 
-            <h2 className="section-title">Credentials</h2>
-
-           
-
+            <h2 className="section-title">Education</h2>
              {/* ------------------ CERTIFICATES ------------------  */}
 
             <div className="credentials-grid">
-                {academics.map((cert, index) => (
+                {education.map((edu, index) => (
+                    <Education
+                        key={index}
+                        title={edu.title}
+                        school={edu.school}
+                        date={edu.date}
+                        icon={edu.icon}
+                        
+                    />
+                ))}
+            </div>
+
+
+            <h2 className="section-title">Credentials</h2>
+
+            <div className="credentials-grid">
+                {certificates.map((cert, index) => (
                     <Credential
                         key={index}
                         title={cert.title}
@@ -68,8 +92,7 @@ export default function AcademicCredentials(){
                     />
                 ))}
             </div>
-
-
         </div>
     )
 }
+
