@@ -3,7 +3,7 @@ import Education from "@/components/Education"
 import Job from "@/components/Job"
 import Credential from "@/components/Credential"
 
-export default function resume(){
+export default function Resume(){
 
 
     const education = [
@@ -127,7 +127,10 @@ export default function resume(){
         <div className="section-container" id="resume-container">
 
             
-            <Sidebar />
+            <Sidebar 
+                title="Resume" 
+                sections={["Work Experience", "Education", "Credentials"]} 
+            />
             
              {/* ----- Jobs ----- */}
             <div className="jobs-container">

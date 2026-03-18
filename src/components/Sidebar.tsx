@@ -1,31 +1,28 @@
-export default function Sidebar(){
+interface SidebarProps {
+  title: string;
+  sections: string[];
+}
+
+export default function Sidebar({ title, sections }: SidebarProps) {
 
      return(
 
-        <div className="left-sidebar" id="resume">
+        <div className="left-sidebar" id="project-toc">
 
-            <h2 className="section-title">Resume</h2>
+            <h2 className="section-title">{title}</h2>
 
-            {/* ----- Personal Information ----- */}
-            <div className="personal-info">
-
-                <img className="resume-photo" src="assets/park.jpg" alt="no image" style={{ height:"8em"}}/>
-                
-                <h3 className="sub-title" style={{marginTop:"1em", fontSize:"1.5em"}}>Eric Laudrum</h3>
-                <p>Web Developer</p>
-                <p>Kitchener, ON, Canada</p>
-
-                <div className="resume-nav" style={{ display:"flex", flexDirection:"column", marginTop: "1em"}}>
-
-                    <a className="resume-link" href="#work-experience">Work Experience</a>
-                    <a className="resume-link" href="#education">Education</a>
-                    <a className="resume-link" href="#credentials">Credentials</a>
-
-                </div>
-                
-            
-
-            </div>   
+            <div className="resume-nav" style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+                {sections?.map((section) => (
+                <a
+                    key={section}
+                    className="resume-link"
+                    href={`#${section.toLowerCase().replace(/\s+/g, "-")}`}
+                    style={{ fontSize: "0.9rem", color: "#555" }}
+                >
+                    {section}
+                </a>
+                ))}
+            </div>
         </div>
 
 
