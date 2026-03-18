@@ -90,6 +90,10 @@ body {
 
 
 /* Project Page */
+
+
+
+
 .project-page{
   display: flex;
   flex-direction: row;
@@ -400,6 +404,10 @@ body {
   scroll-margin-top: 140px;
 }
 
+[id^="cc_"], [id^="trellis_"] {
+    scroll-margin-top: 150px;
+}
+
 
 
 .cred-left {
@@ -577,9 +585,12 @@ button.view-doc{
   width: 200px;
   min-width: 200px; 
   position: sticky;
-  top: 120px;
-  height: fit-content;
+  top: 200px;
+  height: 70vh;
   flex-shrink: 0;
+
+  align-content: start;
+  border-right: 0.5px solid rgba(0, 0, 0, 0.15);
 }
 
 #resume-container, .project-page {

@@ -39,7 +39,7 @@ export default function ContractorConnect(){
         <div className="section-container">
 
             {/* ----- 1 Intro ----- */}
-            <div className="solo-project-container">
+            <div className="solo-project-container" id="cc_intro">
 
                 <div className="left-container" style={{minWidth:"12em"}}>
                     <h1 className="solo-project-title">Contractor Connect</h1>
@@ -56,7 +56,7 @@ export default function ContractorConnect(){
             {/* ----- 2 Description ----- */}
             <hr style={{margin: "3em"}}/>
 
-            <div className="solo-project-container">
+            <div className="solo-project-container" id="cc_description">
                 <p className="solo-project-description">
                     Contractor Connect is a secure marketplace to simplify the home improvement process. 
                     Homeowners post projects, receive bids, and pick their contractor based on user ratings and transparent pricing. 
@@ -67,7 +67,7 @@ export default function ContractorConnect(){
 
             {/* ----- 3 Project Summary ----- */}
             <hr style={{margin: "3em"}}/>
-            <h3 className="solo-project-title">Project Summary</h3>
+            <h3 className="solo-project-title" id="cc_project-summary">Project Summary</h3>
 
             <p>
                 Contractor Connect is a software website designed to create a direct channel between contractors, 
@@ -93,7 +93,7 @@ export default function ContractorConnect(){
 
             {/* ----- 3 Project Plan ----- */}
             <hr style={{margin: "3em"}}/>
-            <h3 className="solo-project-title">Project Plan</h3>
+            <h3 className="solo-project-title" id="cc_project-plan">Project Plan</h3>
 
             <p>Contractor Connect is a digital marketplace designed to streamline the process for homeowners to connect and engage with local service professionals. 
                 By creating a centralized system for contractor information, peer reviews, and job-bidding, the platform removes the difficulties of researching contractors and gathering quotes. 
@@ -114,7 +114,7 @@ export default function ContractorConnect(){
 
             {/* ----- 4 Project Vision ----- */}
             <hr style={{margin: "3em"}}/>
-            <h3 className="solo-project-title">Project Vision</h3>
+            <h3 className="solo-project-title" id="cc_project-vision">Project Vision</h3>
 
             <p>
                 The goal of this project is to build an online platform that connects people with local
@@ -138,7 +138,7 @@ export default function ContractorConnect(){
 
             {/* ----- 5 Technological Requirements ----- */}
             <hr style={{margin: "3em"}}/>
-            <h3 className="solo-project-title">Software Requirements Analysis and Design</h3>
+            <h3 className="solo-project-title" id="cc_project-requirements">Software Requirements Analysis and Design</h3>
 
             <p>
                  Contractor Connect is a new, self-contained web application that matches homeowners with local contractors. 
@@ -164,7 +164,7 @@ export default function ContractorConnect(){
 
             {/* ----- 6 Diagrams ----- */}
             <hr style={{margin: "3em"}}/>
-            <h3 className="solo-project-title">Diagrams</h3>
+            <h3 className="solo-project-title" id="cc_diagrams">Diagrams</h3>
 
            <div className="image-carousel" 
                 style={{ maxWidth: '800px', margin: '0 auto' }}>
@@ -242,7 +242,7 @@ export default function ContractorConnect(){
 
             {/* ----- 7 Figma ----- */}
             <hr style={{margin: "3em"}}/>
-            <h3 className="solo-project-title">Prototype</h3>
+            <h3 className="solo-project-title" id="cc_prototype">Prototype</h3>
 
             <div className="image-carousel" style={{ maxWidth: '800px', margin: '0 auto' }}>
                 <ImageCarousel imageUrls={ccMockupImages.map((src, i) => (
@@ -263,7 +263,7 @@ export default function ContractorConnect(){
 
             {/* ----- 8 System Implementation ----- */}
             <hr style={{margin: "3em"}}/>
-            <h3 className="solo-project-title">System Implementation</h3>
+            <h3 className="solo-project-title" id="cc_system-implementation">System Implementation</h3>
 
             <img 
                 className="solo-project-img" id="mockup"
@@ -300,7 +300,7 @@ export default function ContractorConnect(){
 
             {/* ----- 8 Status Report ----- */}
             <hr style={{margin: "3em"}}/>
-            <h3 className="solo-project-title">Status Report</h3>
+            <h3 className="solo-project-title" id="cc_status-report">Status Report</h3>
 
             <p>This document outlines the vision, goals, and scope for the Contractor Connect project developed by The Four Group. 
                 The goal of this project is to build an online platform that connects people with local contractors to get their job done quickly and professionally.  

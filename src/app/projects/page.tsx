@@ -14,7 +14,7 @@ export default function ProjectPage(){
     const projects = [
     {
         title: "Contractor Connect",
-        sections: ["Summary", "Plan", "Vision", "Requirements", "Diagrams", "Prototype", "StatusReport"],
+        sections: ["Intro", "Description", "Project Summary", "Project Plan", "Project Vision", "Project Requirements", "Diagrams", "Prototype", "System Implementation", "Status Report"],
         description: "An online bidding platform for home improvement projects.",
         tags: ["PHP", "PHPUnit"],
         image: "/assets/contractor-connect.jpg",
@@ -43,7 +43,8 @@ export default function ProjectPage(){
                 <aside className="project-sidebar-container">
                     <Sidebar 
                         title="Project Contents" 
-                        sections={currentProject?.sections || []} 
+                        sections={currentProject?.sections || []}
+                        prefix={activeProject === "Contractor Connect" ? "cc" : "trellis"}
                     />
                 </aside>
             
