@@ -6,6 +6,7 @@ export default function ContractorConnect(){
     const projectPlanPDF = "/assets/pdf/ProjectPlan.pdf"
     const projectVisionPDF = "/assets/pdf/ProjectVision.pdf"
     const softwareRequirementsPDF = "/assets/pdf/softwareRequirementsAnalysis.pdf"
+    const statusReportPDF = "/assets/pdf/statusReport.pdf"
 
     const activityDiagramPDF = "/assets/pdf/activityDiagram.pdf"
     const dataFlowPDF = "/assets/pdf/dataFlowDiagram.pdf"
@@ -180,7 +181,7 @@ export default function ContractorConnect(){
 
             {/* Show PDF Buttons */}
 
-            
+
             {/* UML */}
             <div className='pdf-btn-container'>
                 <a className="view-pdf-button"
@@ -243,13 +244,11 @@ export default function ContractorConnect(){
             <hr style={{margin: "3em"}}/>
             <h3 className="solo-project-title">Prototype</h3>
 
-
             <div className="image-carousel" style={{ maxWidth: '800px', margin: '0 auto' }}>
                 <ImageCarousel imageUrls={ccMockupImages.map((src, i) => (
                     <img key={i} src={src} alt={`Mockup ${i + 1}`} />
                 ))} />
             </div>
-
 
             {/* Show PDF */}
             <div className='pdf-btn-container'>
@@ -262,11 +261,9 @@ export default function ContractorConnect(){
                 </a>
             </div>
 
-
             {/* ----- 8 System Implementation ----- */}
             <hr style={{margin: "3em"}}/>
             <h3 className="solo-project-title">System Implementation</h3>
-
 
             <img 
                 className="solo-project-img" id="mockup"
@@ -278,7 +275,6 @@ export default function ContractorConnect(){
 
                 }}
             />
-
 
             <p>
                  Contractor Connect is a new, self-contained web application that matches homeowners with local contractors. 
@@ -302,27 +298,30 @@ export default function ContractorConnect(){
 
 
 
-
-
-
-
-
-
-
-
-
-            {/* X Just notes */}
+            {/* ----- 8 Status Report ----- */}
             <hr style={{margin: "3em"}}/>
-            <ul>Docs to add - working notes - remove later
-                <li>X Project Summary</li>
-                <li>X Project Vision</li>
-                <li>Project / Business Requirements</li>
-                <li>XProject Plan</li>
-                <li>Requirements Analysis and Design</li>
-                <li>Wireframes/Mockups</li>
-                <li>Status Reports</li>
-                <li>System Implementation</li>
-            </ul>
+            <h3 className="solo-project-title">Status Report</h3>
+
+            <p>This document outlines the vision, goals, and scope for the Contractor Connect project developed by The Four Group. 
+                The goal of this project is to build an online platform that connects people with local contractors to get their job done quickly and professionally.  
+                Users can choose their contractor from the available bidders on their task to ensure that they are connected with the right person. 
+                Contractors can provide their estimates for various tasks. In addition, people receive the best deals and services from local contractors. 
+                The document serves as a guide to align all stakeholders and team members on the purpose, expectations, and boundaries of the project. 
+            </p>
+            
+            {/* Show PDF */}
+            <div className='pdf-btn-container'>
+                <a className="view-pdf-button"
+                    href={projectVisionPDF} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
+                    View Status Report (PDF)
+                </a>
+            </div>
+
+
+
         
         </div>
     )

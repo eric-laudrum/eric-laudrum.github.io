@@ -28,6 +28,7 @@ body {
   display: flex;
   position: sticky;
   top: 0;
+  height: 80px;
   flex-direction: row;
   width: 100%;
   align-content: center;
@@ -49,9 +50,6 @@ body {
   color:white;
 }
 
-.nav-bar{
-  
-}
 
 .nav-link{
   margin-right: 1em;
@@ -67,7 +65,7 @@ body {
 }
 
 .section-container{
-  padding: 4rem;
+  padding: 2rem 8rem;
   margin: 20px;
 
   min-height: 70vh;
@@ -91,7 +89,38 @@ body {
 
 }
 
+.project-nav{
+  position: sticky;
+  top: 70px;
+  z-index: 999; 
+  background-color: white; 
+  
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 1em;
+  border-bottom: 2px solid black;
+  
 
+  margin: -2rem 0 2rem;
+
+}
+
+.project-nav a {
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.project-nav a:hover {
+  color: #2a769c;
+}
+
+.nav-link-active {
+  font-weight: bold;
+  color: #2a769c;
+  border-bottom: 2px solid #2a769c;
+  padding-bottom: 2px;
+}
 
 .project-grid{
   display: flex;
@@ -178,7 +207,7 @@ body {
 
 .pdf-btn-container{
   display: flex;
-  margin-top: 1.5em;
+  margin-top: 5px;
   
   justify-content: flex-end;
 }
@@ -238,7 +267,7 @@ body {
 
 
 .solo-project-title{
-  margin-bottom: 1rem;
+  margin: 2em 0;
   
 }
 
