@@ -1,3 +1,5 @@
+import ImageCarousel from "@/components/ImageCarousel";
+
 export default function ContractorConnect(){
 
     const projectSummaryPDF = "/assets/pdf/ProjectSummary.pdf"
@@ -15,6 +17,22 @@ export default function ContractorConnect(){
 
     const figmaLink = "https://www.figma.com/proto/3oCa6OhkkkkVvA9YbuAmgZ/Contractor-Connect--Copy-?node-id=0-1&t=YKylebIu3parvFDt-1"
 
+    const ccMockupImages = [
+        "./assets/mockups/contractor-connect-mockup1.jpg",
+        "./assets/mockups/contractor-connect-mockup2.jpg",
+        "./assets/mockups/cc-new-project.jpg",
+        "./assets/mockups/cc-bids.jpg",
+        "./assets/mockups/cc-compare.jpg",
+        "./assets/mockups/cc-contractor.jpg",
+        "./assets/mockups/cc-con-projects.jpg",
+        "./assets/mockups/cc-con-project-details.jpg",
+        "./assets/mockups/cc-con-browse.jpg",
+        "./assets/mockups/cc-con-bids.jpg",
+        "./assets/mockups/cc-con-bid-details.jpg",
+        "./assets/mockups/cc-con-make-bid.jpg",
+        "./assets/mockups/cc-con-place-bid.jpg"
+    ];
+    
     return(
 
         <div className="section-container">
@@ -147,11 +165,22 @@ export default function ContractorConnect(){
             <hr style={{margin: "3em"}}/>
             <h3 className="solo-project-title">Diagrams</h3>
 
-            <p>
-                 Diagram info
-            </p>
+           <div className="image-carousel" 
+                style={{ maxWidth: '800px', margin: '0 auto' }}>
+                <ImageCarousel imageUrls={[
+                    <img key="1" src="./assets/diagrams/umlDiagram.jpg" alt="UML" />,
+                    <img key="2" src="./assets/diagrams/activityDiagram.jpg" alt="Activity" />,
+                    <img key="3" src="./assets/diagrams/dataFlowDiagram.jpg" alt="Data Flow" />,
+                    <img key="4" src="./assets/diagrams/normalizedDataModel.jpg" alt="Data Model" />,
+                    <img key="5" src="./assets/diagrams/sequenceDiagram.jpg" alt="Sequence" />,
+                ]} />
 
-            {/* Show PDF */}
+            </div>
+
+
+            {/* Show PDF Buttons */}
+
+            
             {/* UML */}
             <div className='pdf-btn-container'>
                 <a className="view-pdf-button"
@@ -172,7 +201,6 @@ export default function ContractorConnect(){
                     View Activity Diagram (PDF)
                 </a>
             </div>
-
             {/* Data Flow Diagram */}
             <div className='pdf-btn-container'>
                 <a className="view-pdf-button"
@@ -183,8 +211,6 @@ export default function ContractorConnect(){
                     View Data Flow Diagram (PDF)
                 </a>
             </div>
-
-
             {/* Normalized Data Model Diagram */}
             <div className='pdf-btn-container'>
                 <a className="view-pdf-button"
@@ -211,20 +237,19 @@ export default function ContractorConnect(){
 
 
 
+
+
             {/* ----- 7 Figma ----- */}
             <hr style={{margin: "3em"}}/>
             <h3 className="solo-project-title">Prototype</h3>
 
-            <div className="right-container" id="mockups">
-                <img 
-                    className="solo-project-img" id="mockup"
-                    src="./assets/mockups/contractor-connect-mockup1.jpg" 
-                />
-                 <img 
-                    className="solo-project-img" id="mockup"
-                    src="./assets/mockups/contractor-connect-mockup2.jpg" 
-                />
+
+            <div className="image-carousel" style={{ maxWidth: '800px', margin: '0 auto' }}>
+                <ImageCarousel imageUrls={ccMockupImages.map((src, i) => (
+                    <img key={i} src={src} alt={`Mockup ${i + 1}`} />
+                ))} />
             </div>
+
 
             {/* Show PDF */}
             <div className='pdf-btn-container'>
