@@ -3,6 +3,8 @@
 import { useState } from "react";
 import ContractorConnect from "../contractor-connect/page";
 import TrellisSequencer from "../trellis-sequencer/page";
+import LoopIn from "../loop-in/page.";
+import Warble from "../warble/page";
 import ProjectNav from "@/components/ProjectNav"
 import Sidebar from "@/components/Sidebar";
 
@@ -17,7 +19,7 @@ export default function ProjectPage(){
         sections: ["Intro", "Description", "Project Summary", "Project Plan", "Project Vision", "Project Requirements", "Diagrams", "Prototype", "System Implementation", "Status Report"],
         description: "An online bidding platform for home improvement projects.",
         tags: ["PHP", "PHPUnit"],
-        image: "/assets/contractor-connect.jpg",
+        image: "/assets/screenshots/contractor-connect.jpg",
         component: <ContractorConnect />,
     },
     {
@@ -25,8 +27,24 @@ export default function ProjectPage(){
         sections: ["Overview", "Architecture", "Demo"],
         description: "A real-time 16-step sequencer built with Node.js, Socket.io, and Tone.js.",
         tags: ["Node.js", "Socket.io", "Tone.js"],
-        image: "/assets/trellis-sequencer.jpg",
+        image: "/assets/screenshots/trellis-sequencer.jpg",
         component: <TrellisSequencer />,
+    },
+    {
+        title: "Warble",
+        sections: ["Overview", "Architecture", "Demo"],
+        description: "description for loopin.",
+        tags: ["React"],
+        image: "/assets/screenshots/warbleHome.jpg",
+        component: <Warble />,
+    },
+    {
+        title: "Loop-In",
+        sections: ["Overview", "Architecture", "Demo"],
+        description: "description for loopin.",
+        tags: ["React"],
+        image: "/assets/screenshots/loopInHome.jpg",
+        component: <LoopIn />,
     },
     ]
 

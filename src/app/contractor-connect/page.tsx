@@ -47,7 +47,7 @@ export default function ContractorConnect(){
                 </div>
 
                 <div className="right-container">
-                    <img className="solo-project-img" src="./assets/contractor-connect.jpg" />
+                    <img className="solo-project-img" src="./assets/screenshots/contractor-connect.jpg" />
                 </div>
             </div>
 
@@ -312,7 +312,7 @@ export default function ContractorConnect(){
             {/* Show PDF */}
             <div className='pdf-btn-container'>
                 <a className="view-pdf-button"
-                    href={projectVisionPDF} 
+                    href={statusReportPDF} 
                     target="_blank" 
                     rel="noopener noreferrer"
                 >

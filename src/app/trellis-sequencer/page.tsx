@@ -17,7 +17,7 @@ export default function TrellisSequencer(){
                 </div>
 
                 <div className="right-container">
-                    <img className="solo-project-img" src="./assets/trellis-sequencer.jpg" />
+                    <img className="solo-project-img" src="./assets/screenshots/trellis-sequencer.jpg" />
 
                 </div>
             </div>
