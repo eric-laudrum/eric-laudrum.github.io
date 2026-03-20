@@ -40,9 +40,35 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 
 ## Checklist
+### Next
 - [] Bio
 - [] Cover Letter
+- [] Philosophy / Career goal
 - [] Link 
-    - [] GitHub Repos
-    - [] GitHub Account
+    - [] CC to Web Page (ContractorConnect.cc)
+    - [x] GitHub Repos
+        - [x] Contractor Connect
+        - [x] Trellis
+        - [x] Warble
+        - [x] Loop-In
+    - [x] GitHub Account
     - [] LinkedIn Account
+
+- [x] Capstone / Contractor Connect
+    - [x] Project Summary
+    - [x] Project Vision
+    - [x] Project / Business Requirements
+    - [x] Project Plan
+    - [x] Requirements Analysis & Design
+    - [x] Wireframes / Mockups
+    - [x] Status Reports
+    - [x] System Implementation
+
+- [x] Credentials
+    - [x] Certificates
+    - [x] Degrees/ Diplomas
+    - [] Letters of recommendation
+    - [] 
+
+### Later
+- [] Set up contact to email
