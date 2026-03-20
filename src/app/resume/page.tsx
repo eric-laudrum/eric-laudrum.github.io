@@ -130,6 +130,8 @@ export default function Resume(){
             <Sidebar 
                 title="Resume" 
                 sections={["Work Experience", "Education", "Credentials"]} 
+                repo="https://github.com/eric-laudrum"
+                repoText="GitHub"
             />
             
              {/* ----- Jobs ----- */}

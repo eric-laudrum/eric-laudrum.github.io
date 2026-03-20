@@ -20,6 +20,7 @@ export default function ProjectPage(){
         description: "An online bidding platform for home improvement projects.",
         tags: ["PHP", "PHPUnit"],
         image: "/assets/screenshots/contractor-connect.jpg",
+        github: "https://github.com/eric-laudrum/trellis-sequencer",
         component: <ContractorConnect />,
     },
     {
@@ -28,14 +29,16 @@ export default function ProjectPage(){
         description: "A real-time 16-step sequencer built with Node.js, Socket.io, and Tone.js.",
         tags: ["Node.js", "Socket.io", "Tone.js"],
         image: "/assets/screenshots/trellis-sequencer.jpg",
+        github: "https://github.com/eric-laudrum/trellis-sequencer",
         component: <TrellisSequencer />,
     },
     {
         title: "Warble",
-        sections: ["Overview", "Architecture", "Demo"],
+        sections: ["Overview", "Architecture", "Warble"],
         description: "description for loopin.",
         tags: ["React"],
         image: "/assets/screenshots/warbleHome.jpg",
+        github: "https://github.com/eric-laudrum/audio_showcase",
         component: <Warble />,
     },
     {
@@ -44,6 +47,7 @@ export default function ProjectPage(){
         description: "description for loopin.",
         tags: ["React"],
         image: "/assets/screenshots/loopInHome.jpg",
+        github: "https://github.com/eric-laudrum/AdventureClub",
         component: <LoopIn />,
     },
     ]
@@ -62,8 +66,10 @@ export default function ProjectPage(){
                     <Sidebar 
                         title="Project Contents" 
                         sections={currentProject?.sections || []}
-                        prefix={activeProject === "Contractor Connect" ? "cc" : "trellis"}
+                        repo={currentProject?.github} 
+                        prefix={activeProject === "Contractor Connect" ? "cc" : "trellis"} /* account for file prefixes */
                     />
+                    
                 </aside>
             
 
