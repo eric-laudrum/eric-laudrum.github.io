@@ -20,7 +20,7 @@ export default function ProjectPage(){
         description: "An online bidding platform for home improvement projects.",
         tags: ["PHP", "PHPUnit"],
         image: "/assets/screenshots/contractor-connect.jpg",
-        github: "https://github.com/eric-laudrum/trellis-sequencer",
+        github: "https://github.com/AdelAlhajHussein/contractor_connect",
         component: <ContractorConnect />,
     },
     {
