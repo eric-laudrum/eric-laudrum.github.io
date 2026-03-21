@@ -7,16 +7,28 @@ import TrellisSequencer from "./trellis-sequencer/page";
 
 export default function Home() {
   return (
-    <main>
+    <main className="home-page">
 
 
+
+
+    
       <AboutPage />
-      <ContractorConnect/>
-      <TrellisSequencer />
 
-      <ProjectPage />
-      
+      <div className="github-stats">
 
+        <img 
+          className="github-stat"
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=eric-laudrum&layout=compact&theme=transparent" 
+          alt="Top Languages" 
+        />
+
+        <img
+          className="github-stat"
+          src="https://github-readme-stats.vercel.app/api?username=eric-laudrum&show_icons=true&theme=transparent" 
+          alt="GitHub Stats" 
+         />
+      </div>
 
     </main>
   );

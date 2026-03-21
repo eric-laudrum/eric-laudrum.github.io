@@ -72,3 +72,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ### Later
 - [] Set up contact to email
+
+
+
+## GitHub Stats
+![My GitHub stats](https://github-readme-stats.vercel.app/api?username=eric-laudrum&show_icons=true&theme=transparent)
+
+
+## Top Languages
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=eric-laudrum)](https://github.com/eric-laudrum/github-readme-stats)
