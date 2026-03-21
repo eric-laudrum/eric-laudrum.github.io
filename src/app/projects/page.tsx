@@ -47,7 +47,7 @@ export default function ProjectPage(){
         description: "description for loopin.",
         tags: ["React"],
         image: "/assets/screenshots/loopInHome.jpg",
-        github: "https://github.com/eric-laudrum/AdventureClub",
+        github: "https://github.com/eric-laudrum/LoopIn",
         component: <LoopIn />,
     },
     ]

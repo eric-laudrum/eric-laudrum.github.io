@@ -96,9 +96,9 @@ export default function Resume(){
             // Sloane Fine Tea Merchants
             icon: <img src="/assets/icons/sloane-logo.jpg"  alt="Data Annotation" />,
             title: "Manager, Operations",
-            employer: "CPA Ontario",
+            employer: "Sloane Fine Tea Merchants",
             location: "Toronto, ON",
-            date: "Jul 2012 - Nov 2015",
+            date: "Nov 2015 - Aug 2016",
             description: "Oversaw day to day operations including inventory management, product packaging, and wholesale oder fulfillment."
         },
         {
