@@ -81,3 +81,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Top Languages
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=eric-laudrum)](https://github.com/eric-laudrum/github-readme-stats)
+
+
+## Visit Live Page
+[eric-laudrum] (https://eric-laudrum.github.io/)

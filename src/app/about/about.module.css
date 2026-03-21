@@ -1,0 +1,75 @@
+/* About Page */
+
+
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 2rem 5rem;
+    background-color: var(--primary-cream);
+}
+
+/* Header Text */
+.title {
+    font-size: 7rem;
+    line-height: 1.1;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    color: #f1593e;
+}
+
+
+/* Profile side */
+.leftSide {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem; 
+}
+
+
+.headshotImg {
+    width: 20rem; 
+    height: 25rem;  
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 5px solid rgba(173, 216, 230, 0.2);
+    flex-shrink: 0;
+}
+
+/* Text Container */
+.mainText {
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Individual Paragraphs */
+.aboutParagraph {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+
+
+/* Tablets / Phones */
+@media (max-width: 1024px) {
+    .leftSide {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sectionContainer {
+        padding: 2rem;
+    }
+
+    .title {
+        font-size: 4rem;
+        text-align: center;
+    }
+}
+
+
