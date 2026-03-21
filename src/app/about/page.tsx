@@ -3,24 +3,39 @@ export default function AboutPage(){
      return(
         <>
         <main className="section-container" id="about-section">
-            <img className="headshot-img" src="assets/park.jpg" alt="no image"/>
+           
+            {/* Headshot */}
+            <img 
+                className="headshot-img" 
+                src="assets/screenshots/eric-headshot.jpg" 
+                alt="no image"
+                width={300}
+                height={300}
+                
+            />
             
             <div>
-                <ul className="about-details">
-                    <li>Full-Stack Developer</li>
+              
+
                     <p>
                         
-                        I started pushing buttons on a sequencer. 
-                        Programming music is a passion of mine that had me doing everything I could to avoid expensive sampling hardware.
-
-                        I like simple, intuitive design to facilitate complex 
+                        Hi, I’m Eric, a full-stack developer who turns complex ideas into simple, intuitive products that work cleanly and feel effortless to use. 
+                        My first insight into coding came from an unexpected place, pushing buttons on a sequencer to make music, using the same logic, patterns, and workflow that now guide how I build software. 
+                    </p>
+                    <p>
+                        I work across object-oriented programming (Java, C#, Python), 
+                        mobile apps (iOS Swift, Android Java/Kotlin), 
+                        full-stack web development (React, Node.js, ASP.NET, Spring Boot, MERN/MEAN), 
+                        and databases (SQL, PostgreSQL, MongoDB). 
+                        
+                    </p>
+                    <p>
+                        My background in sociology shapes how I think about people and data, bringing a human approach to my code. 
+                        I believe that good design looks invisible, and the best tools are the ones you have available.
 
                     </p>
 
-                    <p className="philosophy">The best tool for the job is the one available</p>
-
-                    <p>Good design looks invisible</p>
-                </ul>
+            
             </div>
         </main>
         </>

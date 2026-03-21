@@ -6,10 +6,10 @@ const ContactForm = () => {
         <>
         <div>
             <div>
-                <Form className="contact-form" action="/submit">
+               <Form className="contact-form" action="/submit">
                     <div className='form-col'>
                         <label>First name</label>
-                        <input className='form-field' name="first-name" placeholder='First name'/>
+                        <input className='form-field' name="first-name" placeholder='First name' />
                     </div>
                     <div className='form-col'>
                         <label>Last name</label>
