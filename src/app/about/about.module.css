@@ -2,6 +2,8 @@
     min-height: 100vh;
     padding: 2rem 5rem;
     background-color: #fdfaf5;
+    width: fit-content; 
+    min-width: 100vw;
 }
 
 .aboutTitle {
@@ -10,43 +12,28 @@
     margin-bottom: 3rem;
     font-weight: bold;
     color: #97dc42;
+    width: max-content;
 }
 
-/* THE 3-COLUMN GRID */
 .threeColumnGrid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 400px 400px 400px;
     gap: 3rem;
     align-items: start;
-    width: 100%;
+    width: 1300px; 
 }
 
 .column {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    width: 100%;
+    width: 400px;
 }
 
-/* COLUMN 1 PHOTO ROW */
-.photoRow {
-    display: flex;
-    gap: 1rem;
-    width: 100%;
-}
 
-.smallPhoto {
-    width: 100%;
-    height: 20rem;
-    object-fit: cover;
-    border-radius: 8px;
-    display: block;
-}
-
-/* COLUMNS 2 & 3 PHOTOS */
-.fullWidthPhoto {
-    width: 100%; 
-    height: auto; 
+.smallPhoto, .fullWidthPhoto {
+    width: 400px;
+    height: auto;
     display: block;
     border-radius: 8px;
     object-fit: contain;
@@ -63,16 +50,5 @@
     margin-bottom: 1.5rem;
     color: #333;
     list-style: none;
-}
-
-/* Responsive: Stack columns on smaller screens */
-@media (max-width: 1100px) {
-    .threeColumnGrid {
-        grid-template-columns: 1fr; /* Stacks to 1 column so text doesn't squish */
-        gap: 4rem;
-    }
-    
-    .aboutTitle {
-        font-size: 4rem;
-    }
+    width: 400px;
 }

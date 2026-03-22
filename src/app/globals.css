@@ -38,18 +38,35 @@ main{
 
 }
 
+.banner-title {
+    margin: 0;
+    display: block;
+    height: auto;
+    width: fit-content;
+}
+
+.title {
+    display: block;
+    height: auto;
+    text-decoration: none;
+}
+
+.title img {
+    height: 6rem; 
+    width: auto;
+    display: block;
+    max-width: none;
+}
 
 
 .home-page {
   display: grid;
-  /* Track 1 (About): 1fr (takes the rest) 
-     Track 2 (GitHub): 450px (exactly your sidebar width) */
   grid-template-columns: 1fr 450px; 
-  gap: 5rem; /* This is the physical wall between them */
+  gap: 5rem;
   padding: 2rem;
   align-items: start;
   width: 100%;
-  min-width: 1200px; /* Forces the page to stay wide enough for both */
+  min-width: 1200px;
 }
 
 
@@ -73,21 +90,9 @@ main{
   align-items: center;
   padding: 0 2em;
   z-index: 1000;
-
   background-color: var(--primary);
 
-  
-
 }
-.banner-title{
-  font-size: 2rem;
-  margin: 1em 0;
-
-}
-.title{
-  color:white;
-}
-
 
 .nav-link{
   margin-right: 1em;
