@@ -19,21 +19,21 @@ export default function ContractorConnect(){
     const figmaLink = "https://www.figma.com/proto/3oCa6OhkkkkVvA9YbuAmgZ/Contractor-Connect--Copy-?node-id=0-1&t=YKylebIu3parvFDt-1"
 
     const ccMockupImages = [
-        "./assets/mockups/CC-1.jpg",
-        "./assets/mockups/CC-2.jpg",
-        "./assets/mockups/contractor-connect-mockup1.jpg",
-        "./assets/mockups/contractor-connect-mockup2.jpg",
-        "./assets/mockups/cc-new-project.jpg",
-        "./assets/mockups/cc-bids.jpg",
-        "./assets/mockups/cc-compare.jpg",
-        "./assets/mockups/cc-contractor.jpg",
-        "./assets/mockups/cc-con-projects.jpg",
-        "./assets/mockups/cc-con-project-details.jpg",
-        "./assets/mockups/cc-con-browse.jpg",
-        "./assets/mockups/cc-con-bids.jpg",
-        "./assets/mockups/cc-con-bid-details.jpg",
-        "./assets/mockups/cc-con-make-bid.jpg",
-        "./assets/mockups/cc-con-place-bid.jpg"
+        "/assets/mockups/CC-1.jpg",
+        "/assets/mockups/CC-2.jpg",
+        "/assets/mockups/contractor-connect-mockup1.jpg",
+        "/assets/mockups/contractor-connect-mockup2.jpg",
+        "/assets/mockups/cc-new-project.jpg",
+        "/assets/mockups/cc-bids.jpg",
+        "/assets/mockups/cc-compare.jpg",
+        "/assets/mockups/cc-contractor.jpg",
+        "/assets/mockups/cc-con-projects.jpg",
+        "/assets/mockups/cc-con-project-details.jpg",
+        "/assets/mockups/cc-con-browse.jpg",
+        "/assets/mockups/cc-con-bids.jpg",
+        "/assets/mockups/cc-con-bid-details.jpg",
+        "/assets/mockups/cc-con-make-bid.jpg",
+        "/assets/mockups/cc-con-place-bid.jpg"
     ];
     
     return(
@@ -44,7 +44,7 @@ export default function ContractorConnect(){
 
 
             <div className="right-container">
-                <img className="solo-project-img" src="./assets/mockups/CC-2.jpg" />
+                <img className="solo-project-img" src="/assets/mockups/CC-2.jpg" />
             </div>
 
 
@@ -156,11 +156,11 @@ export default function ContractorConnect(){
            <div className="image-carousel" 
                 style={{ maxWidth: '800px', margin: '0 auto' }}>
                 <ImageCarousel imageUrls={[
-                    <img key="1" src="./assets/diagrams/umlDiagram.jpg" alt="UML" />,
-                    <img key="2" src="./assets/diagrams/activityDiagram.jpg" alt="Activity" />,
-                    <img key="3" src="./assets/diagrams/dataFlowDiagram.jpg" alt="Data Flow" />,
-                    <img key="4" src="./assets/diagrams/normalizedDataModel.jpg" alt="Data Model" />,
-                    <img key="5" src="./assets/diagrams/sequenceDiagram.jpg" alt="Sequence" />,
+                    <img key="1" src="/assets/diagrams/umlDiagram.jpg" alt="UML" />,
+                    <img key="2" src="/assets/diagrams/activityDiagram.jpg" alt="Activity" />,
+                    <img key="3" src="/assets/diagrams/dataFlowDiagram.jpg" alt="Data Flow" />,
+                    <img key="4" src="/assets/diagrams/normalizedDataModel.jpg" alt="Data Model" />,
+                    <img key="5" src="/assets/diagrams/sequenceDiagram.jpg" alt="Sequence" />,
                 ]} />
 
             </div>
@@ -255,7 +255,7 @@ export default function ContractorConnect(){
             <div className="project-img-container">
                 <img 
                     className="solo-project-img" id="mockup"
-                    src="./assets/mockups/system-implementation-ppt.jpg" 
+                    src="/assets/mockups/system-implementation-ppt.jpg" 
                     style={{
                         width: "50vw",
                         display: "flex",

@@ -5,14 +5,14 @@
 }
 
 .aboutTitle {
-    font-size: 7rem;
+    font-size: 5rem;
     line-height: 1.1;
     margin-bottom: 2rem;
     font-weight: bold;
-    color: #97dc42;
-    word-wrap: break-word; 
-    overflow-wrap: break-word; 
-    display: block;
+    color: #151d08;
+    width: max-content;
+    font-family:"Bookman";
+
 }
 
 .leftSide {

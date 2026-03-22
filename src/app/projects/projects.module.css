@@ -1,24 +1,27 @@
+
 .projectsContainer {
     display: block !important; 
     max-width: 1400px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem; 
     background-color: transparent;
     min-height: 100vh;
+    overflow: visible; 
 }
 
 .projectLayout {
     display: flex !important;
     flex-direction: row !important;
     gap: 3rem;
-    margin-top: 2rem;
     align-items: flex-start;
+    margin-top: 20px !important; 
+    padding-top: 20px;
 }
 
 .projectSidebarContainer {
     width: 280px;
     position: sticky;
-    top: 100px;
+    top: 11rem;
     flex-shrink: 0;
 }
 

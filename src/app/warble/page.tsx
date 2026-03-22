@@ -16,7 +16,7 @@ export default function Warble(){
                 </div>
 
                 <div className="right-container">
-                    <img className="solo-project-img" src="./assets/screenshots/warbleHome.jpg" />
+                    <img className="solo-project-img" src="/assets/screenshots/warbleHome.jpg" />
 
                 </div>
             </div>
