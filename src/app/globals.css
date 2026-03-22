@@ -286,6 +286,98 @@ main{
  
 }
 
+.bullet-points {
+    display: grid;
+    grid-template-rows: 0fr; 
+    transition: grid-template-rows 0.4s ease;
+}
+.bullet-points.open {
+    grid-template-rows: 1fr;
+}
+
+/* Job Container */
+
+.job-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.bullet-tray {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.4s ease-out;
+    overflow: hidden;
+}
+
+.bullet-tray.open {
+    grid-template-rows: 1fr;
+}
+
+.bullet-content {
+    min-height: 0;
+}
+
+
+.job-info {
+    flex: 1;
+}
+
+.expand-btn {
+
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+  width: fit-content;
+  
+  /* THE CRITICAL ALIGNMENT LINES */
+  display: block;
+  margin-top: auto; 
+  margin-left: auto;
+}
+
+.expand-btn:hover {
+    background-color: #706a45;
+}
+.job-bullets {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 15px 0;
+    display: block;
+}
+
+.job-bullets li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.bullet-points-wrapper {
+    width: 100%;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
 
 .solo-project-title{
   margin: 2em 0;
@@ -423,15 +515,16 @@ main{
 /* Credentials */
 
 
-.credential{
-  display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
-  border-radius: 4px;
-  padding: 1em;
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.09);
-  margin: 0.5em;
+.credential {
+    display: flex;
+    align-items: stretch;
+    gap: 1.5rem;
+    border-radius: 4px;
+    padding: 1em;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    margin: 0.5em;
+    position: relative;
 }
 
 .credential:hover {
@@ -655,15 +748,25 @@ button.view-doc{
   padding-left: 5px;
 }
 
-.jobs-container {
-  flex: 1;
-  min-width: 0;
+.job-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+    position: relative;
+    padding-right: 2em;
 }
 
+.job-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border: 10px solid red;
+}
+
+
 .job-container ul{
-  list-style: none;
+  list-style: circle;
   padding: 0;
-  display: flex;
   gap: 15px;
   margin: 5px 0;
   

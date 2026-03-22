@@ -29,7 +29,7 @@ export default function Resume(){
             title: "George Brown - Dean's List",
             date: "Fall 2025",
             fileName: "Dean_list_fall25.jpg",
-            description: "Achieved a X.0 GPA for the semester.",
+            description: "Achieved a 3.5 GPA for the semester.",
         },
                 {
             // Linked In - Testing Q/A
@@ -72,7 +72,14 @@ export default function Resume(){
             employer: "Data Annotation",
             location: "Remote",
             date: "Apr 2025 - Present",
-            description: "Trained AI models with prompt engineering and response evaluation."
+            description: "Trained AI models with prompt engineering and response evaluation.",
+            bulletPoints: [
+                "Trained and refined AI models through prompt engineering and rubric-based evaluation", 
+                "Tested AI outputs with APIs and CLI tools, catching edge cases and unclear requirements.",
+                "Delivered accurate, consistent assessments independently, improving real AI products used by millions.",
+                "Questioned assumptions and flagged gaps to strengthen model logic and data quality."]
+
+
         },
         {
         // PW Inc.
@@ -81,7 +88,12 @@ export default function Resume(){
             employer: "Psychedelic Water, Inc.",
             location: "Toronto, ON",
             date: "Nov 2021 - Jun 2023",
-            description: "Managed all customer inquiries and orders. Including working with the distribution company to manage orders. I also worked with the sales team to expand our reach to over 1,000 physical locations."
+            description: "Managed all customer inquiries and orders. Including working with the distribution company to manage orders. I also worked with the sales team to expand our reach to over 1,000 physical locations.",
+            bulletPoints: [
+                "Led customer support communications to ensure a positive customer experience", 
+                "Coordinated shipping and fulfillment with product feedback.", 
+                "Worked as a team to test and develop new flavors and products",
+            ]
         },
         {
         // The Aviary
@@ -90,7 +102,10 @@ export default function Resume(){
             employer: "The Aviary Brewpub",
             location: "Toronto, ON",
             date: "Aug 2018 - Jul 2020",
-            description: "Manage front of house operations including ordering, scheduling, and team leadership."
+            description: "Manage front of house operations including ordering, scheduling, and team leadership.",
+            bulletPoints: [
+                "Responsible for hiring, scheduling, and training front-of-house staff on procedures and workplace culture; daily operations including opening/closing procedures, inventory management, and deliveries."
+            ]
         },
          {
             // Sloane Fine Tea Merchants
@@ -108,7 +123,11 @@ export default function Resume(){
             employer: "CPA Ontario",
             location: "Toronto, ON",
             date: "Jul 2012 - Nov 2015",
-            description: "Promote the Professional Development Institute wing of CMA Ontario."
+            description: "Promote the Professional Development Institute wing of CMA Ontario.",
+            bulletPoints: [
+                "Organized and coordinated corporate events for 20- 200+ attendees.",
+                "Promoted the continuing education program to external organizations.",
+            ]
         },
         {
             // CMA Ontario
@@ -148,6 +167,8 @@ export default function Resume(){
 
                         description={job.description}
                         icon={job.icon}
+
+                        bulletPoints={job.bulletPoints}
                         
                     />
                 ))}

@@ -9,11 +9,12 @@ interface JobProps{
     date: string;
     location: string;
     description: string;
+    bulletPoints?: string[];
     icon?: React.ReactNode;
 }
 
-const Job: React.FC<JobProps> = ({ title, employer, date, location, description, icon }) =>{
-
+const Job: React.FC<JobProps> = ({ title, employer, date, location, description, bulletPoints, icon }) =>{
+const [isExpanded, setIsExpanded] = useState(false);
 
     return(
         <div className="credential">
@@ -26,18 +27,37 @@ const Job: React.FC<JobProps> = ({ title, employer, date, location, description,
 
             <div className="job-container">
 
-                <h3 className="cred-title">{title}</h3>
-                <h4 >{employer}</h4>
                 
-         
-                <h4 style={{ fontStyle: 'italic' }}>{location}</h4>
-                <h4>{date}</h4>
-            
-        
+                <div className="job-header">
+                    <div className="job-info">
+                        <h3 className="cred-title">{title}</h3>
+                        <h4>{employer}</h4>
+                        <h4 style={{ fontStyle: 'italic', fontSize: '0.9rem' }}>{location}</h4>
+                        <h4 style={{ fontWeight: 'bold' }}>{date}</h4>
+                    </div>
+                    
+                </div>
 
-                <p className="cred-description">
-                    {description}
-                </p>
+                {/* Bullet Points */}
+                <div className={`bullet-tray ${isExpanded ? 'open' : ''}`}>
+                    <div className="bullet-content">
+                        <ul className="job-bullets">
+                            {bulletPoints?.map((point, index) => (
+                                <li key={index}>{point}</li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+
+                 {/* Expand for description */}
+                    {bulletPoints && bulletPoints.length > 0 && (
+                        <button 
+                            className="expand-btn" 
+                            onClick={() => setIsExpanded(!isExpanded)}
+                        >
+                            {isExpanded ? "Show Less ↑" : "View Details ↓"}
+                        </button>
+                    )}
             </div>
         </div>
     )

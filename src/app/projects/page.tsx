@@ -38,7 +38,7 @@ export default function ProjectPage(){
         description: "description for loopin.",
         tags: ["React"],
         image: "/assets/screenshots/warbleHome.jpg",
-        github: "https://github.com/eric-laudrum/audio_showcase",
+        github: "https://github.com/eric-laudrum/warble",
         component: <Warble />,
     },
     {
