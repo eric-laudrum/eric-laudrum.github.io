@@ -5,6 +5,7 @@ import ContractorConnect from "../contractor-connect/page";
 import TrellisSequencer from "../trellis-sequencer/page";
 import LoopIn from "../loop-in/page.";
 import Warble from "../warble/page";
+
 import ProjectNav from "@/components/ProjectNav"
 import Sidebar from "@/components/Sidebar";
 
@@ -25,11 +26,12 @@ export default function ProjectPage(){
     },
     {
         title: "Trellis",
-        sections: ["Overview", "Architecture", "Demo"],
+        sections: ["Overview", "Tech Stack", "Architecture & Design", "Prototype", "Roadmap"],
         description: "A real-time 16-step sequencer built with Node.js, Socket.io, and Tone.js.",
         tags: ["Node.js", "Socket.io", "Tone.js"],
         image: "/assets/screenshots/trellis-sequencer.jpg",
         github: "https://github.com/eric-laudrum/trellis-sequencer",
+        techStack: ["Next.js", "TypeScript", "Tone.js", "Socket.io", "Tailwind"],
         component: <TrellisSequencer />,
     },
     {

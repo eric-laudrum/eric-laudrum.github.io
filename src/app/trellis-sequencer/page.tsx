@@ -1,27 +1,46 @@
+import styles from './trellis.module.css'
+
 export default function TrellisSequencer(){
     return(
-        
-        <div className="section-container">
+        <div className={styles.sectionContainer}>
 
-            <div className="solo-project-container">
+            <div className={styles.projectContainer}>
 
-                <div className="left-container">
-                    <h1 className="solo-project-title">Trellis Sequencer</h1>
-                    <h4 className="solo-project-tagline">
+                <div className={styles.leftContainer}>
+
+
+                    <h4 className={styles.projectTagline}>
                         A real-time 16-step sequencer
                     </h4>
-                    <p className="solo-project-description">
+
+                    <p className={styles.projectDescription}>
                         The Trellis sequencer was designed to solve the nightmare of latency in online music production.
                         Built with Socket.io and Tone.js, Trellis allows multiple users to collaborate online with the precision and time-consistency of a hardware sampler. 
                     </p>
                 </div>
 
-                <div className="right-container">
-                    <img className="solo-project-img" src="./assets/screenshots/trellis-sequencer.jpg" />
-
+                <div className={styles.rightContainer}>
+                     <div className={styles.videoContainer}>
+                        <iframe
+                            src="https://www.youtube.com/embed/xl6ijl_q9w4"
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                        >
+                        </iframe>
+                    </div>
                 </div>
             </div>
-        </div>
 
+            <hr style={{margin:"3rem 0"}}/>
+
+
+            <div className={styles.projectContainer} id="architecture">
+
+                <h1>oh hi</h1>
+
+            </div>
+        </div>
     )
 }
