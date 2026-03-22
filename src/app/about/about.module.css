@@ -1,78 +1,78 @@
-/* About Page */
-
-
 .sectionContainer {
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
     padding: 2rem 5rem;
-    background-color: var(--primary-cream);
-
+    background-color: #fdfaf5;
 }
 
-/* Header Text */
 .aboutTitle {
     font-size: 7rem;
     line-height: 1.1;
     margin-bottom: 3rem;
     font-weight: bold;
     color: #97dc42;
-
-
 }
 
-
-/* Profile side */
-.leftSide {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 3rem; 
+/* THE 3-COLUMN GRID */
+.threeColumnGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    align-items: start;
+    width: 100%;
 }
 
-
-.headshotImg {
-    width: 20rem; 
-    height: 25rem;  
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 12px;
-    border: 5px solid rgba(173, 216, 230, 0.2);
-    flex-shrink: 0;
-}
-
-/* Text Container */
-.mainText {
-    max-width: 650px;
+.column {
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
 }
 
-/* Individual Paragraphs */
+/* COLUMN 1 PHOTO ROW */
+.photoRow {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.smallPhoto {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+/* COLUMNS 2 & 3 PHOTOS */
+.fullWidthPhoto {
+    width: 100%; 
+    height: auto; 
+    display: block;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.contentBox h2, .contentBox h3 {
+    margin-top: 0;
+    color: #2a769c;
+}
+
 .aboutParagraph {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
     color: #333;
+    list-style: none;
 }
 
-
-
-/* Tablets / Phones */
-@media (max-width: 1024px) {
-    .leftSide {
-        flex-direction: column;
-        align-items: center;
+/* Responsive: Stack columns on smaller screens */
+@media (max-width: 1100px) {
+    .threeColumnGrid {
+        grid-template-columns: 1fr; /* Stacks to 1 column so text doesn't squish */
+        gap: 4rem;
     }
     
-    .sectionContainer {
-        padding: 2rem;
-    }
-
-    .title {
+    .aboutTitle {
         font-size: 4rem;
-        text-align: center;
     }
 }
-
-
