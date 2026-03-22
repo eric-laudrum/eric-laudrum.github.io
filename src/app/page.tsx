@@ -1,8 +1,8 @@
 import Image from "next/image";
 import ProjectPage from "./projects/page";
 import AboutPage from "./about/page"
-import ContractorConnect from "./contractor-connect/page";
-import TrellisSequencer from "./trellis-sequencer/page";
+import ContractorConnect from "./contractorConnect/page";
+import TrellisSequencer from "./trellisSequencer/page";
 import GitHubStats from "../components/GitHubStats";
 
 

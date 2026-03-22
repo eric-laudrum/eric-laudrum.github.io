@@ -114,7 +114,17 @@ main{
 
 /* Project Page */
 
-
+.tag-badge {
+    background: rgba(25, 25, 25, 0.08);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-right: 8px;
+    display: inline-block;
+    color: var(--primary);
+    font-weight: 500;
+}
 
 
 .project-page{

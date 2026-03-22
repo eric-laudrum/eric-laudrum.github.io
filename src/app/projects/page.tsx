@@ -1,58 +1,19 @@
 "use client";
 
 import { useState } from "react";
-import ContractorConnect from "../contractor-connect/page";
-import TrellisSequencer from "../trellis-sequencer/page";
-import LoopIn from "../loop-in/page.";
+import ContractorConnect from "../contractorConnect/page";
+import TrellisSequencer from "../trellisSequencer/page";
+import LoopIn from "../loopIn/page";
 import Warble from "../warble/page";
 
 import ProjectNav from "@/components/ProjectNav"
 import Sidebar from "@/components/Sidebar";
+import projects  from "@/app/data/projectsData";
 
 
 export default function ProjectPage(){
 
     const [activeProject, setActiveProject] = useState("Contractor Connect");
-
-    const projects = [
-    {
-        title: "Contractor Connect",
-        sections: ["Intro", "Description", "Project Summary", "Project Plan", "Project Vision", "Project Requirements", "Diagrams", "Prototype", "System Implementation", "Status Report"],
-        description: "An online bidding platform for home improvement projects.",
-        tags: ["PHP", "PHPUnit"],
-        image: "/assets/screenshots/contractor-connect.jpg",
-        github: "https://github.com/AdelAlhajHussein/contractor_connect",
-        component: <ContractorConnect />,
-    },
-    {
-        title: "Trellis",
-        sections: ["Overview", "Tech Stack", "Architecture & Design", "Prototype", "Roadmap"],
-        description: "A real-time 16-step sequencer built with Node.js, Socket.io, and Tone.js.",
-        tags: ["Node.js", "Socket.io", "Tone.js"],
-        image: "/assets/screenshots/trellis-sequencer.jpg",
-        github: "https://github.com/eric-laudrum/trellis-sequencer",
-        techStack: ["Next.js", "TypeScript", "Tone.js", "Socket.io", "Tailwind"],
-        component: <TrellisSequencer />,
-    },
-    {
-        title: "Warble",
-        sections: ["Overview", "Architecture", "Warble"],
-        description: "description for loopin.",
-        tags: ["React"],
-        image: "/assets/screenshots/warbleHome.jpg",
-        github: "https://github.com/eric-laudrum/warble",
-        component: <Warble />,
-    },
-    {
-        title: "Loop-In",
-        sections: ["Overview", "Architecture", "Demo"],
-        description: "description for loopin.",
-        tags: ["React"],
-        image: "/assets/screenshots/loopInHome.jpg",
-        github: "https://github.com/eric-laudrum/LoopIn",
-        component: <LoopIn />,
-    },
-    ]
 
     const currentProject = projects.find(p => p.title === activeProject);
 
@@ -79,11 +40,28 @@ export default function ProjectPage(){
                 <section className="project-main-content" style={{ flex: 1 }}>
                     <h1 className="section-title">{activeProject}</h1>
 
-                    <div className="project-content-area">
-                        {currentProject ? currentProject.component : <p>Select a project</p>}
+                    {/* Project Tags */}
+                    {currentProject?.tags && (
+                        <div className="project-tags" style={{ marginBottom: '2rem' }}>
+                            <span style={{ fontWeight: 'bold', marginRight: '10px' }}>Tech Stack:</span>
+                            {currentProject.tags.map(tag => (
+                                <span key={tag} className="tag-badge">{tag}</span>
+                            ))}
+                        </div>
+                    )}
+
+                   <div className="project-content-area">
+                        {currentProject ? (
+                            <currentProject.component 
+                                techStack={currentProject.techStack} 
+                                tags={currentProject.tags} 
+                            />
+                        ) : (
+                            <p>Select a project</p>
+                        )}
                     </div>
 
-                    {/* Grid view below the active project */}
+    
                     <div className="project-grid">
                         {projects.map((project, index) => (
                             <div 
