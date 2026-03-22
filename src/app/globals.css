@@ -14,7 +14,7 @@
 
 *{
   font-family: Futura;
-  font-weight: 1;
+
   color: rgb(25, 25, 25);
 }
 
@@ -31,26 +31,41 @@ body {
 
 main{
   flex: 1;
-  display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: stretch;
   width: 100%;
   padding: 0;
 
 }
 
-.home-page{
-  display: flex;
-  flex-direction: row;
 
+
+.home-page {
+  display: grid;
+  /* Track 1 (About): 1fr (takes the rest) 
+     Track 2 (GitHub): 450px (exactly your sidebar width) */
+  grid-template-columns: 1fr 450px; 
+  gap: 5rem; /* This is the physical wall between them */
+  padding: 2rem;
+  align-items: start;
+  width: 100%;
+  min-width: 1200px; /* Forces the page to stay wide enough for both */
+}
+
+
+
+
+
+#about-section {
+  flex: 1; 
+  min-width: 0; 
 }
 
 .header{
   display: flex;
   position: sticky;
   top: 0;
-  height: 80px;
+  height: 120px;
   flex-direction: row;
   width: 100%;
   align-content: center;
@@ -756,17 +771,7 @@ button.view-doc{
   gap: 12px;
 }
 
-.github-link {
-  text-decoration: none;
-  font-size: 0.9rem;
-  color: #555;
-  transition: color 0.2s, padding-left 0.2s;
-}
 
-.github-link:hover {
-  color: #2a769c;
-  padding-left: 5px;
-}
 
 .job-container {
     display: flex;
@@ -863,36 +868,65 @@ button.view-doc{
 }
 
 
-/* GitHub Stats */
+/* ----- GitHub Stats ------ */
 .github-stats {
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  gap: 1.5rem; 
-  
-  padding: 2rem;
-  width: 100%;
-  max-width: 600px; 
-
-  background-color: #e4e1e0;
-
-
-
+  gap: 1rem;
+  flex: 0 0 450px; 
+  width: 450px;
+  align-self: flex-start;
 }
 
-.github-stat{
-  height: auto;
-  display: block
-  
+/* The Container for the Donut */
+#donut-wrapper {
+  width: 450px;
+  height: 150px;      /* This strictly controls the vertical space */
+  overflow: hidden;   /* This chops off the excess parts of the image */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
 }
 
 #top-languages {
-  width: 450px; 
+  width: 120% !important; 
+  height: auto;
+  transform: translateY(0);
 }
 
 #general-stats {
-  width: 450px; /* General stats are wider, so we give it more room */
+  width: 100% !important;
+  height: auto;
+  display: block;
+  border-radius: 10px;
 }
+
+.github-link {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #555;
+  transition: color 0.2s, padding-left 0.2s;
+}
+
+.github-link:hover {
+  color: #2a769c;
+  padding-left: 5px;
+}
+
+@media (max-width: 800px) {
+  .github-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+  .github-stat {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+
 
 /* - -- - --  -- -- */
 

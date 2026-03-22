@@ -1,9 +1,5 @@
-import Image from "next/image";
-import ProjectPage from "./projects/page";
-import AboutPage from "./about/page"
-import ContractorConnect from "./contractorConnect/page";
-import TrellisSequencer from "./trellisSequencer/page";
 import GitHubStats from "../components/GitHubStats";
+import About from "@/components/About";
 
 
 export default function Home() {
@@ -11,7 +7,7 @@ export default function Home() {
     <main className="home-page">
 
     
-      <AboutPage />
+      <About isFullPage={false} />
 
       <GitHubStats />
       
