@@ -38,7 +38,7 @@ export default function ContractorConnect(){
     
     return(
 
-        <div className="section-container">
+        <div className="section-container" id="cc_overview">
 
             {/* ----- 1 Intro ----- */}
 

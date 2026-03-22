@@ -18,7 +18,15 @@ export default function Sidebar({ title, sections, prefix, repo, repoText }: Sid
 
             <div className="sidebar-nav" style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                 {sections?.map((section) => {
-                    const slug = section.toLowerCase().replace(/\s+/g, "-");
+
+                    const slug = section
+                        .toLowerCase()
+                        .replace(/&/g, '')
+                        .replace(/\s+/g, '-')
+                        .replace(/-+/g, '-');
+
+
+
                     const anchor = prefix ? `${prefix}_${slug}` : slug;
 
                     return (

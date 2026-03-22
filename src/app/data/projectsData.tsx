@@ -20,7 +20,7 @@ interface Project {
 const projects: Project[] = [
     {
         title: "Contractor Connect",
-        sections: ["Intro", "Description", "Project Summary", "Project Plan", "Project Vision", "Project Requirements", "Diagrams", "Prototype", "System Implementation", "Status Report"],
+        sections: ["Overview", "Project Plan", "Project Vision", "Project Requirements", "Diagrams", "Prototype", "System Implementation", "Status Report"],
         description: "An online bidding platform for home improvement projects.",
         tags: ["PHP", "PHPUnit"],
         image: "/assets/screenshots/contractor-connect.jpg",

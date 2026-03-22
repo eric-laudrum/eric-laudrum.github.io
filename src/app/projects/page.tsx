@@ -38,17 +38,21 @@ export default function ProjectPage(){
 
                 {/* Right Side */}
                 <section className="project-main-content" style={{ flex: 1 }}>
-                    <h1 className="section-title">{activeProject}</h1>
+                    <div className="project-header">
 
-                    {/* Project Tags */}
-                    {currentProject?.tags && (
-                        <div className="project-tags" style={{ marginBottom: '2rem' }}>
-                            <span style={{ fontWeight: 'bold', marginRight: '10px' }}>Tech Stack:</span>
-                            {currentProject.tags.map(tag => (
-                                <span key={tag} className="tag-badge">{tag}</span>
-                            ))}
-                        </div>
-                    )}
+                         <h1 className="section-title">{activeProject}</h1>
+
+                        {/* Project Tags */}
+                        {currentProject?.tags && (
+                            <div className="project-tags" style={{ marginBottom: '2rem' }}>
+                                <span style={{ fontWeight: 'bold', marginRight: '10px' }}>Tech Stack:</span>
+                                {currentProject.tags.map(tag => (
+                                    <span key={tag} className="tag-badge">{tag}</span>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+                   
 
                    <div className="project-content-area">
                         {currentProject ? (

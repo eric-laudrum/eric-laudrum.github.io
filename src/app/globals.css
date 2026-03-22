@@ -98,7 +98,7 @@ main{
   
 }
 .section-title{
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 1em;
 
 }
@@ -126,6 +126,13 @@ main{
     font-weight: 500;
 }
 
+.project-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 2rem;
+
+}
 
 .project-page{
   display: flex;
@@ -210,10 +217,12 @@ main{
 
   border: 5px solid rgba(255, 255, 255, 0.403);
 }
+
 .project-title{
-  margin: 1em 0 5px;
-  font-size: 1.5em;
+  font-size: 2rem;
 }
+
+
 .project-description {
   margin: 1em 0;
   line-height: 1.5;
@@ -391,6 +400,7 @@ main{
 
 .solo-project-title{
   margin: 2em 0;
+  font-size: 1.5rem;
   
 }
 

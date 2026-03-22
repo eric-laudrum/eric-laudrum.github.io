@@ -20,7 +20,7 @@
 }
 
 .projectTitle{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .projectTagline{
@@ -51,6 +51,11 @@
 }
 
 
+.projectDescription strong, 
+.leftContainer ul li strong {
+    font-weight: 700;
+    color: var(--primary); 
+}
 
 
 
@@ -80,3 +85,7 @@
   border: none;
 }
 
+
+.projectContainer, .sectionContainer {
+    scroll-margin-top: 10rem; 
+}

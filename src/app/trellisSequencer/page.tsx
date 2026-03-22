@@ -15,7 +15,7 @@ export default function TrellisSequencer({ techStack, tags }: TrellisProps) {
     return(
         <div className={styles.sectionContainer}>
 
-            <div className={styles.projectContainer}>
+            <div className={styles.projectContainer} id="trellis_overview">
 
                 <div className={styles.leftContainer}>
 
@@ -47,7 +47,7 @@ export default function TrellisSequencer({ techStack, tags }: TrellisProps) {
             <hr style={{margin:"3rem 0"}}/>
 
 
-            <div className={styles.projectContainer} id="techStack">
+            <div className={styles.projectContainer} id="trellis_tech-stack">
                 <div className={styles.leftContainer}>
                     <h2 className={styles.projectTitle}>Tech Stack</h2>
                     
@@ -69,7 +69,7 @@ export default function TrellisSequencer({ techStack, tags }: TrellisProps) {
 
             <hr style={{margin:"3rem 0"}}/>
 
-            <div className={styles.projectContainer} id="architecture">
+            <div className={styles.projectContainer} id="trellis_architecture-design">
                 <div className={styles.leftContainer}>
                     <h2 className={styles.projectTitle}>Architecture & Design</h2>
                 
@@ -90,7 +90,7 @@ export default function TrellisSequencer({ techStack, tags }: TrellisProps) {
 
             <hr style={{margin:"3rem 0"}}/>
 
-            <div className={styles.projectContainer} id="prototype">
+            <div className={styles.projectContainer} id="trellis_prototype">
                 <div className={styles.leftContainer}>
                     <h2 className={styles.projectTitle}>Prototype</h2>
                 
@@ -109,17 +109,19 @@ export default function TrellisSequencer({ techStack, tags }: TrellisProps) {
         
             <hr style={{margin:"3rem 0"}}/>
 
-            <div className={styles.projectContainer} id="roadmap">
+            <div className={styles.projectContainer} id="trellis_roadmap">
                 <div className={styles.leftContainer}>
                     <h2 className={styles.projectTitle}>Roadmap</h2>
                 
                     
                     <ul>
 
-                    <li>User Persistence: Implementing MongoDB to allow users to save, share, and fork sequencer "scenes."</li>
-                    <li>MIDI Integration: Adding Web MIDI API support to allow external hardware controllers to trigger the Trellis engine.</li>
-                    <li>Dynamic Sampling: Enabling users to drag and drop their own .wav samples directly into the grid for a fully customized sound palette.</li>
-
+                        <li><strong>User Attribution:</strong></li>
+                        <li>Instead of simple on/off toggles, the grid will track individual contributions. Every pad placed will be tagged with a unique color or name to allow collaborators to see exactly who is building the beat in real-time.</li>
+                        <li><strong>Private Rooms:</strong></li>
+                        <li>Moving beyond public rooms to a tiered access model. Users will be able to lock their sessions with unique keys, ensuring that your collaborative sketches stay private and accessible only to those with an invite link.</li>
+                        <li><strong>Audio Export: </strong></li>
+                        <li>A dedicated recording engine that allows you to capture your live session. Simply set the number of loops, hit record, and download a high-quality .wav file of your arrangement to use in your own DAW.</li>
                     </ul>
 
                 </div>
