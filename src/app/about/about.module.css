@@ -7,15 +7,18 @@
     min-height: 100vh;
     padding: 2rem 5rem;
     background-color: var(--primary-cream);
+
 }
 
 /* Header Text */
-.title {
+.aboutTitle {
     font-size: 7rem;
     line-height: 1.1;
     margin-bottom: 3rem;
     font-weight: bold;
-    color: #f1593e;
+    color: #97dc42;
+
+
 }
 
 

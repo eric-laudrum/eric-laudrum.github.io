@@ -19,6 +19,8 @@ export default function ContractorConnect(){
     const figmaLink = "https://www.figma.com/proto/3oCa6OhkkkkVvA9YbuAmgZ/Contractor-Connect--Copy-?node-id=0-1&t=YKylebIu3parvFDt-1"
 
     const ccMockupImages = [
+        "./assets/mockups/CC-1.jpg",
+        "./assets/mockups/CC-2.jpg",
         "./assets/mockups/contractor-connect-mockup1.jpg",
         "./assets/mockups/contractor-connect-mockup2.jpg",
         "./assets/mockups/cc-new-project.jpg",
@@ -39,37 +41,22 @@ export default function ContractorConnect(){
         <div className="section-container">
 
             {/* ----- 1 Intro ----- */}
-            <div className="solo-project-container" id="cc_intro">
 
-                <div className="left-container" style={{minWidth:"12em"}}>
-                    <h1 className="solo-project-title">Contractor Connect</h1>
-                    <h4 className="solo-project-tagline">Post Projects. Get Bids. Hire Pros.</h4>
-                </div>
 
-                <div className="right-container">
-                    <img className="solo-project-img" src="./assets/screenshots/contractor-connect.jpg" />
-                </div>
+            <div className="right-container">
+                <img className="solo-project-img" src="./assets/mockups/CC-2.jpg" />
             </div>
 
 
 
-            {/* ----- 2 Description ----- */}
-            <hr style={{margin: "3em"}}/>
-
-            <div className="solo-project-container" id="cc_description">
-                <p className="solo-project-description">
-                    Contractor Connect is a secure marketplace to simplify the home improvement process. 
-                    Homeowners post projects, receive bids, and pick their contractor based on user ratings and transparent pricing. 
-                </p>
-            </div>
 
 
 
             {/* ----- 3 Project Summary ----- */}
-            <hr style={{margin: "3em"}}/>
-            <h3 className="solo-project-title" id="cc_project-summary">Project Summary</h3>
 
-            <p>
+
+
+            <p style={{marginTop:"2rem"}}>
                 Contractor Connect is a software website designed to create a direct channel between contractors, 
                 skilled labor workers, and clients. 
                 It helps workers gain steady access to projects while enabling customers to avoid the hassle of shopping around for prices. 
@@ -265,17 +252,20 @@ export default function ContractorConnect(){
             <hr style={{margin: "3em"}}/>
             <h3 className="solo-project-title" id="cc_system-implementation">System Implementation</h3>
 
-            <img 
-                className="solo-project-img" id="mockup"
-                src="./assets/mockups/system-implementation-ppt.jpg" 
-                style={{
-                    width: "50vw",
-                    display: "flex",
-                    flexShrink: 0,
+            <div className="project-img-container">
+                <img 
+                    className="solo-project-img" id="mockup"
+                    src="./assets/mockups/system-implementation-ppt.jpg" 
+                    style={{
+                        width: "50vw",
+                        display: "flex",
+                        flexShrink: 0,
 
-                }}
-            />
+                    }}
+                />
 
+            </div>
+            
             <p>
                  Contractor Connect is a new, self-contained web application that matches homeowners with local contractors. 
                  Today, most people rely on word of mouth, scattered social posts, phone calls, spreadsheets or email to request quotes and keep track of work. 

@@ -7,9 +7,9 @@ export default function AboutPage(){
         <main className={styles.sectionContainer} id="about-section">
             <div className="mainProfile">
 
-                <h1 style={{
-                    fontSize:"7rem"
-                }}>Hi, I’m Eric</h1>
+                <h1 className={styles.aboutTitle}>
+                    Hi, I’m Eric
+                </h1>
 
 
                 <div className={styles.leftSide}>

@@ -3,8 +3,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #7b2e17;
-  --primary-cream: #f6f2e7;
+  --primary: rgb(140, 132, 86);
+
+  --primary-cream: #f0ede9;
+
   
   
 }
@@ -58,6 +60,7 @@ main{
   z-index: 1000;
 
   background-color: var(--primary);
+
   
 
 }
@@ -226,17 +229,18 @@ main{
 /* Project PDFs */
 .view-pdf-button{
   padding: 10px 15px;
-  background-color: black;
+  background-color: var(--primary);
   color: white;
   border-radius: 6px;
   font-weight: bold;
   display: inline-block;
   align-self: center;    
-  font-size: 0.8em;    
+  font-size: 0.8em;   
+
 }
 .view-pdf-button:hover{
-  background-color: rgb(0, 0, 0, 0.9);
-  box-shadow: 5px 5px 10px 10px rbg(0, 0, 0)
+  box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.1);
+
 
 }
 
@@ -263,16 +267,22 @@ main{
   width: 100%;
 }
 
-.solo-project-img{
-  border-radius: 10px;
+.project-img-container{
+  max-width: 50vw;
+  margin: 0 auto; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  overflow: hidden;
 }
 
 .solo-project-img#mockup{
 
   padding: 10px;
-  width: 50vw;
-  height: 55vh;
-  justify-self: center;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
  
 }
 
@@ -741,9 +751,10 @@ button.view-doc{
   width: 100%;
   max-width: 600px; 
 
-  background-color: rgba(241, 246, 251, 0.5);
-  border-radius: 15px;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: #e4e1e0;
+
+
+
 }
 
 .github-stat{
