@@ -14,7 +14,7 @@ export default function ContractorConnect(){
     const sequenceDiagramPDF = "/assets/pdf/sequenceDiagram.pdf"
     const umlDiagramPDF = "/assets/pdf/umlDiagram.pdf"
 
-    const systemImplementation = "https://georgebrowncollege.sharepoint.com/:p:/r/sites/Capstone_jabeab/Shared%20Documents/General/Project%20Documents/in%20progress/System%20Implementation%201%20.pptx?d=wd6257991cc8f428091d131f3d3b8b5e1&csf=1&web=1&e=L652nz"
+    const systemImplementationPDF = "/assets/pdf/systemImplementation.pdf"
 
     const figmaLink = "https://www.figma.com/proto/3oCa6OhkkkkVvA9YbuAmgZ/Contractor-Connect--Copy-?node-id=0-1&t=YKylebIu3parvFDt-1"
 
@@ -128,13 +128,11 @@ export default function ContractorConnect(){
             <h3 className="solo-project-title" id="cc_project-requirements">Software Requirements Analysis and Design</h3>
 
             <p>
-                 Contractor Connect is a new, self-contained web application that matches homeowners with local contractors. 
-                 Today, most people rely on word of mouth, scattered social posts, phone calls, spreadsheets or email to request quotes and keep track of work. 
-                 Our app replaces that messy process. Compared with local listing boards and gig platforms, Contractor Connect focuses on small and medium home projects, uses structured bids so prices are easy to compare, keeps reviews simple, and includes basic in-app payments. 
-                 The main stakeholders are homeowners, contractors, an administrator for moderation, the instructor, teaching assistants for review, and our development team. 
-                 In this release, we will deliver the essentials: user accounts, project posting, project browsing and search, bidding, bid review and selection, a simple dashboard, reviews, and basic payment handling.
-            </p>
+                The Software Requirements Specification (SRS) document outlines the system's functional features, such as project bidding, payment management, and user dashboards.
+                It also defines the technical constraints and database requirements necessary for development. 
+                It serves as a blueprint to ensure all stakeholders share a common understanding of the project's scope and design before programming begins.
 
+            </p>
             {/* Show PDF */}
             <div className='pdf-btn-container'>
                 <a className="view-pdf-button"
@@ -255,7 +253,7 @@ export default function ContractorConnect(){
             <div className="project-img-container">
                 <img 
                     className="solo-project-img" id="mockup"
-                    src="/assets/mockups/system-implementation-ppt.jpg" 
+                    src="/assets/screenshots/qualityAssurance.jpg" 
                     style={{
                         width: "50vw",
                         display: "flex",
@@ -265,23 +263,16 @@ export default function ContractorConnect(){
                 />
 
             </div>
-            
-            <p>
-                 Contractor Connect is a new, self-contained web application that matches homeowners with local contractors. 
-                 Today, most people rely on word of mouth, scattered social posts, phone calls, spreadsheets or email to request quotes and keep track of work. 
-                 Our app replaces that messy process. Compared with local listing boards and gig platforms, Contractor Connect focuses on small and medium home projects, uses structured bids so prices are easy to compare, keeps reviews simple, and includes basic in-app payments. 
-                 The main stakeholders are homeowners, contractors, an administrator for moderation, the instructor, teaching assistants for review, and our development team. 
-                 In this release, we will deliver the essentials: user accounts, project posting, project browsing and search, bidding, bid review and selection, a simple dashboard, reviews, and basic payment handling.
-            </p>
+
 
             {/* Show PDF */}
             <div className='pdf-btn-container'>
                 <a className="view-pdf-button"
-                    href={ systemImplementation } 
+                    href={ systemImplementationPDF } 
                     target="_blank" 
                     rel="noopener noreferrer"
                 >
-                    View System Implementation (PPT)
+                    View System Implementation (PDF)
                 </a>
             </div>
             

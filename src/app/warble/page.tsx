@@ -1,3 +1,5 @@
+import styles from './warble.module.css'
+
 export default function Warble(){
     return(
         
@@ -6,7 +8,6 @@ export default function Warble(){
             <div className="solo-project-container">
 
                 <div className="left-container">
-                    <h1 className="solo-project-title">Warble</h1>
                     <h4 className="solo-project-tagline">
                         Get sounds
                     </h4>
@@ -16,7 +17,7 @@ export default function Warble(){
                 </div>
 
                 <div className="right-container">
-                    <img className="solo-project-img" src="/assets/screenshots/warbleHome.jpg" />
+                    <img className={styles.projectImage} src="/assets/screenshots/warbleHome.jpg" />
 
                 </div>
             </div>

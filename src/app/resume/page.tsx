@@ -2,6 +2,7 @@ import Sidebar from "@/components/Sidebar"
 import Education from "@/components/Education"
 import Job from "@/components/Job"
 import Credential from "@/components/Credential"
+import Recommendations from "../recommendations/page"
 
 export default function Resume(){
 
@@ -146,12 +147,13 @@ export default function Resume(){
         <div className="section-container" id="resume-container">
 
             
-            <Sidebar 
-                title="Resume" 
-                sections={["Work Experience", "Education", "Credentials"]} 
-                repo="https://github.com/eric-laudrum"
-                repoText="GitHub"
-            />
+        <Sidebar 
+            title="Resume" 
+            sections={["Work Experience", "Education", "Credentials", "Recommendations"]} 
+            repo="https://github.com/eric-laudrum"
+            repoText="GitHub"
+            resumeUrl="/assets/Eric_Laudrum_Resume.pdf"
+        />
             
              {/* ----- Jobs ----- */}
             <div className="jobs-container">
@@ -207,6 +209,10 @@ export default function Resume(){
                             
                         />
                     ))}
+                </div>
+
+                <div>
+                    <Recommendations />
                 </div>
 
             </div>                

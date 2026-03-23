@@ -39,7 +39,7 @@ const projects: Project[] = [
     },
     {
         title: "Warble",
-        sections: ["Overview", "Architecture", "Warble"],
+        sections: ["Overview", "Tech Stack", "Architecture & Design", "Prototype", "Roadmap"],
         description: "description for warble.",
         tags: ["React"],
         image: "/assets/screenshots/warbleHome.jpg",
@@ -48,7 +48,7 @@ const projects: Project[] = [
     },
     {
         title: "Loop-In",
-        sections: ["Overview", "Architecture", "Demo"],
+        sections: ["Overview", "Tech Stack", "Architecture & Design", "Prototype", "Roadmap"],
         description: "description for loopin.",
         tags: ["React"],
         image: "/assets/screenshots/loopInHome.jpg",

@@ -7,7 +7,7 @@ export default function LoopIn(){
 
             <div className="solo-project-container">
 
-                <div className="left-container" id="loopIn_overview">
+                <div className={styles.leftContainer} id="loopIn_overview">
                     <h4 className={styles.projectSubtitle}>
                         Stay in the loop
                     </h4>
@@ -22,7 +22,7 @@ export default function LoopIn(){
                     </p>
                 </div>
 
-                <div className="right-container">
+                <div className={styles.rightContainer}>
                     <img className={styles.projectImage} src="/assets/screenshots/loopInHome.jpg" />
 
                 </div>
