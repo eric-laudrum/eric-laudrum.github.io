@@ -4,7 +4,7 @@ interface SidebarProps {
   prefix?: string;
   repo?: string;
   repoText?: string;
-  resumeUrl?: string; // Add this
+  resumeUrl?: string;
 }
 
 export default function Sidebar({ title, sections, prefix, repo, repoText, resumeUrl }: SidebarProps) {
@@ -29,7 +29,7 @@ export default function Sidebar({ title, sections, prefix, repo, repoText, resum
           );
         })}
 
-        {/* --- Add Resume Download Link --- */}
+        {/* --- Download Link --- */}
         {resumeUrl && (
           <div >
             <a 
@@ -40,7 +40,7 @@ export default function Sidebar({ title, sections, prefix, repo, repoText, resum
               className="github-link"
               
             >
-              📄 Download Resume PDF
+              📄 View Resume
             </a>
           </div>
         )}

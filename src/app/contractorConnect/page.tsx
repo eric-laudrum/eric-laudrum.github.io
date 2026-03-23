@@ -2,9 +2,9 @@ import ImageCarousel from "@/components/ImageCarousel";
 
 export default function ContractorConnect({ website }: { website?: string }){
 
-    const projectSummaryPDF = "/assets/pdf/ProjectSummary.pdf"
-    const projectPlanPDF = "/assets/pdf/ProjectPlan.pdf"
-    const projectVisionPDF = "/assets/pdf/ProjectVision.pdf"
+    const projectSummaryPDF = "/assets/pdf/projectSummary.pdf"
+    const projectPlanPDF = "/assets/pdf/projectPlan.pdf"
+    const projectVisionPDF = "/assets/pdf/projectVision.pdf"
     const softwareRequirementsPDF = "/assets/pdf/softwareRequirementsAnalysis.pdf"
     const statusReportPDF = "/assets/pdf/statusReport.pdf"
 
@@ -14,7 +14,7 @@ export default function ContractorConnect({ website }: { website?: string }){
     const sequenceDiagramPDF = "/assets/pdf/sequenceDiagram.pdf"
     const umlDiagramPDF = "/assets/pdf/umlDiagram.pdf"
 
-    const systemImplementationPDF = "/assets/pdf/systemImplementation.pdf"
+    const systemImplementationPDF = "/assets/pdf/SystemImplementation.pdf"
 
     const figmaLink = "https://www.figma.com/proto/3oCa6OhkkkkVvA9YbuAmgZ/Contractor-Connect--Copy-?node-id=0-1&t=YKylebIu3parvFDt-1"
 
