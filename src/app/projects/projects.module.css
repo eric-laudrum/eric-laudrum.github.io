@@ -1,4 +1,3 @@
-
 .projectsContainer {
     display: block !important; 
     max-width: 1400px;
@@ -6,7 +5,6 @@
     padding: 0 2rem 2rem 2rem; 
     background-color: transparent;
     min-height: 100vh;
-    overflow: visible; 
 }
 
 .projectLayout {
@@ -46,6 +44,11 @@
     color: #171717;
 }
 
+.techStackLabel {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
 .projectTags {
     display: flex;
     flex-wrap: wrap;
@@ -78,12 +81,30 @@
 .projectCard {
     display: flex;
     flex-direction: column;
-    background-color: rgba(240, 248, 255, 0.434);
-    padding: 1.5rem;
-    border-radius: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.09);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.2s ease;
+    min-height: 350px; /* Reduced base height */
+    height: auto;      /* Allows it to shrink-wrap the content */
+    padding: 20px;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.projectDescription {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #444;
+    margin-bottom: 1.5rem;
+    height: auto;      /* Removed the 100px height */
+    flex-grow: 1;      /* Re-added to push tags to bottom of available space */
+}
+
+.projectCardContent {
+    margin-top: auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .projectCard:hover {
@@ -96,24 +117,48 @@
     width: 100%;
     height: 180px;
     object-fit: cover;
-    border-radius: 10px;
-    border: 5px solid rgba(255, 255, 255, 0.403);
-    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    flex-shrink: 0;
+}
+
+
+.tagRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
 }
 
 .projectTitle {
-    font-size: 1.8rem;
-    margin-bottom: 0.75rem;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
     color: #171717;
 }
 
-.projectDescription {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: #444;
-    margin-bottom: 1.5rem;
-    flex-grow: 1;
+.headerTitleRow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+.liveButton {
+    background-color: #2a769c;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    height: fit-content;
 }
+
+.liveButton:hover {
+    background-color: #1e5a78;
+}
+
 
 @media (max-width: 1024px) {
     .projectLayout {
@@ -131,4 +176,10 @@
         align-items: flex-start;
         gap: 1rem;
     }
+
+    
+
+
+
+
 }

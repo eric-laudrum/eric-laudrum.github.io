@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ProjectNav from "@/components/ProjectNav";
 import Sidebar from "@/components/Sidebar";
 import projects from "@/app/data/projectsData";
@@ -9,6 +9,19 @@ import styles from "./projects.module.css";
 export default function ProjectPage() {
     const [activeProject, setActiveProject] = useState("Contractor Connect");
     const currentProject = projects.find(p => p.title === activeProject);
+
+    const projectPrefixes: Record<string, string> = {
+        "Contractor Connect": "cc",
+        "Trellis": "trellis",
+        "Loop-In": "loopIn",
+        "Warble": "warble"
+    };
+
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [activeProject]);
+
 
     return (
         <main className={styles.projectsContainer}>
@@ -20,16 +33,17 @@ export default function ProjectPage() {
                         title="Project Contents" 
                         sections={currentProject?.sections || []}
                         repo={currentProject?.github} 
-                        prefix={activeProject === "Contractor Connect" ? "cc" : "trellis"}
+                        prefix={projectPrefixes[activeProject] || activeProject.toLowerCase().replace(/\s+/g, '')}
                     />
                 </aside>
 
                 <section className={styles.projectMainContent}>
                     <div className={styles.projectHeader}>
                         <h1 className={styles.sectionTitle}>{activeProject}</h1>
+                        
                         {currentProject?.tags && (
                             <div className={styles.projectTags}>
-                                <span style={{fontWeight: 'bold', marginRight: '10px'}}>Tech Stack:</span>
+                                <span className={styles.techStackLabel}>Tech Stack:</span>
                                 {currentProject.tags.map(tag => (
                                     <span key={tag} className={styles.tagBadge}>{tag}</span>
                                 ))}
@@ -38,9 +52,10 @@ export default function ProjectPage() {
                     </div>
 
                     <div className={styles.projectContentArea}>
+                
                         {currentProject && (
                             <currentProject.component 
-                                techStack={currentProject.techStack} 
+                                website={currentProject.website}
                                 tags={currentProject.tags} 
                             />
                         )}
@@ -53,7 +68,7 @@ export default function ProjectPage() {
                                 key={index} 
                                 onClick={() => {
                                     setActiveProject(project.title);
-                                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                                    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
                                 }}
                             >
                                 <img 
@@ -61,8 +76,17 @@ export default function ProjectPage() {
                                     src={project.image} 
                                     alt={project.title} 
                                 />
-                                <h2 className={styles.projectTitle}>{project.title}</h2>
                                 <p className={styles.projectDescription}>{project.description}</p>
+                                
+                                
+                                <div className={styles.projectCardContent}>
+                                    <div className={styles.tagRow}>
+                                        {project.tags?.map(tag => (
+                                            <span key={tag} className={styles.tagBadge}>{tag}</span>
+                                        ))}
+                                    </div>
+                                    <h2 className={styles.projectTitle}>{project.title}</h2>
+                                </div>
                             </div>
                         ))}
                     </div>

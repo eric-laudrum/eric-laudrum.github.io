@@ -1,6 +1,6 @@
 import ImageCarousel from "@/components/ImageCarousel";
 
-export default function ContractorConnect(){
+export default function ContractorConnect({ website }: { website?: string }){
 
     const projectSummaryPDF = "/assets/pdf/ProjectSummary.pdf"
     const projectPlanPDF = "/assets/pdf/ProjectPlan.pdf"
@@ -49,9 +49,6 @@ export default function ContractorConnect(){
 
 
 
-
-
-
             {/* ----- 3 Project Summary ----- */}
 
 
@@ -59,10 +56,31 @@ export default function ContractorConnect(){
             <p style={{marginTop:"2rem"}}>
                 Contractor Connect is a software website designed to create a direct channel between contractors, 
                 skilled labor workers, and clients. 
+
+            </p>
+
+
+
+
+            <p>
                 It helps workers gain steady access to projects while enabling customers to avoid the hassle of shopping around for prices. 
                 By simplifying and automating the estimating process, Contractor Connect ensures timely, accurate, and transparent project quotes. 
 
             </p>
+
+
+            {website && (
+                <div className='pdf-btn-container'>
+                    <a className="view-pdf-button" 
+                       href={website} 
+                       target="_blank" 
+                       style={{ background: '#2a769c', color: 'white' }}
+                    >
+                        Visit Live Project Website →
+                    </a>
+                </div>
+            )}
+            
 
             {/* Show PDF */}
             <div className='pdf-btn-container'>

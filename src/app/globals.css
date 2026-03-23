@@ -11,6 +11,13 @@
   
 }
 
+html{
+  scroll-behavior: smooth
+}
+
+[id] {
+  scroll-margin-top: 120px; 
+}
 
 *{
   font-family: Futura;
@@ -754,7 +761,7 @@ button.view-doc{
 
 
 .left-sidebar {
-  width: 200px;
+  width: 220px;
   min-width: 200px; 
   position: sticky;
   top: 200px;

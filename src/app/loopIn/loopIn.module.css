@@ -1,26 +1,64 @@
-.projectImage{
+.sectionHeader {
+    font-size: 1.8rem;
+    color: #2a769c;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+}
 
-  padding: 10px;
-  width: 40rem;
-  min-width: 30rem;
-  height: auto;
-  display: block;
-  object-fit: contain;
 
- 
+.fullWidthContent {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+
+.sectionDivider {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    margin: 4rem 0;
+}
+
+
+.projectImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+.projectContainer{
+    display: flex;
+    flex-direction: column;
+    scroll-margin-top: 200px;
 }
 
 .projectSubtitle{
     font-size: 1.5rem;
 }
 
-.projectText{
-    font-size: 1rem;
-    margin-top: 1rem;
-    
+.projectTitle {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.projectText {
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.05rem;
+}
+
+.leftContainer{
+    max-width: 90%;
 }
 
 
-.leftContainer{
-    max-width: 20rem;
+.rightContainer {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }

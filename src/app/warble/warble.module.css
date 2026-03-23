@@ -1,20 +1,65 @@
-.projectImage{
 
-  padding: 10px;
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
- 
+.sectionContainer {
+  padding: 2rem 4rem;
+  margin: 20px;
+  min-height: 70vh;
+  background-color: rgba(241, 246, 251, 0.5);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.073);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.005);
 }
 
-.projectSubtitle{
+.projectContainer {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  scroll-margin-top: 200px;
+}
+
+.leftContainer {
+  flex: 1;
+}
+
+.projectTitle {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.projectTagline{
     font-size: 1.5rem;
+    margin: 1rem 0;
 }
 
-.projectText{
+.projectDescription{
     font-size: 1rem;
-    margin-top: 1rem;
+}
+
+.badgeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1.5rem 0;
 }
 
 
+
+.rightContainer {
+  flex: 1;
+  width: 100%;
+}
+
+.projectImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: block;
+    object-fit: contain;
+}
+
+.projectContainer, .sectionContainer {
+    scroll-margin-top: 10rem; 
+}

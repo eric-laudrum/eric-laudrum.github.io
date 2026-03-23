@@ -1,44 +1,39 @@
-import Form from 'next/form'
-
-
 const ContactForm = () => {
-    return(
-        <>
-        <div>
-            <div>
-               <Form className="contact-form" action="/submit">
-                    <div className='form-col'>
-                        <label>First name</label>
-                        <input className='form-field' name="first-name" placeholder='First name' />
-                    </div>
-                    <div className='form-col'>
-                        <label>Last name</label>
-                        <input className='form-field' name="last-name" placeholder='Last name'/>
-                    </div>
-                    <div className='form-col'>
-                        <label>Email</label>
-                        <input className='form-field' name="email" placeholder='Email'/>
-                    </div>
-                    <div className='form-col'>
-                        <label id='comment-label'>Comment</label>
-                        <textarea
-                            className='form-field'
-                            id='comment-field'
-                            name="comment"
-                            placeholder='Comments'
-                        />
-                    </div>
+    return (
+        <div className="contact-container">
 
-                    <button className="submit-button">Submit</button>
-                </Form>
+            <form 
+                className="contact-form" 
+                action="https://formspree.io/f/mzdjlavk" 
+                method="POST"
+            >
+                <div className='form-col'>
+                    <label>First name</label>
+                    <input className='form-field' name="first-name" placeholder='First name' required />
+                </div>
+                <div className='form-col'>
+                    <label>Last name</label>
+                    <input className='form-field' name="last-name" placeholder='Last name' required />
+                </div>
+                <div className='form-col'>
+                    <label>Email</label>
+                    <input className='form-field' name="email" type="email" placeholder='Email' required />
+                </div>
+                <div className='form-col'>
+                    <label id='comment-label'>Comment</label>
+                    <textarea
+                        className='form-field'
+                        id='comment-field'
+                        name="comment"
+                        placeholder='Comments'
+                        required
+                    />
+                </div>
 
-
-            </div>
-            
+                <button type="submit" className="submit-button">Submit</button>
+            </form>
         </div>
-        </>
     )
 }
-
 
 export default ContactForm;

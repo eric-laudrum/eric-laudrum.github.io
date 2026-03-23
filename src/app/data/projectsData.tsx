@@ -7,13 +7,13 @@ import LoopIn from "../loopIn/page";
 
 
 interface Project {
-    title: string;
+title: string;
     sections: string[];
     description: string;
     tags: string[];
     image: string;
     github: string;
-    techStack?: string[];
+    website?: string;
     component: React.ComponentType<any>;
 }
 
@@ -22,35 +22,35 @@ const projects: Project[] = [
         title: "Contractor Connect",
         sections: ["Overview", "Project Plan", "Project Vision", "Project Requirements", "Diagrams", "Prototype", "System Implementation", "Status Report"],
         description: "An online bidding platform for home improvement projects.",
-        tags: ["PHP", "PHPUnit"],
+        tags: ["PHP", "MySQL", "MVC", "Bootstrap", "CodeIgniter 4", "PHPUnit"],
         image: "/assets/screenshots/contractor-connect.jpg",
         github: "https://github.com/AdelAlhajHussein/contractor_connect",
+        website: "https://ContractorConnect.cc",
         component: ContractorConnect,
     },
     {
         title: "Trellis",
         sections: ["Overview", "Tech Stack", "Architecture & Design", "Prototype", "Roadmap"],
         description: "A real-time 16-step sequencer.",
-        tags: ["Node.js", "Socket.io", "Tone.js"],
+        tags: ["React", "Node.js", "Express", "Socket.io", "Tone.js", "Yjs", "MongoDB", "CORS", "MULTER"],
         image: "/assets/screenshots/trellis-sequencer.jpg",
         github: "https://github.com/eric-laudrum/trellis-sequencer",
-        techStack: ["Next.js", "TypeScript", "Tone.js", "Socket.io", "Tailwind"],
         component: TrellisSequencer,
     },
     {
         title: "Warble",
-        sections: ["Overview", "Tech Stack", "Architecture & Design", "Prototype", "Roadmap"],
+        sections: ["Overview", "Tech Stack", "Architecture & Design", "Roadmap"],
         description: "description for warble.",
-        tags: ["React"],
+        tags: ["Spring Boot", "React", "PostgreSQL", "JWT", "Java", "Cloudinary", "Docker"],
         image: "/assets/screenshots/warbleHome.jpg",
         github: "https://github.com/eric-laudrum/warble",
         component: Warble,
     },
     {
         title: "Loop-In",
-        sections: ["Overview", "Tech Stack", "Architecture & Design", "Prototype", "Roadmap"],
+        sections: ["Overview", "Tech Stack", "Architecture & Design", "Roadmap"],
         description: "description for loopin.",
-        tags: ["React"],
+        tags: ["React", "Vite", "Node.js", "MongoDB", "Firebase", "Express"],
         image: "/assets/screenshots/loopInHome.jpg",
         github: "https://github.com/eric-laudrum/LoopIn",
         component: LoopIn, 
