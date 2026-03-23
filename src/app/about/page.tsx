@@ -12,7 +12,7 @@ export default function AboutPage() {
                     
                     </div>
                     <div className={styles.contentBox}>
-                        <h2>About Me</h2>
+                        <h2 className={styles.subtitle}>About Me</h2>
                         <p className={styles.aboutParagraph}>
                             I’m a full-stack developer in my final semester of a 3-year Computer Programming & Analysis program at George Brown Polytechnic, with a Bachelor of Arts in Sociology from Toronto Metropolitan University. This combination allows me to approach building software with both technical skill and a strong understanding of user experience. I come equipped with an above average understanding of data and statistics, making me highly capable of identifying bias and drawing real-world insights that can improve design.
                         </p>

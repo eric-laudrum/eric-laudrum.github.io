@@ -891,6 +891,7 @@ button.view-doc{
   flex: 0 0 450px; 
   width: 450px;
   align-self: flex-start;
+  padding-right: 50px;
 }
 
 /* The Container for the Donut */
