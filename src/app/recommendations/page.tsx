@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import styles from './recommendations.module.css';
+import styles from '/recommendations.module.css'
 
 export default function Recommendations() {
     return (
@@ -39,7 +39,7 @@ export default function Recommendations() {
                     </div>
                     
                     <a 
-                        href="/assets/pdf/letter-of-rec2.pdf" 
+                        href="/assets/pdf/letter_of_rec2.pdf" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className={styles.pdfLink}
