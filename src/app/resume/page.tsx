@@ -152,7 +152,7 @@ export default function Resume(){
             sections={["Work Experience", "Education", "Credentials", "Recommendations"]} 
             repo="https://github.com/eric-laudrum"
             repoText="GitHub"
-            resumeUrl="/assets/pdf/Eric_Laudrum_Resume.pdf"
+            resumeUrl="/assets/pdf/Eric-Laudrum-Resume-2026.pdf"
         />
             
              {/* ----- Jobs ----- */}

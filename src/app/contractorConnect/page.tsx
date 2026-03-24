@@ -5,6 +5,7 @@ export default function ContractorConnect({ website }: { website?: string }){
     const projectSummaryPDF = "/assets/pdf/projectSummary.pdf"
     const projectPlanPDF = "/assets/pdf/projectPlan.pdf"
     const projectVisionPDF = "/assets/pdf/projectVision.pdf"
+   
     const softwareRequirementsPDF = "/assets/pdf/softwareRequirementsAnalysis.pdf"
     const statusReportPDF = "/assets/pdf/statusReport.pdf"
 
