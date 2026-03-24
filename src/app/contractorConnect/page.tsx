@@ -3,8 +3,8 @@ import ImageCarousel from "@/components/ImageCarousel";
 export default function ContractorConnect({ website }: { website?: string }){
 
     const projectSummaryPDF = "/assets/pdf/projectSummary.pdf"
-    const projectPlanPDF = "/assets/pdf/projectPlan.pdf"
-    const projectVisionPDF = "/assets/pdf/projectVision.pdf"
+    const projectPlanPDF = "/assets/pdf/ProjectPlan.pdf"
+    const projectVisionPDF = "/assets/pdf/ProjectVision.pdf"
    
     const softwareRequirementsPDF = "/assets/pdf/softwareRequirementsAnalysis.pdf"
     const statusReportPDF = "/assets/pdf/statusReport.pdf"
