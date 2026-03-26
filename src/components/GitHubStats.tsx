@@ -1,17 +1,22 @@
 const GitHubStats = () => {
+
+    const baseUrl = "https://github-readme-stats-git-master-eric-laudrums-projects.vercel.app/api";
+    const params = "&username=eric-laudrum&hide_border=true&count_private=true&cache_seconds=1800";
+
+
     return (
         <div className="github-stats">
             <img 
                 className="github-stat"
                 id="top-languages"
-                src="https://github-readme-stats.vercel.app/api/top-langs/?username=eric-laudrum&layout=donut&hide_border=true&cache_seconds=1800"
+                src={`${baseUrl}/top-langs?layout=donut${params}`}
                 alt="Top Languages"
             />
 
             <img
                 className="github-stat"
                 id="general-stats"
-                src="https://github-readme-stats.vercel.app/api?username=eric-laudrum&show_icons=true&hide_border=true&cache_seconds=1800" 
+                src={`${baseUrl}?show_icons=true${params}`}
                 alt="GitHub Stats" 
             />
         </div>

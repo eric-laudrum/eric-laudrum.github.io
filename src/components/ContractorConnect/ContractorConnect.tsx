@@ -1,12 +1,12 @@
 import ImageCarousel from "@/components/ImageCarousel";
 
 interface ContractorConnectProps {
-    techStack: string[];
+    techStack?: string[];
     website?: string;
 }
 
 
-export default function ContractorConnect({ website, techStack }: ContractorConnectProps) {
+export default function ContractorConnect({ website, techStack=[] }: ContractorConnectProps) {
 
     const projectSummaryPDF = "/assets/pdf/projectSummary.pdf"
     const projectPlanPDF = "/assets/pdf/ProjectPlan.pdf"

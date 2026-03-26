@@ -77,11 +77,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 
 ## GitHub Stats
-![My GitHub stats](https://github-readme-stats.vercel.app/api?username=eric-laudrum&show_icons=true&theme=transparent)
+![Top Languages](https://github-readme-stats-git-master-eric-laudrums-projects.vercel.app/api/top-langs?username=eric-laudrum&layout=donut&hide_border=true&count_private=true&cache_seconds=1800)
 
-
-## Top Languages
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=eric-laudrum)](https://github.com/eric-laudrum/github-readme-stats)
+![GitHub Stats](https://github-readme-stats-git-master-eric-laudrums-projects.vercel.app/api?username=eric-laudrum&show_icons=true&hide_border=true&count_private=true&cache_seconds=1800)
 
 
 ## Visit Live Page
