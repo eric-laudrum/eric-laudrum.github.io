@@ -13,7 +13,7 @@ export interface ProjectComponentProps {
 
 
 interface Project {
-title: string;
+    title: string;
     sections: string[];
     description: string;
     tags: string[];

@@ -1,17 +1,89 @@
 .sectionContainer {
-    min-height: 100vh;
+
+    height: 100%;
+
+    min-width: 100vw;
     padding: 2rem 5rem;
     background-color: #fdfaf5;
-    width: fit-content; 
-    min-width: 100vw;
+    width: 100%; 
+
 }
+
+.imageBar {
+    display: flex;
+
+    overflow-x: auto; 
+    height: auto;
+    width: 100%;
+    gap: 1.1em;
+}
+
+.smallPhoto, .fullWidthPhoto {
+    display: block;
+    flex: 1 1 0%;
+
+    width: 100%;
+    min-width: 0;
+    max-height: 240px; 
+    
+    object-position: top;
+
+    border-radius: 8px;
+    object-fit: contain;
+
+}
+
+
+
+.textColumns{
+    display: flex;
+    flex-direction: row;
+   
+
+
+    width: 100%;
+    gap: 1.1em;
+    padding: 0;
+
+}
+
+.textColumn{
+    flex: 1;
+   
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+
+
+}
+
+
+.quote, .text {
+    margin: 0; 
+    padding: 1.5em;
+}
+
+.quote{
+    color: var(--primary-dark);
+    font-family: Bookman;
+    font-size: 2em;
+    padding-right: 4em;
+    line-height: 35px;
+    border: 2px;
+}
+
+.text{
+    font-weight: 400;
+
+}
+
 
 .aboutTitle {
     font-size: 7rem;
     line-height: 1.1;
     margin-bottom: 3rem;
     font-weight: bold;
-    color: #151d08;
+    color: var(--primary-dark);
     width: max-content;
 
 }
@@ -32,13 +104,7 @@
 }
 
 
-.smallPhoto, .fullWidthPhoto {
-    width: 400px;
-    height: auto;
-    display: block;
-    border-radius: 8px;
-    object-fit: contain;
-}
+
 
 .contentBox h2, .contentBox h3 {
     margin-top: 0;
