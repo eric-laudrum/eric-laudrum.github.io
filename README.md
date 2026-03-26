@@ -72,6 +72,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ### Later
 - [] Set up contact to email
+- [] Set up private instance of GitStats on Vercel to avoid rate limits
 
 
 
