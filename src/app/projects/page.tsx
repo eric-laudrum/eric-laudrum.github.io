@@ -56,7 +56,7 @@ export default function ProjectPage() {
                         {currentProject && (
                             <currentProject.component 
                                 website={currentProject.website}
-                                tags={currentProject.tags} 
+                                techStack={currentProject.tags} 
                             />
                         )}
                     </div>

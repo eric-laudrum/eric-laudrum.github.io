@@ -6,6 +6,12 @@ import Warble from "../warble/page";
 import LoopIn from "../loopIn/page";
 
 
+export interface ProjectComponentProps {
+    techStack?: string[];
+    website?: string;
+}
+
+
 interface Project {
 title: string;
     sections: string[];
@@ -14,7 +20,7 @@ title: string;
     image: string;
     github: string;
     website?: string;
-    component: React.ComponentType<any>;
+    component: React.ComponentType<ProjectComponentProps>;
 }
 
 const projects: Project[] = [
