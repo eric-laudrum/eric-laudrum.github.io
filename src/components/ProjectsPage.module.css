@@ -1,0 +1,185 @@
+.projectsContainer {
+    display: block !important; 
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem 2rem 2rem; 
+    background-color: transparent;
+    min-height: 100vh;
+}
+
+.projectLayout {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 3rem;
+    align-items: flex-start;
+    margin-top: 20px !important; 
+    padding-top: 20px;
+}
+
+.projectSidebarContainer {
+    width: 280px;
+    position: sticky;
+    top: 11rem;
+    flex-shrink: 0;
+}
+
+.projectMainContent {
+    flex: 1;
+    min-width: 0;
+}
+
+.projectHeader {
+    margin-bottom: 3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.sectionTitle {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #171717;
+}
+
+.techStackLabel {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.projectTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.tagBadge {
+    background: rgba(25, 25, 25, 0.08);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgb(140, 132, 86);
+    font-weight: 500;
+}
+
+.projectContentArea {
+    margin-bottom: 5rem;
+}
+
+.projectGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+    gap: 2rem;
+    padding-top: 3rem;
+    border-top: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    min-height: 350px; /* Reduced base height */
+    height: auto;      /* Allows it to shrink-wrap the content */
+    padding: 20px;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.projectDescription {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #444;
+    margin-bottom: 1.5rem;
+    height: auto;      /* Removed the 100px height */
+    flex-grow: 1;      /* Re-added to push tags to bottom of available space */
+}
+
+.projectCardContent {
+    margin-top: auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.projectCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px rgb(42, 118, 156);
+    border-color: #2a769c;
+}
+
+.projectImg {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    flex-shrink: 0;
+}
+
+
+.tagRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.projectTitle {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #171717;
+}
+
+.headerTitleRow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+.liveButton {
+    background-color: #2a769c;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    height: fit-content;
+}
+
+.liveButton:hover {
+    background-color: #1e5a78;
+}
+
+
+@media (max-width: 1024px) {
+    .projectLayout {
+        flex-direction: column !important;
+    }
+
+    .projectSidebarContainer {
+        width: 100%;
+        position: relative;
+        top: 0;
+    }
+    
+    .projectHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    
+
+
+
+
+}

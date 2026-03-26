@@ -1,9 +1,9 @@
 import React from 'react';
 
-import ContractorConnect from "../contractorConnect/page";
-import TrellisSequencer from "../trellisSequencer/page";
-import Warble from "../warble/page";
-import LoopIn from "../loopIn/page";
+import ContractorConnect from "../ContractorConnect/ContractorConnect";
+import TrellisSequencer from "../Trellis/Trellis";
+import Warble from "../Warble/Warble";
+import LoopIn from "../LoopIn/LoopIn";
 
 
 export interface ProjectComponentProps {

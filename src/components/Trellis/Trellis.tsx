@@ -1,5 +1,5 @@
-import { ProjectComponentProps } from '../data/projectsData';
-import styles from './trellis.module.css'
+import { ProjectComponentProps } from '@/components/Data/ProjectsData';
+import styles from './Trellis.module.css'
 import Badge from '@/components/Badge';
 
 interface TrellisProps {
