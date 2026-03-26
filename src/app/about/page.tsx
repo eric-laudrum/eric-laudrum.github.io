@@ -4,6 +4,7 @@ export default function AboutPage() {
     return (
         <main className={styles.sectionContainer} id="about-section">
 
+            {/* Photos */}
             <div className={styles.imageBar}>
 
                 <img src="/assets/screenshots/about-photos-04.png" alt="developer photos" className={styles.fullWidthPhoto} />
@@ -12,6 +13,7 @@ export default function AboutPage() {
 
             </div>
 
+            {/* Quote & About me */}
             <div className={styles.textColumns}>
                 <div className={styles.textColumn}>
                     <p className={styles.quote}>
@@ -32,6 +34,30 @@ export default function AboutPage() {
                     
                     </p>
                 </div>
+            </div>
+
+            {/* Project Preview */}
+            <div className={styles.projectBar}>
+
+                <div className={styles.badgeRow}>
+
+                </div>
+
+                <div className={styles.projectRow}>
+
+                    <img 
+                        className={styles.smallPhoto}
+                         src="/assets/screenshots/trellis-sequencer.jpg"
+                    />
+                    <div className={styles.projectAbout}>
+                        <h1>Title</h1>
+                        <p>This is another paragraph but this one talks about the project that goes here.</p>
+                        <button>See My Work</button>
+                    </div>
+                    
+                </div>
+
+
             </div>
 
         </main>

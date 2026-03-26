@@ -3,7 +3,7 @@
     height: 100%;
 
     min-width: 100vw;
-    padding: 2rem 5rem;
+    padding: 2rem 0;
     background-color: #fdfaf5;
     width: 100%; 
 
@@ -75,6 +75,27 @@
 .text{
     font-weight: 400;
 
+}
+
+
+.projectRow{
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    background-color: var(--secondary-cream);
+
+    gap: 1.1em;
+    
+}
+
+.projectAbout{
+
+    padding: 1em;
+}
+
+.projectAbout, .smallPhoto{
+    width: 100%;
+    flex: 1;
 }
 
 
