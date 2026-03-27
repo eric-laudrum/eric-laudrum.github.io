@@ -116,8 +116,10 @@ export default function AboutPage() {
                             <div className={styles.projectAbout}>
                                 <h1 className={styles.subTitle}>Selected Projects</h1>
                                 <p>
-                                    One of the main projects I’ve developed is Contractor Connect, a full-stack web application built in a team of five. 
-                                    The platform connects homeowners with local contractors through project posting, structured bidding, and simple dashboards. 
+                                    One of the primary projects I have been developing is <strong>Contractor Connect</strong> - a platform that connects homeowners with local contractors through project posting, structured bidding, and simple dashboards. 
+                                    This is a full-stack web application that has been build with a team of five developers. 
+                                </p>
+                                <p>
                                     On this team I played a key role in shaping both the product and the team workflow. 
                                     I led the design of our prototype, focusing on creating a clean, intuitive interface. 
                                     I took ownership of quality assurance, creating and running tests to ensure the application functioned reliably. 
@@ -126,9 +128,19 @@ export default function AboutPage() {
                                 </p>
                                 <p>
                                     I’m currently developing a series of projects that explore the intersection of music production and programming. 
-                                    These include Trellis, a real-time 16-step sequencer built to address latency in online collaboration; 
-                                    Warble, an e-commerce platform for selling sound packs and individual samples; and Loop-In, 
-                                    a blog-style platform focused on the relationship between coding and music production.
+                                    These include 
+                                    <ul className={styles.projectList}>
+                                        <li className={styles.projectPoint}>
+                                            Trellis, a real-time 16-step sequencer built to address latency in online collaboration; 
+                                        </li>
+                                        <li className={styles.projectPoint}>
+                                            Warble, an e-commerce platform for selling sound packs and individual samples; and 
+                                        </li>
+                                        <li className={styles.projectPoint}>
+                                            Loop-In, a blog-style platform focused on the relationship between coding and music production.
+                                        </li>
+                                    </ul>
+                        
 
                                 </p>
                                 <Link className={styles.linkButton} href='/projects'>See My Work</Link>

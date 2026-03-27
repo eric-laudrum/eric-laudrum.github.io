@@ -111,8 +111,10 @@
     justify-content: start;
 
     padding: 1em;
+    gap: 1em;
 
 }
+
 
 
 
@@ -170,7 +172,6 @@
 
 
 
-
 .contentBox h2, .contentBox h3 {
     margin-top: 0;
     color: #2a769c;
@@ -183,4 +184,9 @@
     color: #333;
     list-style: none;
     width: 400px;
+}
+
+.projectPoint{
+    margin-left: 2em;
+    list-style: '- ';
 }
