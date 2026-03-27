@@ -14,6 +14,8 @@ export default function Sidebar({ title, sections, prefix, repo, repoText, resum
 
       <div className="sidebar-nav" style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
         {sections?.map((section) => {
+          
+          // Clean up section titles
           const slug = section
             .toLowerCase()
             .replace(/&/g, '')
@@ -35,8 +37,7 @@ export default function Sidebar({ title, sections, prefix, repo, repoText, resum
             <a 
               href={resumeUrl} 
               target="_blank" 
-              rel="noopener noreferrer"
-              download
+              rel="noopener noreferrer" 
               className="github-link"
               
             >
