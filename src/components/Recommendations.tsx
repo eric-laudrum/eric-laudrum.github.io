@@ -39,7 +39,7 @@ export default function Recommendations() {
                     </div>
                     
                     <a 
-                        href="/assets/pdf/letter_of_rec2.pdf" 
+                        href="/assets/pdf/letter_of_rec-2.pdf" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className={styles.pdfLink}
