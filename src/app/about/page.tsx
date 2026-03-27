@@ -1,4 +1,5 @@
 import styles from './About.module.css';
+import Link from 'next/link';
 
 export default function AboutPage() {
     return (
@@ -17,9 +18,9 @@ export default function AboutPage() {
             <div className={styles.textColumns}>
                 <div className={styles.textColumn}>
                     <p className={styles.quote}>
-                        <strong>
-                           I Believe That Good Design Looks Invisible, And The Best Tools Are The Ones You Have Available. 
-                        </strong>
+                   
+                        I Believe That Good Design Looks Invisible, And The Best Tools Are The Ones You Have Available. 
+                   
                     </p>
                 </div>
 
@@ -39,23 +40,39 @@ export default function AboutPage() {
             {/* Project Preview */}
             <div className={styles.projectBar}>
 
+
                 <div className={styles.badgeRow}>
+                    
+                    <button className={styles.setActiveButton}>Technical Skills</button>
+                    <button className={styles.setActiveButton}>Selected Projects</button>
+                    <button className={styles.setActiveButton}>AI & Data Annotation</button>
 
                 </div>
-
                 <div className={styles.projectRow}>
+
+
+
 
                     <img 
                         className={styles.smallPhoto}
                          src="/assets/screenshots/trellis-sequencer.jpg"
                     />
                     <div className={styles.projectAbout}>
-                        <h1>Title</h1>
+                        <h1 className={styles.subTitle}>Title</h1>
                         <p>This is another paragraph but this one talks about the project that goes here.</p>
-                        <button>See My Work</button>
+                        
+                        <Link 
+                            className={styles.linkButton}
+                            href='/projects'>
+                            See My Work
+                        </Link>
+                        
                     </div>
+
+
                     
                 </div>
+               
 
 
             </div>

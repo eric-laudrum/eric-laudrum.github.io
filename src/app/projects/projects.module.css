@@ -81,10 +81,10 @@
 .projectCard {
     display: flex;
     flex-direction: column;
-    min-height: 350px; /* Reduced base height */
-    height: auto;      /* Allows it to shrink-wrap the content */
+    min-height: 350px;
+    height: auto;
     padding: 20px;
-    background: white;
+    background: var(--primary-cream);
     border: 1px solid rgba(0,0,0,0.1);
     border-radius: 12px;
     cursor: pointer;

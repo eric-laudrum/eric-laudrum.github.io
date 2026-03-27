@@ -1,3 +1,6 @@
+
+
+
 .sectionContainer {
 
     height: 100%;
@@ -28,10 +31,11 @@
     
     object-position: top;
 
-    border-radius: 8px;
     object-fit: contain;
 
 }
+
+
 
 
 
@@ -44,6 +48,7 @@
     width: 100%;
     gap: 1.1em;
     padding: 0;
+    flex-wrap: wrap;
 
 }
 
@@ -61,15 +66,18 @@
 .quote, .text {
     margin: 0; 
     padding: 1.5em;
+
+    min-width: 300px;
 }
 
 .quote{
-    color: var(--primary-dark);
-    font-family: Bookman;
+
     font-size: 2em;
-    padding-right: 4em;
+    padding: 1em 1em 0;
     line-height: 35px;
-    border: 2px;
+    min-width: 350px;
+    font-weight: bold;
+
 }
 
 .text{
@@ -78,11 +86,25 @@
 }
 
 
+
+/* -------- Project Bar ---------*/
+
+.projectBar{
+    background-color: var(--secondary-cream);
+    padding: 1em;
+}
+
+.badgeRow{
+    display: flex;
+    gap: 10px;
+}
+
+
 .projectRow{
     display: flex;
     flex-direction: row;
     padding: 2em;
-    background-color: var(--secondary-cream);
+    
 
     gap: 1.1em;
     
@@ -90,23 +112,41 @@
 
 .projectAbout{
 
+    display: flex;
+    flex-direction: column;
+
+    align-content: space-evenly;
+    justify-content: space-evenly;
+
     padding: 1em;
+
+
 }
+
+
 
 .projectAbout, .smallPhoto{
     width: 100%;
     flex: 1;
+
 }
 
 
-.aboutTitle {
-    font-size: 7rem;
-    line-height: 1.1;
-    margin-bottom: 3rem;
-    font-weight: bold;
-    color: var(--primary-dark);
-    width: max-content;
 
+.linkButton, .setActiveButton{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    background-color: var(--primary-cream);
+    width: fit-content;
+    font-size: 0.9rem;
+
+}
+
+
+.subTitle{
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .threeColumnGrid {
