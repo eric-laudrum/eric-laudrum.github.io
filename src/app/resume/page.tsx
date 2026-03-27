@@ -115,7 +115,12 @@ export default function Resume(){
             employer: "Sloane Fine Tea Merchants",
             location: "Toronto, ON",
             date: "Nov 2015 - Aug 2016",
-            description: "Oversaw day to day operations including inventory management, product packaging, and wholesale oder fulfillment."
+            description: "Oversaw day to day operations including inventory management, product packaging, and wholesale oder fulfillment.",
+            bulletPoints: [
+                "Responsible for customer service as the primary point of contact for customers and business clients.",
+                "Ensured all orders are fulfilled accurately and in a timely manner.", 
+                "Managed inventory,including shipping, receiving, and supervising product packaging.",
+            ]
         },
         {
             // CPA Ontario
@@ -126,8 +131,9 @@ export default function Resume(){
             date: "Jul 2012 - Nov 2015",
             description: "Promote the Professional Development Institute wing of CMA Ontario.",
             bulletPoints: [
-                "Organized and coordinated corporate events for 20- 200+ attendees.",
-                "Promoted the continuing education program to external organizations.",
+                "Organized and coordinated corporate events for 20 - 200+ attendees.",
+                "Secured sponsorships of up to 5k for speaking events.",
+                "Promoted the Professional Development Institute to external organizations to take continuding education programs, or to host their own events in a state of the art meeting and presentation facility.",
             ]
         },
         {
@@ -137,7 +143,15 @@ export default function Resume(){
             employer: "CMA Ontario",
             location: "Toronto, ON",
             date: "Jul 2009 - Jul 2012",
-            description: "Facilitate events for continuing education, and other speaking engagement. Roles include setting up any technological requirements for the room, and being the first point of contact for instructors and attendees."
+            description: "Facilitate events for continuing education, and other speaking engagement. Roles include setting up any technological requirements for the room, and being the first point of contact for instructors and attendees.",
+            bulletPoints: [
+                "Set up conference rooms with Crestron automation.",
+                "Troubleshoot any technical problems (Audio / Video / Internet connection).",
+                "Required to be highly adaptable to last minute bookings and accomodations. ",
+                "Ensure food and beverage stations are stocked and ready in a timely manner, and ensure health and safety mesaures are followed accurately."
+
+            ]
+        
         }
     ]
 
