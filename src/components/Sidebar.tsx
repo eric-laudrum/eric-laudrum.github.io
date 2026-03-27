@@ -39,9 +39,10 @@ export default function Sidebar({ title, sections, prefix, repo, repoText, resum
               target="_blank" 
               rel="noopener noreferrer" 
               className="github-link"
+              style={{ fontWeight: "bold", color: "#2a769c" }}
               
             >
-              📄 View Resume
+              {"View Resume (PDF)"} →
             </a>
           </div>
         )}
