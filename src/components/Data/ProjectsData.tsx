@@ -1,20 +1,26 @@
 import React from 'react';
 
-import ContractorConnect from "../contractorConnect/page";
-import TrellisSequencer from "../trellisSequencer/page";
-import Warble from "../warble/page";
-import LoopIn from "../loopIn/page";
+import ContractorConnect from "../ContractorConnect/ContractorConnect";
+import TrellisSequencer from "../Trellis/Trellis";
+import Warble from "../Warble/Warble";
+import LoopIn from "../LoopIn/LoopIn";
+
+
+export interface ProjectComponentProps {
+    techStack?: string[];
+    website?: string;
+}
 
 
 interface Project {
-title: string;
+    title: string;
     sections: string[];
     description: string;
     tags: string[];
     image: string;
     github: string;
     website?: string;
-    component: React.ComponentType<any>;
+    component: React.ComponentType<ProjectComponentProps>;
 }
 
 const projects: Project[] = [

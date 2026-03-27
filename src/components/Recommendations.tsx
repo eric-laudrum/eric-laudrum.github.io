@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import styles from '/recommendations.module.css'
+import styles from '@/app/recommendations/recommendations.module.css'
 
 export default function Recommendations() {
     return (

@@ -1,4 +1,5 @@
-import styles from './trellis.module.css'
+import { ProjectComponentProps } from '@/components/Data/ProjectsData';
+import styles from './Trellis.module.css'
 import Badge from '@/components/Badge';
 
 interface TrellisProps {
@@ -8,7 +9,7 @@ interface TrellisProps {
 
 
 
-export default function TrellisSequencer({ techStack, tags }: TrellisProps) {
+export default function TrellisSequencer({ techStack }: ProjectComponentProps) {
 
     console.log("TechStack in Trellis:", techStack);
 

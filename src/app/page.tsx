@@ -1,5 +1,5 @@
 import GitHubStats from "../components/GitHubStats";
-import About from "@/components/About";
+import About from "@/components/AboutHome";
 
 
 export default function Home() {
