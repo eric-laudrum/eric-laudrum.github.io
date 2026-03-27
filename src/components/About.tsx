@@ -1,4 +1,6 @@
 import styles from './About.module.css';
+import GitHubStats from "../components/GitHubStats";
+
 
 interface AboutProps {
     isFullPage?: boolean;
@@ -7,27 +9,28 @@ interface AboutProps {
 export default function About({ isFullPage = false }: AboutProps) {
     return (
         <section className={styles.sectionContainer} id="about-section">
-            <div className={styles.mainProfile}>
+           
                 
                 <h1 className={styles.aboutTitle}>
                     {isFullPage ? "About Me" : "Hi, I’m Eric"}
                 </h1>
 
-                {/* This is the Flex Container */}
-                <div className={styles.leftSide}>
+                <div className={styles.aboutBody}>
+
+                    <div className={styles.leftSide}>
                     
-                    {/* Headshot */}
-                    <div className={styles.imageWrapper}>
-                        <img 
-                            className={styles.headshotImg}
-                            src="/assets/screenshots/eric-headshot.jpg" 
-                            alt="Eric Headshot"
-                            width={300}
-                            height={300}
-                        />
-                    </div>
-                    
-                    {/* Text Content */}
+                        {/* Headshot */}
+                        <div className={styles.imageWrapper}>
+                            <img 
+                                className={styles.headshotImg}
+                                src="/assets/screenshots/eric-headshot.jpg" 
+                                alt="Eric Headshot"
+                                width={300}
+                                height={300}
+                            />
+                        </div>
+
+                        {/* Text Content */}
                     <div className={styles.mainText} id="about">           
                         <ul className={styles.paragraphList}>
                             {isFullPage ? (
@@ -60,8 +63,20 @@ export default function About({ isFullPage = false }: AboutProps) {
                             )}
                         </ul>
                     </div>
+
+
+
+
+                    </div>
+
+             
+
+                    <GitHubStats />
                 </div>
-            </div>
+                
+
+               
+     
         </section>
     );
 }

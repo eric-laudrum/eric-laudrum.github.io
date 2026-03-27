@@ -176,6 +176,7 @@ export default function Resume(){
             repo="https://github.com/eric-laudrum"
             repoText="GitHub"
             resumeUrl="/assets/pdf/Eric-Laudrum-Resume-2026.pdf"
+            
         />
             
              {/* ----- Jobs ----- */}

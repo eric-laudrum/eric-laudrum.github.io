@@ -2,16 +2,27 @@
 
 
 .sectionContainer {
-    width: 100%; 
-    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 150%; 
+    min-width: 15em;
     overflow: hidden;
     padding-left: 50px;
+}
+
+
+.aboutBody{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+
 }
 
 .aboutTitle {
     font-size: 5rem;
     line-height: 1.1;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-weight: bold;
     color: #151d08;
     width: max-content;
@@ -22,14 +33,17 @@
 .leftSide {
     display: flex;
     flex-direction: row;
-    gap: clamp(1.5rem, 4vw, 4rem); 
+    gap: 1em;
     align-items: flex-start;
-    width: 100%;
+    width: fit-content;
+    min-width: fit-content;
+
 }
 
 .imageWrapper {
     flex-shrink: 0;
     max-width: 300px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .headshotImg {
@@ -41,7 +55,7 @@
 }
 
 .mainText {
-    flex: 1;
+    flex: 0;
     min-width: 300px;
     max-width: 300px;
 }
@@ -50,6 +64,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    min-width:
 }
 
 .aboutParagraph {
