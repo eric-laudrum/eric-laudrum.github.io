@@ -3,22 +3,22 @@
 
 .sectionContainer {
 
-    height: 100%;
-
-    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     padding: 2rem 0;
     background-color: #fdfaf5;
-    width: 100%; 
 
 }
 
 .imageBar {
     display: flex;
-
-    overflow-x: auto; 
-    height: auto;
+    justify-content: center;
+    gap: 25px;
     width: 100%;
-    gap: 1.1em;
+    max-width: 1200px;
+    margin-bottom: 1rem;
 }
 
 .smallPhoto, .fullWidthPhoto {
@@ -39,49 +39,38 @@
 
 
 
-.textColumns{
+.textColumns {
     display: flex;
     flex-direction: row;
-   
-
-
-    width: 100%;
-    gap: 1.1em;
-    padding: 0;
-    flex-wrap: wrap;
-
-}
-
-.textColumn{
-    flex: 1;
-   
-    display: flex;
+    justify-content: start;
     align-items: flex-start;
-    padding: 0;
-
-
+    gap: 6em;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    margin-bottom: 2.2em;
 }
 
-
-.quote, .text {
-    margin: 0; 
-    padding: 1.5em;
-
-    min-width: 300px;
+.textColumn {
+    flex: 0 1 500px;
+    display: flex;
+    flex-direction: column;
 }
 
-.quote{
-
-    font-size: 2em;
-    padding: 1em 1em 0;
-    line-height: 35px;
-    min-width: 350px;
+.quote {
+    font-size: 2.5em;
     font-weight: bold;
-
+    line-height: 1.2;
+    margin: 0;
+    padding: 0; 
 }
 
-.text{
+.text {
+    font-family: var(--secondary-font);
     font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+    padding-left: 10px;
 
 }
 
@@ -92,9 +81,11 @@
 .projectBar{
     background-color: var(--secondary-cream);
     padding: 1em;
+    width: 100%;
 }
 
 .badgeRow{
+    margin-top: 0.75em;
     display: flex;
     justify-content: center;
     gap: 3em;
@@ -117,10 +108,9 @@
     flex-direction: column;
 
     align-content: space-evenly;
-    justify-content: space-evenly;
+    justify-content: start;
 
     padding: 1em;
-
 
 }
 

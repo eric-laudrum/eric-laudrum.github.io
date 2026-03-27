@@ -97,10 +97,17 @@ export default function AboutPage() {
 
                     { activeTab === 'skills' &&(
 
-                        <div className={styles.projectAbout}>
-                            <h1 className={styles.subTitle}>Title</h1>
-                            <p>This is another paragraph but this one talks about the project that goes here.</p>    
-                        </div>
+                        <>
+                            <img className={styles.smallPhoto} src="/assets/screenshots/trellis-sequencer.jpg" alt="Project" />
+
+                            <div className={styles.projectAbout}>
+                                <h1 className={styles.subTitle}>Title</h1>
+                                <p>
+                                    My experience spans Java, C#, Python, and full-stack development with React, Node.js, ASP.NET, and Spring Boot, 
+                                    along with mobile development for iOS and Android and databases like SQL, PostgreSQL, and MongoDB.
+                                </p>    
+                            </div>
+                        </>
                     )}
 
                     {activeTab === 'projects' && (
@@ -108,17 +115,45 @@ export default function AboutPage() {
                             <img className={styles.smallPhoto} src="/assets/screenshots/trellis-sequencer.jpg" alt="Project" />
                             <div className={styles.projectAbout}>
                                 <h1 className={styles.subTitle}>Selected Projects</h1>
-                                <p>This is where your project details live.</p>
+                                <p>
+                                    One of the main projects I’ve developed is Contractor Connect, a full-stack web application built in a team of five. 
+                                    The platform connects homeowners with local contractors through project posting, structured bidding, and simple dashboards. 
+                                    On this team I played a key role in shaping both the product and the team workflow. 
+                                    I led the design of our prototype, focusing on creating a clean, intuitive interface. 
+                                    I took ownership of quality assurance, creating and running tests to ensure the application functioned reliably. 
+                                    I led discussions around collaboration and workflow, helping establish best practices for using version control so we could work on the same codebase efficiently, 
+                                    track changes clearly, and avoid conflicts.
+                                </p>
+                                <p>
+                                    I’m currently developing a series of projects that explore the intersection of music production and programming. 
+                                    These include Trellis, a real-time 16-step sequencer built to address latency in online collaboration; 
+                                    Warble, an e-commerce platform for selling sound packs and individual samples; and Loop-In, 
+                                    a blog-style platform focused on the relationship between coding and music production.
+
+                                </p>
                                 <Link className={styles.linkButton} href='/projects'>See My Work</Link>
                             </div>
                         </>
                     )}
 
                     {activeTab === 'ai' && (
-                        <div className={styles.projectAbout}>
+                        <>
+                            <img className={styles.smallPhoto} src="/assets/screenshots/trellis-sequencer.jpg" alt="Project" />
+
+                            <div className={styles.projectAbout}>
+                            
                             <h1 className={styles.subTitle}>AI & Data</h1>
-                            <p>Identifying bias and drawing real-world insights.</p>
+
+                            <p>
+                                Alongside my development work, I train and evaluate AI models through data annotation, 
+                                using prompt engineering and structured evaluation to improve output quality. 
+                                I test model behavior using APIs and CLI tools, identify edge cases, and flag gaps in logic or data. 
+                                This work has strengthened my attention to detail and given me a practical understanding of how AI systems perform in real-world use.
+                            </p>
+
                         </div>
+                        </>
+                        
                     )}
                                        
                 </div>            
