@@ -84,39 +84,48 @@ export default function Resume(){
         },
         {
         // PW Inc.
-            icon: <img src="/assets/icons/psych-water-logo.jpg"  alt="George Brown" />,
+            icon: <img src="/assets/icons/psych-water-logo.jpg"  alt="PW Inc." />,
             title: "Customer Success Manager",
-            employer: "Psychedelic Water, Inc.",
+            employer: "PW, Inc.",
             location: "Toronto, ON",
             date: "Nov 2021 - Jun 2023",
             description: "Managed all customer inquiries and orders. Including working with the distribution company to manage orders. I also worked with the sales team to expand our reach to over 1,000 physical locations.",
             bulletPoints: [
-                "Led customer support communications to ensure a positive customer experience", 
+            
+                "Developed a python script to quickly analyse sales patterns and identify potential areas of expansion.",
+                "Maintained the Amazon Store page to ensure good standing and a positive customer experience.",
+                "Worked directly with the distribution company to manage the fulfillment orders.",
+                "Supported the sales team to expand our reach to over 1,000 physical locations, including all Ubran Outfitters locations in the U.S..",
+                "Led customer support communications to ensure a positive customer experience.", 
                 "Coordinated shipping and fulfillment with product feedback.", 
-                "Worked as a team to test and develop new flavors and products",
+                "Worked with the team to test and develop new flavors and products, including a powdered drink version to minimize the cost of shipping liquids.",
+                
             ]
         },
         {
         // The Aviary
-            icon: <img src="/assets/icons/the-aviary-logo.jpg"  alt="Data Annotation" />,
+            icon: <img src="/assets/icons/the-aviary-logo.jpg"  alt="The Aviary" />,
             title: "Assistant Manager, FOH",
             employer: "The Aviary Brewpub",
             location: "Toronto, ON",
             date: "Aug 2018 - Jul 2020",
             description: "Manage front of house operations including ordering, scheduling, and team leadership.",
             bulletPoints: [
-                "Responsible for hiring, scheduling, and training front-of-house staff on procedures and workplace culture; daily operations including opening/closing procedures, inventory management, and deliveries."
+                "Responsible for hiring, scheduling, and training front-of-house staff on procedures and workplace culture.",
+                "Oversaw and trained employees in the sanitation proceedures for the bottle shop growler return program ",
+                "Daily operations include opening/closing procedures, inventory management, and local deliveries."
             ]
         },
          {
             // Sloane Fine Tea Merchants
-            icon: <img src="/assets/icons/sloane-logo.jpg"  alt="Data Annotation" />,
+            icon: <img src="/assets/icons/sloane-logo.jpg"  alt="Sloane Fine Tea Merchants" />,
             title: "Manager, Operations",
             employer: "Sloane Fine Tea Merchants",
             location: "Toronto, ON",
             date: "Nov 2015 - Aug 2016",
             description: "Oversaw day to day operations including inventory management, product packaging, and wholesale oder fulfillment.",
             bulletPoints: [
+                "Managed a team of 3 to pack product, and maintain warehouse facility",
                 "Responsible for customer service as the primary point of contact for customers and business clients.",
                 "Ensured all orders are fulfilled accurately and in a timely manner.", 
                 "Managed inventory,including shipping, receiving, and supervising product packaging.",
@@ -124,7 +133,7 @@ export default function Resume(){
         },
         {
             // CPA Ontario
-            icon: <img src="/assets/icons/cpa-logo.jpg"  alt="Data Annotation" />,
+            icon: <img src="/assets/icons/cpa-logo.jpg"  alt="CPA Ontario" />,
             title: "Coordinator, Business Development",
             employer: "CPA Ontario",
             location: "Toronto, ON",
@@ -138,7 +147,7 @@ export default function Resume(){
         },
         {
             // CMA Ontario
-            icon: <img src="/assets/icons/cma-logo.jpg"  alt="Data Annotation" />,
+            icon: <img src="/assets/icons/cma-logo.jpg"  alt="CMA Ontario" />,
             title: "Concierge",
             employer: "CMA Ontario",
             location: "Toronto, ON",
