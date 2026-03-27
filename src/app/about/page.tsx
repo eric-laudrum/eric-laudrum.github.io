@@ -1,7 +1,32 @@
+'use client';
+import { useState} from 'react';
 import styles from './About.module.css';
 import Link from 'next/link';
 
+
 export default function AboutPage() {
+
+    const [ activeTab, setActiveTab ] = useState('skills');
+
+    const tabData = {
+        skills: {
+            title: "Technical Skills",
+            content: "React, Next.js, Node.js",
+            image: '/assets/screenshots/warbleHome.jpg',
+        },
+        projects: {
+            title: "Selected Projects",
+            content: "Building full-stack apps with sociology in mind",
+            image: '/assets/screenshots/trellis-sequencer.jpg',
+        },
+        ai: {
+            title: "AI & Data",
+            content: "Identifying bias and drawing real-world insights",
+            image: '/assets/screenshots/loopInHome.jpg',
+        }
+
+    }
+
     return (
         <main className={styles.sectionContainer} id="about-section">
 
@@ -40,43 +65,64 @@ export default function AboutPage() {
             {/* Project Preview */}
             <div className={styles.projectBar}>
 
-
                 <div className={styles.badgeRow}>
                     
-                    <button className={styles.setActiveButton}>Technical Skills</button>
-                    <button className={styles.setActiveButton}>Selected Projects</button>
-                    <button className={styles.setActiveButton}>AI & Data Annotation</button>
+                    <button 
+                        className={`${styles.setActiveButton} ${activeTab === 'skills' ? styles.active : ''}`}
+                        onClick={() => setActiveTab('skills')}
+                    >
+                        Technical Skills
+                    </button>
+
+
+                    <button 
+                        className={`${styles.setActiveButton} ${activeTab === 'projects' ? styles.active : ''}`}
+                        onClick={() => setActiveTab('projects')}
+                    >
+                        Selected Projects
+                    </button>
+
+
+                    <button 
+                        className={`${styles.setActiveButton} ${activeTab === 'ai' ? styles.active : ''}`}
+                        onClick={() => setActiveTab('ai')}
+                    >
+                        AI & Data Annotation
+                    </button>
 
                 </div>
+
+
                 <div className={styles.projectRow}>
 
+                    { activeTab === 'skills' &&(
 
+                        <div className={styles.projectAbout}>
+                            <h1 className={styles.subTitle}>Title</h1>
+                            <p>This is another paragraph but this one talks about the project that goes here.</p>    
+                        </div>
+                    )}
 
+                    {activeTab === 'projects' && (
+                        <>
+                            <img className={styles.smallPhoto} src="/assets/screenshots/trellis-sequencer.jpg" alt="Project" />
+                            <div className={styles.projectAbout}>
+                                <h1 className={styles.subTitle}>Selected Projects</h1>
+                                <p>This is where your project details live.</p>
+                                <Link className={styles.linkButton} href='/projects'>See My Work</Link>
+                            </div>
+                        </>
+                    )}
 
-                    <img 
-                        className={styles.smallPhoto}
-                         src="/assets/screenshots/trellis-sequencer.jpg"
-                    />
-                    <div className={styles.projectAbout}>
-                        <h1 className={styles.subTitle}>Title</h1>
-                        <p>This is another paragraph but this one talks about the project that goes here.</p>
-                        
-                        <Link 
-                            className={styles.linkButton}
-                            href='/projects'>
-                            See My Work
-                        </Link>
-                        
-                    </div>
-
-
-                    
-                </div>
-               
-
-
+                    {activeTab === 'ai' && (
+                        <div className={styles.projectAbout}>
+                            <h1 className={styles.subTitle}>AI & Data</h1>
+                            <p>Identifying bias and drawing real-world insights.</p>
+                        </div>
+                    )}
+                                       
+                </div>            
             </div>
-
         </main>
     );
 }
