@@ -6,19 +6,31 @@ const GitHubStats = () => {
 
     return (
         <div className="github-stats">
-            <img 
-                className="github-stat"
-                id="top-languages"
-                src={`${baseUrl}/top-langs?layout=donut${params}`}
-                alt="Top Languages"
-            />
+            <div className="github-stat">
 
-            <img
-                className="github-stat"
-                id="general-stats"
-                src={`${baseUrl}?show_icons=true${params}`}
-                alt="GitHub Stats" 
-            />
+                <img 
+                    className="github-stat-image"
+                    id="top-languages"
+                    src={`${baseUrl}/top-langs?layout=donut${params}`}
+                    alt="Top Languages"
+                />
+
+            </div>
+            
+
+            {/* Stats */}
+            <div className="github-stat">
+
+                <img
+                    className="github-stat-image"
+                    id="general-stats"
+                    src={`${baseUrl}?show_icons=true${params}`}
+                    alt="GitHub Stats" 
+                />
+
+
+            </div>
+            
         </div>
     );
 }

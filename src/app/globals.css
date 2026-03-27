@@ -812,7 +812,7 @@ button.view-doc{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    border: 10px solid red;
+
 }
 
 
@@ -890,23 +890,28 @@ button.view-doc{
 }
 
 
-.repo-link{
-  border: 4px solid red;
-}
 
 
 /* ----- GitHub Stats ------ */
 .github-stats {
   display: flex;
-  flex: 0;
   flex-direction: column;
+  justify-content: center;
   gap: 1rem;
   flex: 0 0 400px; 
-  width: fit-content;
-  align-self: flex-start;
-  padding-right: 50px;
+  max-width: 100%;
+  margin-right: 4em;
 
 
+
+}
+
+.github-stat{
+}
+
+.github-stat-image{
+  max-width: 100%;
+    height: auto;
 }
 
 #donut-wrapper {
@@ -962,6 +967,32 @@ button.view-doc{
 
 
 /* Mobile */
+
+@media (max-width: 1100px) { /* Trigger wrap sooner for stats */
+    .aboutBody {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .leftSide {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .sectionContainer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .leftSide {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
 @media (max-width: 600px) {
   .credential {
     flex-direction: column;

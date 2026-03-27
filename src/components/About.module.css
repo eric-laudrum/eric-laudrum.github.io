@@ -3,11 +3,19 @@
 
 .sectionContainer {
     display: flex;
-    flex-direction: column;
-    width: 150%; 
-    min-width: 15em;
-    overflow: hidden;
-    padding-left: 50px;
+    flex-direction: row;
+
+    width: 100vw;
+
+    height: auto;
+    min-height: max-content;
+    flex-wrap: wrap;
+
+    box-sizing: border-box;
+
+    overflow: visible;
+    padding: 10px 50px;
+
 }
 
 
@@ -15,7 +23,11 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+
+
 
 }
 
@@ -32,7 +44,8 @@
 
 .leftSide {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex: 1;
     gap: 1em;
     align-items: flex-start;
     width: fit-content;
@@ -58,6 +71,9 @@
     flex: 0;
     min-width: 300px;
     max-width: 300px;
+    margin-left: 2em;
+    padding-top: 1em;
+    
 }
 
 .paragraphList {
