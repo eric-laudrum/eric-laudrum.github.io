@@ -101,7 +101,6 @@ export default function AboutPage() {
                             <img className={styles.smallPhoto} src="/assets/screenshots/trellis-sequencer.jpg" alt="Project" />
 
                             <div className={styles.projectAbout}>
-                                <h1 className={styles.subTitle}>Title</h1>
                                 <p>
                                     My experience spans Java, C#, Python, and full-stack development with React, Node.js, ASP.NET, and Spring Boot, 
                                     along with mobile development for iOS and Android and databases like SQL, PostgreSQL, and MongoDB.
@@ -114,7 +113,7 @@ export default function AboutPage() {
                         <>
                             <img className={styles.smallPhoto} src="/assets/screenshots/trellis-sequencer.jpg" alt="Project" />
                             <div className={styles.projectAbout}>
-                                <h1 className={styles.subTitle}>Selected Projects</h1>
+                    
                                 <p>
                                     One of the primary projects I have been developing is <strong>Contractor Connect</strong> - a platform that connects homeowners with local contractors through project posting, structured bidding, and simple dashboards. 
                                     This is a full-stack web application that has been build with a team of five developers. 
@@ -153,9 +152,7 @@ export default function AboutPage() {
                             <img className={styles.smallPhoto} src="/assets/screenshots/trellis-sequencer.jpg" alt="Project" />
 
                             <div className={styles.projectAbout}>
-                            
-                            <h1 className={styles.subTitle}>AI & Data</h1>
-
+                        
                             <p>
                                 Alongside my development work, I train and evaluate AI models through data annotation, 
                                 using prompt engineering and structured evaluation to improve output quality. 
@@ -165,7 +162,7 @@ export default function AboutPage() {
 
                         </div>
                         </>
-                        
+                      
                     )}
                                        
                 </div>            
