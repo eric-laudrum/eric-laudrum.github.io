@@ -3,22 +3,18 @@
 
 .sectionContainer {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
     justify-content: flex-start;
-    align-items: flex-start;
 
     width: 100%;
-    min-height: max-content;
+    height: auto;
 
-    
+    min-height: max-content;
+    flex-wrap: nowrap;
+
     box-sizing: border-box;
 
     overflow: visible;
-    gap: 2rem;
-
-    border: 5px solid salmon;
+    padding: 0;
 
 }
 
@@ -26,36 +22,37 @@
 .aboutBody{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 2rem;
     width: 100%;
-    border: 5px solid transparent;
+    border: 5px solid green;
+
 }
 
 .aboutTitle {
-    font-size: 7rem;
+    font-size: 5rem;
     line-height: 1.1;
+    margin-bottom: 1rem;
     font-weight: bold;
-    color: #151d08e5;
+    color: #151d08;
     width: max-content;
     font-family:"Bookman";
 
 }
 
+/* Overridden 
 .leftSide {
-    flex: 2 1 600px;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    
+    flex: 1;
+    width: 100%;
+    max-width: none;
+    border: 5px solid green;
 
-    border: 5px solid transparent;
-
-}
+*/}
 
 .imageWrapper {
     flex: 0 0 300px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .headshotImg {
@@ -67,8 +64,9 @@
 }
 
 .mainText {
-    flex: 1 1 400px;
-    border: 5px dotted transparent;
+    flex: 1;
+  min-width: 300px;
+  max-width: 800px;
     
 }
 
@@ -76,33 +74,23 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    
+
 }
 
 .aboutParagraph {
-    margin-bottom: 5px;
+    margin-bottom: 1.5rem;
     line-height: 1.6;
     font-size: clamp(1rem, 1.1vw, 1.1rem); 
-    border: 5px solid transparent;
-    min-width: 50px;
-    font-size: 1.2rem;
-    font-weight: 50;
 }
 
 /* Mobile Breakpoint */
-@media (max-width: 900px) {
-    .leftSide {
+@media (max-width: 768px) {
+    .sectionContainer {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .aboutBody {
         flex-direction: column;
         align-items: center;
-        text-align: left; 
-        gap: 2rem;
-    }
-
-    .mainText {
-        min-width: 100%;
-    }
-
-    .imageWrapper {
-        max-width: 250px;
     }
 }

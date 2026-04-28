@@ -71,23 +71,13 @@ main{
 }
 
 
-.home-page {
-  display: grid;
-  grid-template-columns: 1fr 450px; 
-  gap: 5rem;
-  padding: 2rem;
-  align-items: start;
-  width: 100%;
-  min-width: 1200px;
-}
-
-
-
-
 
 #about-section {
   flex: 1; 
-  min-width: 0; 
+  padding: 10px 50px 50px 50px;
+
+  width: 100%;
+  border: 5px solid transparent;
 }
 
 .header{
@@ -129,6 +119,8 @@ main{
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.073);
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.005);
+
+  border: 5px solid dashed salmon;
   
 }
 .section-title{
@@ -871,6 +863,7 @@ button.view-doc{
   background: rgba(0, 0, 0, 0.5);
   color: white !important;
   border: none;
+
   padding: 20px 10px;
   cursor: pointer;
   z-index: 10;
@@ -896,17 +889,19 @@ button.view-doc{
 .github-stats {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-  flex: 0 0 400px; 
-  max-width: 100%;
-  margin-right: 4em;
 
+  justify-content: flex-start;
 
+  flex: 1 1 400px; 
+  max-width: 600px;
+  
+  border: 5px dashed transparent;
 
 }
 
 .github-stat{
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .github-stat-image{
@@ -915,7 +910,8 @@ button.view-doc{
 }
 
 #donut-wrapper {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: 150px;
   overflow: hidden;
   border-radius: 10px;
