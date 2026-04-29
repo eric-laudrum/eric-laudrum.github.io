@@ -1,3 +1,5 @@
+import styles from './About.module.css';
+
 const GitHubStats = () => {
 
     const baseUrl = "https://github-readme-stats-git-master-eric-laudrums-projects.vercel.app/api";
@@ -5,32 +7,22 @@ const GitHubStats = () => {
 
 
     return (
-        <div className="github-stats">
-            <div className="github-stat">
-
+        <div className={styles.githubStats}>
+            <div className={styles.githubStat}>
                 <img 
-                    className="github-stat-image"
-                    id="top-languages"
+                    className={styles.githubStatImage}
                     src={`${baseUrl}/top-langs?layout=donut${params}`}
                     alt="Top Languages"
                 />
-
             </div>
-            
 
-            {/* Stats */}
-            <div className="github-stat">
-
+            <div className={styles.githubStat}>
                 <img
-                    className="github-stat-image"
-                    id="general-stats"
+                    className={styles.githubStatImage}
                     src={`${baseUrl}?show_icons=true${params}`}
                     alt="GitHub Stats" 
                 />
-
-
             </div>
-            
         </div>
     );
 }

@@ -1,5 +1,5 @@
-import styles from './About.module.css';
-import GitHubStats from "../components/GitHubStats";
+import styles from './AboutHome.module.css';
+import GitHubStats from "./GitHubStats";
 
 
 interface AboutProps {
@@ -13,6 +13,7 @@ export default function About({ isFullPage = false }: AboutProps) {
                 
                 {/* Title, headshot, text */}
                 <div className={styles.leftSide}>
+                    
                     <h1 className={styles.aboutTitle}>
                         Hi, I’m Eric
                     </h1>
@@ -49,13 +50,12 @@ export default function About({ isFullPage = false }: AboutProps) {
                         </div>
 
 
+                        <GitHubStats />
 
-                    
                     </div>
                     
 
-             </div>
-             <GitHubStats />
+                </div>
 
                 
                 

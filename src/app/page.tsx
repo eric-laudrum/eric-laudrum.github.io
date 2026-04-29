@@ -6,7 +6,7 @@ export default function Home() {
     <main className="home-page">
 
     
-      <About isFullPage={false} />
+      <About/>
 
 
       

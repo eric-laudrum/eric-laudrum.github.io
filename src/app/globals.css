@@ -71,23 +71,13 @@ main{
 }
 
 
-.home-page {
-  display: grid;
-  grid-template-columns: 1fr 450px; 
-  gap: 5rem;
-  padding: 2rem;
-  align-items: start;
-  width: 100%;
-  min-width: 1200px;
-}
-
-
-
-
 
 #about-section {
   flex: 1; 
-  min-width: 0; 
+  padding: 10px 50px 50px 50px;
+
+  width: 100%;
+  border: 5px solid transparent;
 }
 
 .header{
@@ -96,6 +86,7 @@ main{
   top: 0;
   height: 120px;
   flex-direction: row;
+
   width: 100%;
   align-content: center;
   justify-content: space-between;
@@ -104,6 +95,14 @@ main{
   z-index: 1000;
   background-color: var(--primary);
 
+}
+
+.nav-bar{
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+
+  border: 2px solid transparent;
 }
 
 .nav-link{
@@ -129,6 +128,8 @@ main{
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.073);
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.005);
+
+  border: 5px solid dashed salmon;
   
 }
 .section-title{
@@ -871,6 +872,7 @@ button.view-doc{
   background: rgba(0, 0, 0, 0.5);
   color: white !important;
   border: none;
+
   padding: 20px 10px;
   cursor: pointer;
   z-index: 10;
@@ -892,63 +894,7 @@ button.view-doc{
 
 
 
-/* ----- GitHub Stats ------ */
-.github-stats {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-  flex: 0 0 400px; 
-  max-width: 100%;
-  margin-right: 4em;
 
-
-
-}
-
-.github-stat{
-}
-
-.github-stat-image{
-  max-width: 100%;
-    height: auto;
-}
-
-#donut-wrapper {
-  width: 450px;
-  height: 150px;
-  overflow: hidden;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: white;
-}
-
-#top-languages {
-  width: 120% !important; 
-  height: auto;
-  transform: translateY(0);
-}
-
-#general-stats {
-  width: 100% !important;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-}
-
-.github-link {
-  text-decoration: none;
-  font-size: 0.9rem;
-  color: #555;
-  transition: color 0.2s, padding-left 0.2s;
-}
-
-.github-link:hover {
-  color: #2a769c;
-  padding-left: 5px;
-}
 
 @media (max-width: 800px) {
   .github-stats {
@@ -968,7 +914,7 @@ button.view-doc{
 
 /* Mobile */
 
-@media (max-width: 1100px) { /* Trigger wrap sooner for stats */
+@media (max-width: 1100px) {
     .aboutBody {
         flex-direction: column;
         align-items: center;
@@ -978,6 +924,15 @@ button.view-doc{
         width: 100%;
         justify-content: center;
     }
+}
+
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column; 
+    height: auto;
+    padding: 1.5rem 0;
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
