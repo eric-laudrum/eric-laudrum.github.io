@@ -5,14 +5,15 @@ interface SidebarProps {
   repo?: string;
   repoText?: string;
   resumeUrl?: string;
+  customClassName?: string;
 }
 
-export default function Sidebar({ title, sections, prefix, repo, repoText, resumeUrl }: SidebarProps) {
+export default function Sidebar({ title, sections, customClassName, prefix, repo, repoText, resumeUrl }: SidebarProps) {
   return (
-    <div className="left-sidebar" id="project-toc">
+    <div className={`left-sidebar ${customClassName || ''}`} id="project-toc">
       <h2 className="section-title">{title}</h2>
 
-      <div className="sidebar-nav" style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+      <div className="sidebar-nav">
         {sections?.map((section) => {
           
           // Clean up section titles

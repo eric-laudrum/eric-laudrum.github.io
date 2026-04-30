@@ -5,23 +5,28 @@
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
     width: 100%;
-    padding: 2rem 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+
+    padding: 2rem 5%;
+    gap: 4rem;
     background-color: #fdfaf5;
 
 }
 
 .imageBar {
     display: flex;
-    justify-content: center;
-    gap: 25px;
+    flex-direction: row;
+    gap: 1.5rem;
     width: 100%;
-    max-width: 1200px;
-    margin-bottom: 1rem;
+    
+
 }
 
-.smallPhoto, .fullWidthPhoto {
+.smallPhoto {
     display: block;
     flex: 1 1 0%;
 
@@ -36,19 +41,29 @@
 }
 
 
+.fullWidthPhoto{
+    flex: 1;
+    width: 50%;
 
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+
+    border-radius: 4px;
+    filter: grayscale(20%);
+    transition: filter 0.3s ease;
+}
+
+.fullWidthPhoto:hover {
+    filter: grayscale(0%);
+}
 
 
 .textColumns {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: flex-start;
-    gap: 6em;
-    width: 100%;
-    max-width: 1200px;
-    padding: 2rem;
-    margin-bottom: 2.2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
 }
 
 .textColumn {
@@ -58,20 +73,18 @@
 }
 
 .quote {
-    font-size: 2.5em;
-    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: "Bookman", serif;
     line-height: 1.2;
-    margin: 0;
-    padding: 0; 
+    color: #151d08;
+    font-weight: bold;
+    text-transform: capitalize;
 }
 
 .text {
-    font-family: var(--secondary-font);
-    font-weight: 400;
-    line-height: 1.6;
-    margin: 0;
-    padding-left: 10px;
-
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
 }
 
 
@@ -85,10 +98,13 @@
 }
 
 .badgeRow{
-    margin-top: 0.75em;
     display: flex;
-    justify-content: center;
     gap: 3em;
+
+    margin-top: 0.75em;
+    
+    justify-content: center;
+    
 }
 
 
@@ -112,6 +128,7 @@
 
     padding: 1em;
     gap: 1em;
+    line-height: 1.7;
 
 }
 
@@ -148,6 +165,16 @@
     opacity: 1;
     border-bottom: 2px solid #000;
     font-weight: bold;
+}
+
+.setActiveButton.active::after {
+    content: '';
+    position: absolute;
+    
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--primary);
 }
 
 .subTitle{
@@ -189,4 +216,91 @@
 .projectPoint{
     margin-left: 2em;
     list-style: '- ';
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* -------------------- Mobile --------------------- */
+@media (max-width: 900px) {
+
+    .sectionContainer {
+        padding: 2rem 1.5rem;
+        gap: 2rem;
+    }
+
+    .imageBar {
+        flex-direction: column;
+    }
+    .fullWidthPhoto:last-child {
+        display: none;
+    }
+
+    .textColumns, .projectRow {
+        grid-template-columns: 1fr;
+    }
+
+    .quote {
+        font-size: 1.8rem;
+    }
+
+    .fullWidthPhoto {
+        width: 100%;
+        max-height: 150px;
+    }
+
+    .badgeRow {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .textColumns {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .quote {
+        font-size: 1.8rem;
+    }
+
+    .projectBar {
+        padding: 1.5rem;
+    }
+
+    .setActiveButton {
+        width: 100%;
+        text-align: left;
+        padding: 0.8rem;
+        position: relative;
+    }
+
+    /* Cut Line */
+    .setActiveButton.active::after {
+        height: 2px;
+        bottom: 0;
+    }
+
+    .projectRow {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .smallPhoto, .projectAbout {
+        width: 100%;
+    }
+
+    .smallPhoto {
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .threeColumnGrid, .column, .aboutParagraph {
+        width: 100% !important;
+        grid-template-columns: 1fr;
+    }
 }

@@ -1,0 +1,202 @@
+.resumeContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.sectionContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 2rem 5%;
+    box-sizing: border-box;
+    background-color: var(--primary-cream);
+}
+
+.jobsContent {
+    flex: 1;
+    min-width: 0;
+    
+}
+/* --------------------------------- Mobile -----------------------------*/
+@media (max-width: 900px) {
+    .resumeContainer {
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+        padding: 1rem !important;
+        margin: 0 !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+        overflow-x: hidden;
+        align-items: center;
+    
+    }
+
+    .jobsContent {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: none !important; 
+        display: block !important;
+        margin: 0 !important;
+    }
+
+    .jobsContent :global(.credentials-grid) {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .resumeSidebar {
+        position: relative !important;
+        top: 0 !important;
+        height: auto !important;
+        width: 100% !important;
+        
+        /* Layout */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        border-right: none !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0 0 2rem 0 !important;
+        margin: 0 0 0 0 !important;
+    }
+
+    .resumeSidebar h2 {
+        text-align: center;
+        font-size: 1.4rem;
+
+    }
+
+    .resumeSidebar :global(.sidebar-nav) {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-content: center;
+        gap: 12px 10px !important; 
+        padding: 0 10px;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .resumeSidebar :global(.sidebar-nav a.github-link),
+    .resumeSidebar :global(.sidebar-nav div a.github-link) {
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        
+        background-color: #fff;
+        border: 1px solid #333;
+        color: #333 !important;
+        
+        padding: 8px 10px !important;
+        border-radius: 25px;
+        font-size: 0.85rem !important;
+        text-decoration: none !important;
+        white-space: nowrap;
+        
+        transform: none !important;
+        transition: all 0.2s ease;
+    }
+
+    .resumeSidebar :global(.sidebar-nav > div) {
+        display: contents !important;
+    }
+
+    .resumeSidebar :global(.github-link[style*="color: rgb(42, 118, 156)"]),
+    .resumeSidebar :global(.github-link[style*="color:#2a769c"]) {
+        background-color: #a9d2e6 !important;
+        color: white !important;
+        border: none !important;
+        font-weight: bold;
+    }
+
+    .jobsContent :global(.job-container) {
+        align-items: center !important;
+        padding-right: 0 !important; 
+        text-align: center;
+    }
+
+    .jobsContent :global(.expand-btn) {
+        margin: 1.5rem auto 0 auto !important;
+        display: block !important;
+        position: relative !important;
+        left: 0 !important;
+        transform: none !important;
+        width: fit-content;
+    }
+
+    .jobsContent :global(.job-header) {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 0.5rem;
+    }
+
+    .jobsContent :global(.job-header-wrapper) {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1rem;
+    }
+
+
+    /* Recommendations */
+@media (max-width: 900px) {
+    .jobsContent :global(.recommendations-container),
+    .jobsContent :global(.recommendations-wrapper),
+    .jobsContent :global(.slick-track), 
+    .jobsContent :global(.swiper-wrapper) {
+        display: flex !important;
+        flex-direction: column !important;
+        height: auto !important;
+        transform: none !important;
+        width: 100% !important;
+        gap: 2rem;
+    }
+
+    .jobsContent :global(.recommendation-slide),
+    .jobsContent :global(.slick-slide),
+    .jobsContent :global(.swiper-slide),
+    .jobsContent :global(.recommendation-card) {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        
+        width: 100% !important;
+        height: auto !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    .jobsContent :global(.slick-dots),
+    .jobsContent :global(.slick-arrow),
+    .jobsContent :global(.swiper-pagination),
+    .jobsContent :global(.swiper-button-next),
+    .jobsContent :global(.swiper-button-prev) {
+        display: none !important;
+    }
+
+    .jobsContent :global(.recommendation-text),
+    .jobsContent :global(.recommendation-author) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+
+
+
+  @media (max-width: 480px) {
+      .resumeSidebar :global(.github-link) {
+          padding: 6px 12px !important;
+          font-size: 0.75rem !important;
+      }
+  }
+}
