@@ -102,7 +102,7 @@ main{
   flex-direction: row;
   gap: 1.5rem;
 
-  border: 2px solid transparent;
+
 }
 
 .nav-link{
@@ -128,8 +128,6 @@ main{
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.073);
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.005);
-
-  border: 5px solid dashed salmon;
   
 }
 .section-title{
@@ -927,15 +925,30 @@ button.view-doc{
 }
 
 @media (max-width: 900px) {
-  .header {
-    flex-direction: column; 
-    height: auto;
-    padding: 1.5rem 0;
-    gap: 1rem;
-  }
+    .contact-form, 
+    .section-container, 
+    .threeColumnGrid,
+    .aboutParagraph {
+        min-width: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .header {
+        padding: 1rem !important;
+        height: auto !important;
+        flex-direction: column;
+    }
 }
 
+
 @media (max-width: 768px) {
+    .header {
+      flex-direction: column; 
+      height: auto;
+      padding: 1rem 0;
+      gap: 1rem;
+    }
     .sectionContainer {
         padding-left: 20px;
         padding-right: 20px;
@@ -945,6 +958,10 @@ button.view-doc{
         flex-direction: column;
         align-items: center;
     }
+    .nav-bar{
+      gap: 0.8;
+    }
+
 }
 
 

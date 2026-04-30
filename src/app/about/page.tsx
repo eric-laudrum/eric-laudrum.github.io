@@ -98,7 +98,7 @@ export default function AboutPage() {
                     { activeTab === 'skills' &&(
 
                         <>
-                            <img className={styles.smallPhoto} src="/assets/screenshots/trellis-sequencer.jpg" alt="Project" />
+                            <img className={styles.smallPhoto} src="/assets/screenshots/warbleHome.jpg" alt="Project" />
 
                             <div className={styles.projectAbout}>
                                 <p>
@@ -125,7 +125,7 @@ export default function AboutPage() {
                                     I led discussions around collaboration and workflow, helping establish best practices for using version control so we could work on the same codebase efficiently, 
                                     track changes clearly, and avoid conflicts.
                                 </p>
-                                <p>
+                               <div className={styles.projectDescriptionContainer}>
                                     I’m currently developing a series of projects that explore the intersection of music production and programming. 
                                     These include 
                                     <ul className={styles.projectList}>
@@ -141,7 +141,7 @@ export default function AboutPage() {
                                     </ul>
                         
 
-                                </p>
+                                </div>
                                 <Link className={styles.linkButton} href='/projects'>See My Work</Link>
                             </div>
                         </>

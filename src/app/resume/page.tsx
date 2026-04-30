@@ -3,6 +3,7 @@ import Education from "@/components/Education"
 import Job from "@/components/Job"
 import Credential from "@/components/Credential"
 import Recommendations from "@/components/Recommendations/Recommendations"
+import styles from './resume.module.css'
 
 export default function Resume(){
 
@@ -167,20 +168,20 @@ export default function Resume(){
 
     return(
 
-        <div className="section-container" id="resume-container">
+        <div className={styles.resumeContainer} id="resume-container">
 
             
         <Sidebar 
-            title="Resume" 
-            sections={["Work Experience", "Education", "Credentials", "Recommendations"]} 
-            repo="https://github.com/eric-laudrum"
-            repoText="GitHub"
-            resumeUrl="/assets/pdf/Eric-Laudrum-Resume-2026.pdf"
+                title="Resume" 
+                sections={["Work Experience", "Education", "Credentials", "Recommendations"]} 
+                repo="https://github.com/eric-laudrum"
+                repoText="GitHub"
+                resumeUrl="/assets/pdf/Eric-Laudrum-Resume-2026.pdf"
+                customClassName={styles.resumeSidebar} 
+            />
             
-        />
-            
-             {/* ----- Jobs ----- */}
-            <div className="jobs-container">
+             {/* ------------------ Jobs ------------------ */}
+            <div className={styles.jobsContent}>
                 <h2 className="section-title" id="work-experience">Work Experience</h2>
 
                 {jobs.map((job, index) => (
@@ -200,7 +201,7 @@ export default function Resume(){
                 ))}
 
                 
-                {/*  ----- Education ----- */}
+                {/*  ------------------ Education ------------------ */}
                 <h2 className="section-title" id="education">Education</h2>
 
                 <div className="credentials-grid">
