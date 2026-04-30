@@ -1,45 +1,37 @@
 import ContactForm from '@/components/ContactForm'
+import styles from './contact.module.css'
 
 export default function ContactPage(){
+    return(
+        <main className={styles.sectionContainer} id="contact-page">
+            <div className={styles.leftContact}>
+                <h1 className={styles.sectionTitle}>Contact</h1>
 
-     return(
-        <main className="section-container" id="contact-page">
-            <div className="left-contact">
-                <h1 className="section-title">Contact</h1>
-
-
-                <div style={{ marginBottom: '2rem', marginTop: '-1rem' }}>
+                <div className={styles.linkGroup}>
                     <a 
                         href="https://www.linkedin.com/in/ericlaudrum/" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="resume-link"
-                        style={{ fontWeight: 'bold', color: '#2a769c', fontSize: '0.9rem' }}
+                        className={styles.resumeLink}
                     >
                         LinkedIn Profile →
                     </a>
-                </div>
 
-                <div style={{ marginBottom: '2rem', marginTop: '-1rem' }}>
                     <a 
                         href="https://github.com/eric-laudrum" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="resume-link"
-                        style={{ fontWeight: 'bold', color: '#2a769c', fontSize: '0.9rem' }}
+                        className={styles.resumeLink}
                     >
                         GitHub Profile →
                     </a>
                 </div>
-
+            
             </div>
-            <div className="right-contact">
+
+            <div className={styles.rightContact}>
                 <ContactForm />
             </div>
-
-
-            
-
         </main>
     )
 }

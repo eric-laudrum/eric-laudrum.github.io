@@ -5,7 +5,6 @@
     padding: 0 2rem 2rem 2rem; 
     min-height: 100vh;
     background-color: var(--primary-cream);
-    
 }
 
 .projectLayout {
@@ -13,15 +12,10 @@
     flex-direction: row !important;
     gap: 3rem;
     align-items: flex-start;
-    margin-top: 20px !important; 
-    padding-top: 20px;
-}
 
-.projectSidebarContainer {
-    width: 280px;
-    position: sticky;
-    top: 11rem;
-    flex-shrink: 0;
+    margin-top: 0 !important; 
+    padding-top: 0;
+
 }
 
 .projectMainContent {
@@ -32,10 +26,10 @@
 .projectHeader {
     margin-bottom: 3rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding-bottom: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
 }
 
 .sectionTitle {
@@ -55,6 +49,7 @@
     flex-wrap: wrap;
     gap: 10px;
     align-items: center;
+
 }
 
 .tagBadge {
@@ -68,14 +63,14 @@
 }
 
 .projectContentArea {
-    margin-bottom: 5rem;
+    border: 1px solid transparent;
 }
 
 .projectGrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
     gap: 2rem;
-    padding-top: 3rem;
+    padding-top: 0;
     border-top: 2px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -161,26 +156,175 @@
 }
 
 
+.project-nav {
+    position: sticky;
+    top: 120px;
+    margin: 0 !important;
+    padding: 1rem 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0 !important; 
+}
+
+
+/* -------------------------- Mobile -------------------------------- */
+
 @media (max-width: 1024px) {
+    .project-nav {
+        top: 120px;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0.75rem;
+    }
+
+    .nav-link-item, .nav-link-active {
+        font-size: 0.85rem;
+        padding: 4px 8px;
+        white-space: nowrap;
+    }
+
+    .projectsContainer {
+        padding: 120px 1rem 2rem 1rem;
+    }
+
     .projectLayout {
+        display: flex !important;
         flex-direction: column !important;
+        gap: 1.5rem;
+        margin-top: 0 !important;
+        padding-top: 1rem !important;
+    }
+
+    /* Target generic AND specific project containers for Warble/Trellis */
+    .projectContentArea :global(.solo-project-container),
+    .projectContentArea :global(.warble-container),
+    .projectContentArea :global(.trellis-container) {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 2rem !important;
+        align-items: center !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    /* Force Media (Video/Images) to full width */
+    .projectContentArea :global(.project-img-container),
+    .projectContentArea :global(.video-wrapper) {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: none !important;
+    }
+
+    /* Handle Youtube Iframes and Images */
+    .projectContentArea :global(.solo-project-img),
+    .projectContentArea :global(iframe),
+    .projectContentArea :global(video) {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 16 / 9;
+    }
+
+    .projectContentArea :global(.solo-project-title) {
+        text-align: center;
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+    /* Force Text blocks to full width */
+    .projectContentArea :global(.solo-project-description),
+    .projectContentArea :global(.solo-project-info),
+    .projectContentArea :global(.warble-info),
+    .projectContentArea :global(.trellis-info) {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        flex: none !important;
     }
 
     .projectSidebarContainer {
-        width: 100%;
-        position: relative;
-        top: 0;
-    }
-    
-    .projectHeader {
+  
+        width: 100% !important;
+        position: relative !important;
+        top: 0 !important;
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        
+
+        border: 5px solid orange;
     }
 
-    
+    .projectSidebarContainer :global(.left-sidebar) {
+        flex: 1;
+        width: 100% !important;
+        padding: 0 !important;
+        background: transparent !important;
+        border: none !important;
+        border: 4px solid green;
+    }
 
+    .projectSidebarContainer :global(.section-title) {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
 
+    .projectSidebarContainer :global(.sidebar-nav) {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 10px !important;
+    }
 
+    .projectSidebarContainer :global(.github-link) {
+        background-color: #fff;
+        border: 1px solid #333;
+        padding: 6px 14px !important;
+        border-radius: 20px;
+        font-size: 0.8rem !important;
+    }
 
+    .projectSidebarContainer :global(.github-link[style*="font-weight: bold"]) {
+        background-color: #2a769c !important;
+        color: white !important;
+        border: none;
+    }
+
+    .projectMainContent {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .projectHeader {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
+    }
+
+    .sectionTitle {
+        font-size: 2rem;
+        margin-top: 0 !important;
+        text-align: center;
+    }
+
+    .projectTags {
+        justify-content: center;
+    }
+
+    .projectGrid {
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+    }
+
+    .projectCard {
+        min-height: auto;
+        padding: 15px;
+    }
+
+    .projectImg {
+        height: 200px;
+    }
 }

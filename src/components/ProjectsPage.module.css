@@ -1,4 +1,4 @@
-.projectsContainer {
+/*.projectsContainer {
     display: block !important; 
     max-width: 1400px;
     margin: 0 auto;
@@ -81,8 +81,8 @@
 .projectCard {
     display: flex;
     flex-direction: column;
-    min-height: 350px; /* Reduced base height */
-    height: auto;      /* Allows it to shrink-wrap the content */
+    min-height: 350px; 
+    height: auto;
     padding: 20px;
     background: white;
     border: 1px solid rgba(0,0,0,0.1);
@@ -182,4 +182,4 @@
 
 
 
-}
+}*/
