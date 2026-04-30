@@ -1,4 +1,4 @@
-"use client";
+/*"use client";
 
 import { useState, useEffect } from "react";
 import ProjectNav from "@/components/ProjectNav";
@@ -27,6 +27,7 @@ export default function ProjectPage() {
         <main className={styles.projectsContainer}>
             <ProjectNav setActive={setActiveProject} active={activeProject} />
 
+            <h1> HELLO THERE </h1>
             <div className={styles.projectLayout}>
                 <aside className={styles.projectSidebarContainer}>
                     <Sidebar 
@@ -94,4 +95,4 @@ export default function ProjectPage() {
             </div>
         </main>
     );
-}
+}*/

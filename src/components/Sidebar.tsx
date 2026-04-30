@@ -23,7 +23,7 @@ export default function Sidebar({ title, sections, customClassName, prefix, repo
             .replace(/\s+/g, '-')
             .replace(/-+/g, '-');
 
-          const anchor = prefix ? `${prefix}_${slug}` : slug;
+          const anchor = prefix ? `${String(prefix)}_${slug}` : slug;
 
           return (
             <a key={section} className="github-link" href={`#${anchor}`}>

@@ -188,7 +188,6 @@ main{
   border-bottom: 2px solid black;
   background-color: var(--primary-cream);
 
-  margin: -2rem 0 2rem;
 }
 
 .project-nav a {
@@ -484,8 +483,7 @@ main{
 }
 
 .left-contact{
-  flex: 0 0 250px;
-  border: 2px none;
+  flex: 1;
 }
 
 .right-contact{
@@ -493,15 +491,6 @@ main{
   display: flex;
   justify-content: center;
 
-}
-
-
-.section-container#contact-page{
-  display: grid;
-  grid-template-columns: 250px 1fr 250px; 
-  align-items: start;
-  gap: 2rem;
-  min-height: 70vh;
 }
 
 
@@ -782,7 +771,7 @@ button.view-doc{
   border-right: 0.5px solid rgba(0, 0, 0, 0.15);
 }
 
-#resume-container, .project-page, #contact-page{
+#resume-container, .project-page {
   display: flex;
   flex-direction: row;
   gap: 3rem;
@@ -894,85 +883,176 @@ button.view-doc{
 
 
 
-@media (max-width: 800px) {
-  .github-stats {
-    flex-direction: column;
-    align-items: center;
-  }
-  .github-stat {
-    height: auto;
-    max-width: 100%;
-  }
-}
 
 
 
-/* - -- - --  -- -- */
 
 
-/* Mobile */
 
-@media (max-width: 1100px) {
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------ Mobile ------------------------------ */
+
+@media (max-width: 1024px) {
+
     .aboutBody {
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 120px 1.5rem 2rem 1.5rem !important;
+        align-items: center;
+        gap: 0;
+    }
+
+    .left-contact, .leftSide {
+        width: 100% !important;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .left-contact .section-title {
+        font-size: 2.2rem;
+
+    }
+
+    .left-contact {
+        width: 100% !important;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
-    .leftSide {
+
+    .left-contact div[style*="marginBottom"] {
+        margin-top: 0 !important;
+        margin-bottom: 0.5rem !important;
+        display: inline-block;
+        width: auto !important; 
+    }
+
+    .right-contact {
+        width: 100% !important;
+        max-width: 500px;
+    }
+
+    .resume-link {
+        display: inline-block;
+        padding: 6px 12px;
+        border: 1px solid rgba(42, 118, 156, 0.3);
+        border-radius: 20px;
+        background-color: rgba(42, 118, 156, 0.05);
+        white-space: nowrap;
+        transition: all 0.2s ease;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .form-col {
         width: 100%;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-field {
+        width: 100% !important;
+        padding: 12px !important;
+        font-size: 16px !important;
+        border-radius: 6px;
+        border: 1px solid rgba(0,0,0,0.1);
+    }
+
+    #comment-field {
+        min-height: 120px;
+    }
+
+    .submit-button {
+        width: 100% !important;
+        padding: 14px !important;
+        font-size: 1rem;
+        margin-top: 1rem;
     }
 }
 
+/* -------------------------- Small Tablet & Large Phones -------------------------------- */
+
 @media (max-width: 900px) {
-    .contact-form, 
     .section-container, 
     .threeColumnGrid,
     .aboutParagraph {
-        min-width: 0 !important;
         width: 100% !important;
         max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    main {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+    
+    #about-section {
+        padding: 1rem !important;
     }
 
     .header {
         padding: 1rem !important;
         height: auto !important;
+        min-height: 80px;
         flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .title img {
+        height: 4rem;
     }
 }
 
+/* -------------------------- Standard Phones -------------------------------- */
 
 @media (max-width: 768px) {
-    .header {
-      flex-direction: column; 
-      height: auto;
-      padding: 1rem 0;
-      gap: 1rem;
-    }
     .sectionContainer {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     
+    .nav-bar {
+        gap: 1rem;
+        justify-content: center;
+        width: 100%;
+    }
+
     .leftSide {
         flex-direction: column;
         align-items: center;
     }
-    .nav-bar{
-      gap: 0.8;
-    }
-
 }
 
+/* -------------------------- Small Phones -------------------------------- */
 
 @media (max-width: 600px) {
-  .credential {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .cred-icon-container {
-    padding-top: 0;
-    margin-bottom: 10px;
-  }
+    .credential {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .cred-icon-container {
+        padding-top: 0;
+        margin-bottom: 5px;
+    }
 }
