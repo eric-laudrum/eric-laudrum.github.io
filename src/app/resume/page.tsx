@@ -39,7 +39,7 @@ export default function Resume(){
             title: "Programming Foundations: Software Testing/ QA",
             date: "Jan 2026",
             fileName: "LI-testing-qa.jpg",
-            description: "Learned fundamentals of software testing and quality analysi.",
+            description: "Learned fundamentals of software testing and quality analysis.",
         },
         {
             // Linked In - Data Annotation

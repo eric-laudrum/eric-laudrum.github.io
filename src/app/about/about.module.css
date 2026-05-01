@@ -1,4 +1,8 @@
-/* About Page */
+/* 
+
+- - - - - - - - - - About Tab - - - - - - - - - - 
+
+*/
 
 
 .sectionContainer {
@@ -14,6 +18,7 @@
     padding: 2rem 5%;
     gap: 4rem;
     background-color: #fdfaf5;
+    border: 10px solid orange;
 
 }
 
@@ -180,6 +185,7 @@
     gap: 3rem;
     align-items: start;
     width: 1300px; 
+
 }
 
 .column {

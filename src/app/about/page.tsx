@@ -1,3 +1,5 @@
+/* About Page */
+
 'use client';
 import { useState} from 'react';
 import styles from './about.module.css';
@@ -48,7 +50,6 @@ export default function AboutPage() {
                    
                     </p>
                 </div>
-
                 <div className={styles.textColumn}>
                     <p className={styles.text}>
                      

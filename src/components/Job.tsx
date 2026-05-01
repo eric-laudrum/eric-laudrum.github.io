@@ -13,7 +13,8 @@ interface JobProps{
     icon?: React.ReactNode;
 }
 
-const Job: React.FC<JobProps> = ({ title, employer, date, location, description, bulletPoints, icon }) =>{
+const Job: React.FC<JobProps> = ({ 
+    title, employer, date, location, description, bulletPoints, icon }) =>{
 const [isExpanded, setIsExpanded] = useState(false);
 
     return(

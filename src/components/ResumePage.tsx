@@ -1,8 +1,10 @@
+
+
 import Sidebar from "@/components/Sidebar"
 import Education from "@/components/Education"
 import Job from "@/components/Job"
 import Credential from "@/components/Credential"
-import Recommendations from "./Recommendations"
+
 
 export default function Resume(){
 

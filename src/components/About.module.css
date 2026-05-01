@@ -1,5 +1,8 @@
-/* Home Page / Welcome */
+/* 
 
+- - - - - - - - Home Page / About Section - - - - - - - - 
+
+*/
 
 .sectionContainer {
     display: flex;
@@ -41,6 +44,8 @@
     width: max-content;
     font-family:"Bookman", serif;
 
+    border: 5px solid orange;
+
 }
 
 .leftSide {
@@ -68,7 +73,7 @@
 
 .mainText {
     flex: 1; 
-    min-width: 300px;
+    min-width: 200px;
     max-width: 500px;
 }
 

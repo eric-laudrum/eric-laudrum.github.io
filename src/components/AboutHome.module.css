@@ -1,6 +1,6 @@
 /* Home Page / Welcome */
 
-
+/*
 .sectionContainer {
     display: flex;
     justify-content: flex-start;
@@ -40,16 +40,7 @@
 
 }
 
-/* Overridden 
-.leftSide {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    width: 100%;
-    max-width: none;
-    border: 5px solid green;
 
-*/}
 
 .imageWrapper {
     flex: 0 0 300px;
@@ -83,7 +74,7 @@
     font-size: clamp(1rem, 1.1vw, 1.1rem); 
 }
 
-/* Mobile Breakpoint */
+
 @media (max-width: 768px) {
     .sectionContainer {
         flex-direction: column;
@@ -93,4 +84,4 @@
         flex-direction: column;
         align-items: center;
     }
-}
+}*/

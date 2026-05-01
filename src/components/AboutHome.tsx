@@ -1,4 +1,4 @@
-import styles from './AboutHome.module.css';
+/*import styles from './AboutHome.module.css';
 import GitHubStats from "./GitHubStats";
 
 
@@ -11,7 +11,7 @@ export default function About({ isFullPage = false }: AboutProps) {
         <section className={styles.sectionContainer} id="about-section">
            
                 
-                {/* Title, headshot, text */}
+
                 <div className={styles.leftSide}>
                     
                     <h1 className={styles.aboutTitle}>
@@ -21,7 +21,7 @@ export default function About({ isFullPage = false }: AboutProps) {
 
                     <div className={styles.aboutBody}>
 
-                        {/* Headshot */}
+         
                         <div className={styles.imageWrapper}>
                             <img 
                                 className={styles.headshotImg}
@@ -32,7 +32,7 @@ export default function About({ isFullPage = false }: AboutProps) {
                             />
                         </div>
 
-                        {/* Text Content */}
+                       
                         <div className={styles.mainText} id="about">           
                             <ul className={styles.paragraphList}>
                                 
@@ -66,3 +66,5 @@ export default function About({ isFullPage = false }: AboutProps) {
         </section>
     );
 }
+
+*/

@@ -1,3 +1,9 @@
+/* 
+
+- - - - - - - - Home Page / About Section - - - - - - - - 
+
+*/
+
 import styles from './About.module.css';
 import GitHubStats from "../components/GitHubStats";
 
