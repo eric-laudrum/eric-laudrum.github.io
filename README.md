@@ -37,45 +37,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-
-
-## Checklist
-### Next
-- [] Bio
-- [] Cover Letter
-- [] Philosophy / Career goal
-- [] Link 
-    - [] CC to Web Page (ContractorConnect.cc)
-    - [x] GitHub Repos
-        - [x] Contractor Connect
-        - [x] Trellis
-        - [x] Warble
-        - [x] Loop-In
-    - [x] GitHub Account
-    - [] LinkedIn Account
-
-- [x] Capstone / Contractor Connect
-    - [x] Project Summary
-    - [x] Project Vision
-    - [x] Project / Business Requirements
-    - [x] Project Plan
-    - [x] Requirements Analysis & Design
-    - [x] Wireframes / Mockups
-    - [x] Status Reports
-    - [x] System Implementation
-
-- [x] Credentials
-    - [x] Certificates
-    - [x] Degrees/ Diplomas
-    - [] Letters of recommendation
-    - [] 
-
-### Later
-- [] Set up contact to email
-- [] Set up private instance of GitStats on Vercel to avoid rate limits
-
-
-
 ## GitHub Stats
 ![Top Languages](https://github-readme-stats-git-master-eric-laudrums-projects.vercel.app/api/top-langs?username=eric-laudrum&layout=donut&hide_border=true&count_private=true&cache_seconds=1800)
 
