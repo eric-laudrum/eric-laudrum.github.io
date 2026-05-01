@@ -155,7 +155,8 @@ export default function Resume(){
             resumeUrl="/assets/pdf/Eric-Laudrum-Resume-2026.pdf"
         />
             
-             {/* ----- Jobs ----- */}
+             {/* ------------------ Jobs ----------------- */}
+             <h1>TESTING</h1>
             <div className="jobs-container">
                 <h2 className="section-title" id="work-experience">Work Experience</h2>
 

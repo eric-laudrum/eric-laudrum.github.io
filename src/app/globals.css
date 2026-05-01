@@ -560,14 +560,19 @@ main{
 
 .credential {
     display: flex;
-    align-items: stretch;
-    gap: 1.5rem;
+    flex: 1;
+    
+    gap: 2rem;
     border-radius: 4px;
     padding: 1em;
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.09);
     margin: 0.5em;
-    position: relative;
+
+    max-width: 50rem;
+    min-width: 20rem;
+
+    border: 2px solid red;
 }
 
 .credential:hover {
@@ -761,10 +766,10 @@ button.view-doc{
   width: 220px;
   min-width: 200px; 
   position: sticky;
-  top: 200px;
-  height: 70vh;
+  top: 120px;
+  height: 100vh;
   flex-shrink: 0;
-  background-color: var(--primary-cream);
+  background-color: white;
   padding: 2rem;
 
   align-content: start;

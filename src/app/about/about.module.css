@@ -167,15 +167,7 @@
     font-weight: bold;
 }
 
-.setActiveButton.active::after {
-    content: '';
-    position: absolute;
-    
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: var(--primary);
-}
+
 
 .subTitle{
     font-size: 1.5em;
@@ -279,11 +271,6 @@
         position: relative;
     }
 
-    /* Cut Line */
-    .setActiveButton.active::after {
-        height: 2px;
-        bottom: 0;
-    }
 
     .projectRow {
         flex-direction: column;

@@ -31,27 +31,6 @@ export default function Recommendations() {
                     </a>
                 </div>
 
-                {/* Letter 2 */}
-                <div className={styles.recCard}>
-                    <div className={styles.recInfo}>
-                        <h4 className={styles.recName}>Andrew Campbell</h4>
-                        <p className={styles.recWorkplace}>CloudUp</p>
-                    </div>
-                    
-                    <a 
-                        href="/assets/pdf/letter_of_rec-2.pdf" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className={styles.pdfLink}
-                    >
-                        <img 
-                            src="/assets/screenshots/rec2-thumb.jpg" 
-                            alt="Recommendation Letter Thumbnail" 
-                            className={styles.pdfThumbnail}
-                        />
-                        <span className={styles.viewLabel}>View Full PDF</span>
-                    </a>
-                </div>
             </div>
         </div>
     );

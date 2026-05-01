@@ -39,15 +39,15 @@ export default function Resume(){
             title: "Programming Foundations: Software Testing/ QA",
             date: "Jan 2026",
             fileName: "LI-testing-qa.jpg",
-            description: "Learned fundamentals of software testing and quality analysis",
+            description: "Learned fundamentals of software testing and quality analysi.",
         },
         {
             // Linked In - Data Annotation
             icon: <img src="/assets/icons/linkedin-logo.png"  alt="Google-logo" />,
-            title: "Hands-On Data Annotation: Applied Machine Learning",
+            title: "Hands-On Data Annotation: Applied Machine Learning.",
             date: "Jan 2026",
             fileName: "LI-hands-on-annotation.jpg",
-            description: " learned fundamental programming concepts through using the Python programming language",
+            description: "Learned fundamental programming concepts using the Python programming language.",
         },
         {
             // Google E-commerce
