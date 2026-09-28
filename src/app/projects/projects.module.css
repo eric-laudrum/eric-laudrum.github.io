@@ -61,12 +61,12 @@
 
     border: 10px solid none;
 }
+
 .sectionTitle {
     font-size: 2.5rem;
     font-weight: 700;
     color: #171717;
 
-    border: 5px solid none;
 }
 
 .techStackLabel {
@@ -253,24 +253,22 @@
         gap: 1rem;
         padding: 0.5em;
         font-size: 1em;
-        border: 10px solid none;
-        
-    }
 
-    .sectionTitle{
-        border: 4px solid none;
+        border: 10px solid gold;
     }
 
     .nav-link-item, .nav-link-active {
         font-size: 0.85rem;
         padding: 4px 8px;
         white-space: nowrap;
+
         border: 100px solid none;
     }
 
     .projectsContainer {
         padding: 120px 1rem 2rem 1rem;
-        border: 10px dotted none;
+
+        border: 10px dotted red;
     }
 
     .projectLayout {
@@ -279,40 +277,13 @@
         gap: 0;
         margin-top: 0 !important;
 
-        border: 10px dotted none;
+        border: 10px dotted green;
     }
 
 
-    /* Target generic AND specific project containers for Warble/Trellis */
-    .projectContentArea :global(.solo-project-container),
-    .projectContentArea :global(.warble-container),
-    .projectContentArea :global(.trellis-container){
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 2rem !important;
-        align-items: center !important;
-        width: 100% !important;
-        padding: 0 !important;
 
-        border: 100px dotted none;
-    }
 
-    /* Force Media (Video/Images) to full width */
-    .projectContentArea :global(.project-img-container),
-    .projectContentArea :global(.video-wrapper) {
-        width: 100% !important;
-        max-width: 100% !important;
-        flex: none !important;
-    }
 
-    /* Handle Youtube Iframes and Images */
-    .projectContentArea :global(.solo-project-img),
-    .projectContentArea :global(iframe),
-    .projectContentArea :global(video) {
-        width: 100% !important;
-        height: auto !important;
-        aspect-ratio: 16 / 9;
-    }
 
     .projectContentArea :global(.solo-project-title) {
         text-align: center;
@@ -320,28 +291,20 @@
         width: 100%;
     }
 
-    /* Force Text blocks to full width */
-    .projectContentArea :global(.solo-project-description),
-    .projectContentArea :global(.solo-project-info),
-    .projectContentArea :global(.warble-info),
-    .projectContentArea :global(.trellis-info) {
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 0 !important;
-        flex: none !important;
-    }
+
 
     .projectSidebarContainer {
-  
         width: 100% !important;
         position: sticky !important;
         top: 0 !important;
         display: flex;
+
         flex-direction: column;
         align-items: center;
+
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
-        border: 5px dashed none;
+        border: 10px dashed pink;
     
     }
 
@@ -394,13 +357,13 @@
     }
 
     .sectionTitle {
+        width: 100%;
         font-size: 2rem;
         margin-top: 0 !important;
-        padding: 5em;
+        
         text-align: center;
 
-        border: 10px solid none;
-
+        border: 10px solid salmon;
     }
 
     .projectTags {

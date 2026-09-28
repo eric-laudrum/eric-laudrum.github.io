@@ -134,6 +134,8 @@ main{
   font-size: 2rem;
   margin: 1em 0;
 
+  border: 5px solid red;
+
 }
 
 .section-sub-title{

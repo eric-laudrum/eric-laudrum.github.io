@@ -15,8 +15,7 @@
     "incremental": true,
     "plugins": [
       {
-        "name": "next",
-
+        "name": "next"
       }
     ],
     "paths": {
@@ -31,6 +30,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-, "src/components/GitHubStats"  ],
+  ],
   "exclude": ["node_modules"]
 }
