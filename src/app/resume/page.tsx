@@ -3,7 +3,7 @@ import Education from "@/components/Education"
 import Job from "@/components/Job"
 import Credential from "@/components/Credential"
 import Recommendations from "@/components/Recommendations/Recommendations"
-import styles from './resume.module.css'
+import styles from './page.module.css'
 
 export default function Resume(){
 

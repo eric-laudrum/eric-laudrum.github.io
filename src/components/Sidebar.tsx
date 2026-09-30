@@ -1,4 +1,4 @@
-import styles from '../app/projects/projects.module.css';
+import styles from '../app/projects/page.module.css';
 
 
 interface SidebarProps {

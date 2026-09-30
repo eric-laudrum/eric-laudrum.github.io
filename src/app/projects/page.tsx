@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import ProjectNav from "@/components/ProjectNav";
 import Sidebar from "@/components/Sidebar";
 import projects from "@/components/Data/ProjectsData";
-import styles from "./projects.module.css"
+import styles from "./page.module.css"
 
 export default function ProjectPage() {
     const [activeProject, setActiveProject] = useState("Trellis");

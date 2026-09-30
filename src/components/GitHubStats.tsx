@@ -1,4 +1,4 @@
-import styles from '../app/about/about.module.css';
+import styles from '../app/about/page.module.css';
 
 const GitHubStats = () => {
 

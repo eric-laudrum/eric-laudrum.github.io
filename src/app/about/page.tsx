@@ -6,7 +6,7 @@
 
 'use client';
 import { useState} from 'react';
-import styles from './about.module.css';
+import styles from './page.module.css';
 import GitHubStats from '@/components/GitHubStats';
 import ProjectNav from "@/components/ProjectNav";
 import projects from "@/components/Data/ProjectsData";
