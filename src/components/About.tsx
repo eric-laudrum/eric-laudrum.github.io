@@ -1,6 +1,6 @@
 /* 
 
-- - - - - - - - Home Page / About Section - - - - - - - - 
+- - - - - - - - About Page / About Section - - - - - - - -
 
 */
 "use client"
@@ -15,21 +15,6 @@ export default function About() {
     
     return (
         <section className={styles.sectionContainer}>
-            {/* Visual Hook */}
-            <div className={styles.imageBar}>
-                <img src="/assets/screenshots/about-photos-04.png" alt="developer photos" className={styles.fullWidthPhoto} />
-                <img src="/assets/screenshots/about-photos-06.png" alt="abstract static image" className={styles.fullWidthPhoto} />
-            </div>
-
-            {/* Philosophy & Short Intro */}
-
-            <div className={styles.textColumn}>
-                <p className={styles.quote}>
-                    Good design, when it's done well, becomes invisible. It's only when it's done poorly that we notice it.
-                </p>
-                <p className={styles.attribution}>- Jared Spool</p>
-            </div>
-            
 
 
             {/* Interactive Preview */}

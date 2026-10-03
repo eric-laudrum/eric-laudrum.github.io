@@ -47,7 +47,7 @@ export default function TrellisSequencer({ techStack }: ProjectComponentProps) {
                         <img 
                             className={styles.projectImage} 
                             src="/assets/screenshots/trellis-sequencer.jpg" 
-                            alt="Trellis Home" 
+                            alt="Trellis About"
                         />
 
                     </div>

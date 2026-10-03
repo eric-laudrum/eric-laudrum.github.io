@@ -1,9 +1,7 @@
 import React from 'react';
 
-import ContractorConnect from "../ContractorConnect/ContractorConnect";
 import TrellisSequencer from "../Trellis/Trellis";
 import Warble from "../Warble/Warble";
-import LoopIn from "../LoopIn/LoopIn";
 
 
 export interface ProjectComponentProps {
@@ -24,16 +22,6 @@ interface Project {
 }
 
 const projects: Project[] = [
-   /* {
-        title: "Contractor Connect",
-        sections: ["Overview", "Project Plan", "Project Vision", "Project Requirements", "Diagrams", "Prototype", "System Implementation", "Status Report"],
-        description: "An online bidding platform for home improvement projects.",
-        tags: ["PHP", "MySQL", "MVC", "Bootstrap", "CodeIgniter 4", "PHPUnit"],
-        image: "/assets/screenshots/contractor-connect.jpg",
-        github: "https://github.com/AdelAlhajHussein/contractor_connect",
-        website: "https://ContractorConnect.cc",
-        component: ContractorConnect,
-    },*/
     {
         title: "Trellis",
         sections: ["Overview", "Tech Stack", "Architecture & Design", "Prototype", "Roadmap"],
@@ -53,14 +41,25 @@ const projects: Project[] = [
         component: Warble,
     },
     {
-        title: "Loop-In",
+        title: "Trinket Magazine",
         sections: ["Overview", "Tech Stack", "Architecture & Design", "Roadmap"],
-        description: "A blog style forum to discuss and track the development of different audio sampling tools.",
-        tags: ["React", "Vite", "Node.js", "MongoDB", "Firebase", "Express"],
-        image: "/assets/screenshots/loopInHome.jpg",
-        github: "https://github.com/eric-laudrum/LoopIn",
-        component: LoopIn, 
+        description: "Website for ",
+        tags: ["Spring Boot", "React", "PostgreSQL", "JWT", "Java", "Cloudinary", "Docker"],
+        image: "/assets/screenshots/warbleHome.jpg",
+        github: "https://github.com/eric-laudrum/warble",
+        component: Warble,
     },
+
+    {
+        title: "Trial By Fire",
+        sections: ["Overview", "Tech Stack", "Architecture & Design", "Roadmap"],
+        description: "Artist website and store page",
+        tags: ["Spring Boot", "React", "PostgreSQL", "JWT", "Java", "Cloudinary", "Docker"],
+        image: "/assets/screenshots/warbleHome.jpg",
+        github: "https://github.com/eric-laudrum/warble",
+        component: Warble,
+    },
+
 ];
 
 export default projects;

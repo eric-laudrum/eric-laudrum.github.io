@@ -13,7 +13,6 @@ export default function ProjectPage() {
     const projectPrefixes: Record<string, string> = {
      /*   "Contractor Connect": "cc",*/
         "Trellis": "trellis",
-        "Loop-In": "loopIn",
         "Warble": "warble"
     };
 

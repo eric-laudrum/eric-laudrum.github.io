@@ -1,0 +1,92 @@
+/*
+- - - - - - - - - - About Tab - - - - - - - - - -
+*/
+.sectionContainer#homePage{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0;
+    padding: 2.5rem 2em;
+
+    background-color: #fdfaf5;
+
+}
+
+
+
+/* ---------------- About Text ---------------- */
+.mainText {
+
+    min-width: 0;
+    max-width: 100% ;
+
+    border-radius: 8px;
+
+
+}
+
+.aboutTitle{
+    font-size: 6em;
+}
+
+.paragraphList {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    list-style: none;
+    line-height: 1;
+
+    align-content: space-evenly;
+
+    align-items: flex-start;
+    gap: 1em;
+
+    border: 10px solid none;
+
+}
+
+.aboutParagraph {
+    display: flex;
+    flex: 1;
+
+    /*font-size: clamp(1rem, 1.2vw, 1.1rem);*/
+
+    font-family: sans-serif;
+    line-height: 1.4;
+
+    min-height: 0;
+
+    padding: none;
+    border: 10px solid none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------- */
+/* -------------------- Mobile --------------------- */
+/* ------------------------------------------------- */
+@media (max-width: 900px) {
+    .sectionContainer {
+        padding: 2rem 1.5rem;
+        gap: 2rem;
+        border: 10px solid none;
+    }
+
+}

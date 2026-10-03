@@ -4,7 +4,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --primary: rgb(140, 132, 86);
-  --primary-dark: #685c0d;
+  --primary-dark: #4c430b;
   --primary-cream: #f0ede9;
   --secondary-cream: #c0ba9e;
 
@@ -50,12 +50,6 @@ main{
 
 }
 
-.banner-title {
-    margin: 0;
-    display: block;
-    height: auto;
-    width: fit-content;
-}
 
 .title {
     display: block;
@@ -80,45 +74,6 @@ main{
   border: 5px solid transparent;
 }
 
-.header{
-  display: flex;
-  position: sticky;
-  top: 0;
-  height: 120px;
-  flex-direction: row;
-
-  width: 100%;
-  align-content: center;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 6em;
-  z-index: 1000;
-  background-color: var(--primary);
-
-}
-
-.nav-bar{
-  display: flex;
-  flex-direction: row;
-  gap: 1.5rem;
-
-
-}
-
-.nav-link{
-  margin-right: 1em;
-  font-size: 1rem;
-  color: white;
-}
-
-.nav-link:hover{
-  transition: 0.3s;
-  transform: translateY(-5px);
-  font-weight: 510;
-  text-shadow: 4px 3px  rgba(15, 20, 20, 0.2);
-
-
-}
 
 .section-container{
   padding: 2rem 4rem;
@@ -134,7 +89,7 @@ main{
   font-size: 2rem;
   margin: 1em 0;
 
-  border: 5px solid red;
+
 
 }
 
@@ -159,7 +114,7 @@ main{
     display: inline-block;
     color: var(--primary);
     font-weight: 500;
-    border: 10px solid red;
+
 }
 
 .project-header{

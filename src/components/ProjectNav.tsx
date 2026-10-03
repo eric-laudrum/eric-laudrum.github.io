@@ -2,7 +2,7 @@ import styles from "../app/projects/page.module.css"
 
 export default function ProjectNav({ active, setActive }: { active: string, setActive: (val: string) => void }) {
     
-    const navItems = [/* "Contractor Connect", */"Trellis", "Warble", "Loop-In" ];
+    const navItems = [ "Trellis", "Warble", "Trinket", "Trial By Fire" ];
     
     return (
         <div className={styles.projectNav}>

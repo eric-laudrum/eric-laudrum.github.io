@@ -18,7 +18,7 @@ export default function Warble({ techStack }: WarbleProps) {
                     <img 
                         className={styles.projectImage} 
                         src="/assets/screenshots/warbleHome.jpg" 
-                        alt="Warble Home" 
+                        alt="Warble About"
                     />
                 </div>
 
