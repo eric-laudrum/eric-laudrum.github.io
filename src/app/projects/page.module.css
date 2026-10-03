@@ -5,9 +5,7 @@
     margin: 0 auto;
     padding: 0 2rem 2rem 2rem; 
     min-height: 100vh;
-    background-color: var(--primary-cream);
 
-    border: 5px solid none;
 }
 
 .projectLayout {
@@ -19,8 +17,6 @@
     margin-top: 0 !important; 
     padding-top: 0;
 
-    border: 5px solid none;
-
 }
 
 /* ------------------- Side Bar ------------------- */
@@ -28,14 +24,13 @@
         display: flex;
 
         position: sticky !important;
-        top: 180px !important;
+        top: 250px !important;
 
         flex-direction: column;
         align-items: center;
+        padding: 3em 1em;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
-        border: 5px solid none;
-    
     }
 
 
@@ -46,7 +41,6 @@
     flex: 1;
     min-width: 0;
 
-    border: 5px solid none;
 }
 .projectHeader {
     display: flex;
@@ -58,8 +52,6 @@
 
     margin: 1em 0 3rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
-    border: 10px solid none;
 }
 
 .sectionTitle {
@@ -72,7 +64,6 @@
 .techStackLabel {
     font-weight: bold;
     margin-right: 10px;
-    border: 5px solid none;
 }
 
 .projectTags {
@@ -80,7 +71,6 @@
     flex-wrap: wrap;
     gap: 10px;
     align-items: center;
-    border: 5px solid none;
 
 }
 
@@ -93,13 +83,11 @@
     color: rgb(140, 132, 86);
     font-weight: 500;
 
-    border: 5px solid none;
 }
 
 .projectContentArea {
     border: 1px solid transparent;
 
-    border: 5px solid none;
 }
 
 .projectGrid {
@@ -108,8 +96,6 @@
     gap: 2rem;
     padding-top: 0;
     border-top: 2px solid rgba(0, 0, 0, 0.05);
-
-    border: 5px solid none;
 }
 
 .projectCard {
@@ -124,7 +110,6 @@
     cursor: pointer;
     transition: all 0.3s ease;
 
-    border: 5px solid none;
 }
 
 .projectDescription {
@@ -135,7 +120,6 @@
     height: auto;
     flex-grow: 1; 
 
-    border: 5px solid none;
 }
 
 .projectCardContent {
@@ -199,9 +183,7 @@
 
 
 .projectNav {
-    display: flex;  
-    position: sticky;
-    top: 7.5rem;
+    display: flex;
     z-index: 999; 
 
     justify-content: space-evenly;
@@ -211,13 +193,34 @@
     font-size: 1.5em;
 
     border-bottom: 1px solid rgba(0, 0, 0, 0.078);
-    background-color: var(--primary-cream);
 
-     border: 10px solid none;
+}
+
+.sectionTitle{
+
 }
 
 
+.project-toc{
+    border: 2px solid red;
+}
+.leftSidebar{
+    border: 2px solid orange;
 
+}
+
+.sidebarNav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sectionTitle{
+    font-size: 2rem;
+    margin: 1em 0;
+    font-family: "Times New Roman";
+
+}
 
 
 
@@ -262,7 +265,6 @@
         padding: 4px 8px;
         white-space: nowrap;
 
-        border: 100px solid none;
     }
 
     .projectsContainer {
@@ -315,7 +317,6 @@
         background: transparent !important;
         border: none !important;
 
-        border: 5px dotted none;
     }
 
 
@@ -327,7 +328,6 @@
         justify-content: center !important;
         gap: 10px !important;
 
-        border: 10px solid none;
     }
 
     .projectSidebarContainer :global(.github-link) {
@@ -353,7 +353,7 @@
         flex-direction: column !important;
         align-items: center !important;
         text-align: center;
-        border: 10px solid none;
+
     }
 
     .sectionTitle {

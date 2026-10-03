@@ -7,11 +7,10 @@
 
 .navLink{
     margin-right: 1em;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #4C430BFF;
     transition: 0.6s;
 }
-
 .navLink:hover{
     transform: translateY(-3px);
     color: var(--primary-dark);

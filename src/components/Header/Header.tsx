@@ -7,7 +7,7 @@ const Header = () => {
         <>
         <div className={styles.header}>
             <h1 className={styles.bannerTitle}>
-                <Link className="title" href="/public">
+                <Link className="title" href="/">
                     <img className={styles.headerImage} src="/assets/eric-nameplate.png" alt="Eric Laudrum" />
                 </Link>
             </h1>

@@ -10,9 +10,9 @@
     max-width: 100%;
 
     margin: 0;
-    padding: 2.5rem 2em;
+    padding: 2.5rem 4em;
 
-    background-color: #fdfaf5;
+
 
 }
 
@@ -31,6 +31,7 @@
 
 .aboutTitle{
     font-size: 6em;
+    color: var(--primary-dark);
 }
 
 .paragraphList {

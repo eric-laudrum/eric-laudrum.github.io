@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../app/contact/page.module.css';
+import styles from '../../app/contact/page.module.css';
 
 const ContactForm = () => {
     return (
@@ -9,34 +9,30 @@ const ContactForm = () => {
                 action="https://formspree.io/f/mzdjlavk" 
                 method="POST"
             >
-            
-                <div className={styles.formRow}>
-                    <div className={styles.formCol}>
-                        <label className={styles.label}>First name</label>
-                        <input className={styles.formField} name="first-name" placeholder='First name' required />
-                    </div>
-                    <div className={styles.formCol}>
-                        <label className={styles.label}>Last name</label>
-                        <input className={styles.formField} name="last-name" placeholder='Last name' required />
-                    </div>
+
+                <div className={styles.formCol}>
+                    <label className={styles.label}>Name</label>
+                    <input className={styles.formField} name="name" placeholder='Name' required />
                 </div>
 
                 <div className={styles.formCol}>
                     <label className={styles.label}>Email</label>
                     <input className={styles.formField} name="email" type="email" placeholder='Email' required />
                 </div>
-
                 <div className={styles.formCol}>
-                    <label className={styles.label}>Comment</label>
+                    <label className={styles.label}>Message</label>
                     <textarea
                         className={`${styles.formField} ${styles.commentField}`}
                         name="comment"
-                        placeholder='Comments'
+                        placeholder='Message'
                         required
                     />
                 </div>
 
-                <button type="submit" className={styles.submitButton}>Submit</button>
+                <button type="submit" className={styles.submitButton}>
+                    Submit
+                </button>
+
             </form>
         </div>
     );

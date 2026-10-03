@@ -1,6 +1,5 @@
 .featuredAlbums{
-    padding-top: 1em;
-
+    padding-top: 3em;
 }
 
 .albumScroll{
@@ -8,9 +7,7 @@
     flex-direction: row;
 
     gap: 1em;
-
     padding: 1em;
-
     overflow: hidden;
     overflow-x: scroll;
 }
@@ -20,9 +17,7 @@
     display: flex;
     flex-direction: column;
 
-
     align-items: center;
-
     width: 300px;
     height: 425px;
     border-radius: 10px;
@@ -32,11 +27,9 @@
 }
 
 .projectCard:hover{
-
     transform: translateY(-0.6em);
     box-shadow: -2px 15px 10px 0 rgba(0, 0, 0, 0.54);
 }
-
 
 .projectImageWrapper{
     border: 0.5px solid rgba(0, 0, 0, 0.05);
@@ -56,7 +49,7 @@
     color: var(--primary-dark);
     padding: 0.5rem;
     font-family: var(--secondary-font);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .projectDescription{

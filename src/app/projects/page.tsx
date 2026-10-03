@@ -37,11 +37,12 @@ export default function ProjectPage() {
                 </aside>
 
                 <section className={styles.projectMainContent}>
+                    {/*
                     <div className={styles.projectHeader}>
                         <h1 className={styles.sectionTitle}>{activeProject}</h1>
-                        
-                        
+
                     </div>
+                    */}
 
                     <div className={styles.projectContentArea}>
                 
