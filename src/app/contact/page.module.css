@@ -1,117 +1,111 @@
-/* page.module.css */
 
-.sectionContainer{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    padding: 1em 10em;
+.sectionContainer {
+    display: grid;
 
-    border: 5px dashed black;
+    grid-template-columns: 1fr 4fr;
 
-}
-
-.contactContainer {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    justify-self: center;
-    
-    gap: 3rem;
-    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
     min-height: 70vh;
     box-sizing: border-box;
-    margin-top: 1em;
-    padding: 1em;
-
-    border: 1px solid black;
-
 }
 
+/* Left Column */
+.leftContact {
+    flex: 0 0 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
 
 .sectionTitle {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1.1;
     font-weight: bold;
-    color: #151d08e5;
+    color: #151d08;
     font-family: "Bookman", serif;
-    margin: 1rem;
-
-    border: 5px solid none;
+    margin: 0;
 }
 
+.linkGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
 
+.resumeLink {
+    color: #151d08;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: opacity 0.2s ease;
+}
 
+.resumeLink:hover {
+    opacity: 0.6;
+}
 
-/* --------------------- Contact Form --------------------- */
+/* Right Column: Form */
+.rightContact {
+    flex: 1;
+    max-width: 520px;
 
+}
 
 .contactForm {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    background-color: #f8fbff;
-    padding: 4em 10em;
-    border-radius: 12px;
-    border: 1px solid rgba(42, 118, 156, 0.1);
-    box-shadow: 0 4px 20px rgba(42, 118, 156, 0.08);
-    align-self: center;
-
-
-}
-
-.formRow {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-    width: 100%;
-
+    background-color: rgba(140, 132, 86, 0.08);
+    padding: 2.5rem;
+    border-radius: 2px;
+    border: 1px solid rgba(140, 132, 86, 0.2);
+    box-shadow: 0 4px 20px rgba(140, 132, 86, 0.08);
+    box-sizing: border-box;
 }
 
 .formCol {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
 }
 
-.formCol label {
+.label {
     margin-bottom: 0.5rem;
     font-weight: 600;
     font-size: 0.9rem;
     color: #333;
-
 }
 
 .formField {
     width: 100%;
     box-sizing: border-box;
     padding: 12px;
-    border: 1px solid #d1d9e0;
-    border-radius: 6px;
+    border: 1px solid rgba(140, 132, 86, 0.5);
+    border-radius: 2px;
     font-size: 1rem;
-
-
+    font-family: inherit;
+    background-color: #ffffff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .formField:focus {
     outline: none;
-    background: #fff;
     border-color: #2a769c;
-    box-shadow: 0 0 0 4px rgba(42, 118, 156, 0.1);
+    box-shadow: 0 0 0 3px rgba(42, 118, 156, 0.1);
 }
 
-#commentField {
-    min-height: 200px;
+.commentField {
+    min-height: 150px;
     resize: vertical;
-
 }
 
 .submitButton {
-    display: flex;
-    justify-content: center;
-    justify-self: center;
-    align-items: center;
-    align-content: center;
+    align-self: center;
     background-color: #171717;
     color: white;
     border: none;
@@ -120,49 +114,39 @@
     max-width: 200px;
     padding: 0.8rem;
     font-weight: 600;
+    font-size: 1rem;
     cursor: pointer;
-    
-
+    margin-top: 0.5rem;
+    transition: background-color 0.2s ease, transform 0.1s ease;
 }
+
 .submitButton:hover {
-    background: #2a769c;
-    transform: translateY(-2px);
+    background-color: #2a769c;
+    transform: translateY(-1px);
 }
 
-
-
-
-
-/* ---------------------  Mobile ------------------------ */
-
-@media (max-width: 900px) {
-    .contactForm{
-        padding-top: 0.5em;
-    }
-
-    .formRow {
-        display: flex;
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .sectionContainer {
         flex-direction: column;
-        gap: 0;
-        margin-bottom: 5px;
+        gap: 2rem;
+        padding: 2rem 1.5rem;
     }
 
-    .formCol{
-        margin: 0;
+    .leftContact {
+        flex: initial;
     }
 
-    .formCol label{
-        margin-top: 0.5em;
+    .rightContact {
+        width: 100%;
+        max-width: 100%;
     }
-    
+
+    .contactForm {
+        padding: 1.5rem;
+    }
+
     .submitButton {
-        width: auto;
-        min-width: 160px;
-        align-self: center;
-        margin-top: 1em;
-    }
-    .commentField{
-        height: 10em;
-
+        max-width: 100%;
     }
 }
