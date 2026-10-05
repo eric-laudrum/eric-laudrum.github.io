@@ -1,61 +1,97 @@
-.featuredAlbums{
-    padding-top: 3em;
+.featuredAlbums {
+    background-color: var(--primary-cream);
+    width: 100%;
+
+    border: none;
 }
 
-.albumScroll{
+.sectionTitle {
+    color: var(--primary-dark);
+    padding: 2rem 0 2rem 4rem;
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.albumScroll {
     display: flex;
     flex-direction: row;
-
+    width: 100%;
     gap: 1em;
-    padding: 1em;
-    overflow: hidden;
-    overflow-x: scroll;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 1rem 0 2.5rem 0;
+    margin-bottom: 2rem;
+
+}
+
+.albumScroll::-webkit-scrollbar {
+    display: none;
 }
 
 
-.projectCard{
+.albumScroll > :first-child {
+    margin-left: 4em;
+}
+
+.albumScroll > :last-child {
+    margin-right: 4em;
+}
+
+.navLink {
+    text-decoration: none;
+}
+
+.projectCard {
     display: flex;
     flex-direction: column;
-
+    background-color: whitesmoke;
     align-items: center;
     width: 300px;
     height: 425px;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.17);
     box-shadow: -1px 5px 5px 0 rgba(0, 0, 0, 0.54);
-    transition: ease-in-out 1.5s;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.projectCard:hover{
+.projectCard:hover {
     transform: translateY(-0.6em);
     box-shadow: -2px 15px 10px 0 rgba(0, 0, 0, 0.54);
 }
 
-.projectImageWrapper{
-    border: 0.5px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+.projectImageWrapper {
     width: 100%;
     aspect-ratio: 1;
-
-    align-content: center;
-    justify-items: center;
-
-    border-radius: 8px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+    overflow: hidden;
 }
 
+.projectImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-.projectTitle{
+.cardTitle {
     color: var(--primary-dark);
-    padding: 0.5rem;
     font-family: var(--secondary-font);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    padding: 1.5rem 0 0.5rem 0;
+    margin: 0;
 }
 
-.projectDescription{
+.projectDescription {
     color: teal;
     text-align: start;
-    padding: 0.5em;
+    padding: 0 1.5em 1.5em 1.5em;
     width: 100%;
+    margin: 0;
+    box-sizing: border-box;
 
 }

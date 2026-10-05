@@ -2,7 +2,7 @@
 .sectionContainer {
     display: grid;
 
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 0.5fr 4fr 0.5fr;
 
     justify-content: center;
     align-items: flex-start;
@@ -53,7 +53,8 @@
 /* Right Column: Form */
 .rightContact {
     flex: 1;
-    max-width: 520px;
+    max-width: 800px;
+
 
 }
 
