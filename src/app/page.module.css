@@ -44,7 +44,7 @@
     align-content: space-evenly;
 
     align-items: flex-start;
-    gap: 1em;
+
 
     margin-bottom: 3em;
 
@@ -61,8 +61,8 @@
 
     min-height: 0;
 
-    padding: none;
-    border: 10px solid none;
+
+
 }
 
 

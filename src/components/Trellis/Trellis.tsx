@@ -1,4 +1,4 @@
-import { ProjectComponentProps } from '@/components/Data/ProjectsData';
+import projects, { ProjectComponentProps } from '@/components/Data/ProjectsData';
 import styles from './page.module.css'
 import Badge from '@/components/Badge';
 
