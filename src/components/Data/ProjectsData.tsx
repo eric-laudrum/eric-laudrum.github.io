@@ -1,18 +1,16 @@
 import React from 'react';
 
-import ContractorConnect from "../ContractorConnect/ContractorConnect";
-import TrellisSequencer from "../Trellis/Trellis";
+import Trellis from "../Trellis/Trellis";
 import Warble from "../Warble/Warble";
-import LoopIn from "../LoopIn/LoopIn";
-
+import TrialByFire from "../TrialByFire/TrialByFire";
+import Trinket from "../Trinket/Trinket";
 
 export interface ProjectComponentProps {
     techStack?: string[];
     website?: string;
 }
 
-
-interface Project {
+export interface Project {
     title: string;
     sections: string[];
     description: string;
@@ -24,42 +22,91 @@ interface Project {
 }
 
 const projects: Project[] = [
-   /* {
-        title: "Contractor Connect",
-        sections: ["Overview", "Project Plan", "Project Vision", "Project Requirements", "Diagrams", "Prototype", "System Implementation", "Status Report"],
-        description: "An online bidding platform for home improvement projects.",
-        tags: ["PHP", "MySQL", "MVC", "Bootstrap", "CodeIgniter 4", "PHPUnit"],
-        image: "/assets/screenshots/contractor-connect.jpg",
-        github: "https://github.com/AdelAlhajHussein/contractor_connect",
-        website: "https://ContractorConnect.cc",
-        component: ContractorConnect,
-    },*/
     {
         title: "Trellis",
-        sections: ["Overview", "Tech Stack", "Architecture & Design", "Prototype", "Roadmap"],
-        description: "A real-time 16-step sequencer.",
-        tags: ["React", "Node.js", "Express", "Socket.io", "Tone.js", "Yjs", "MongoDB", "CORS", "MULTER"],
+        sections: [
+            "Overview",
+            "Frontend Core & UI",
+            "Audio Engine & Timing",
+            "Real-Time Collaboration & Backend",
+            "State Management & Performance"
+        ],
+        description: "A 16-step audio sequencer for real-time collaborative music production on the web.",
+        tags: [
+            "React",
+            "JavaScript (ES6+)",
+            "Web Audio API",
+            "Socket.io",
+            "Node.js",
+            "Express",
+            "CSS"
+        ],
         image: "/assets/screenshots/trellis-sequencer.jpg",
         github: "https://github.com/eric-laudrum/trellis-sequencer",
-        component: TrellisSequencer,
+        website: "https://trellis-sequencer.vercel.app",
+        component: Trellis,
     },
     {
         title: "Warble",
-        sections: ["Overview", "Tech Stack", "Architecture & Design", "Roadmap"],
-        description: "An online marketplace for audio kits and foley sounds.",
-        tags: ["Spring Boot", "React", "PostgreSQL", "JWT", "Java", "Cloudinary", "Docker"],
+        sections: [
+            "Overview",
+            "Backend & Database Core",
+            "Frontend Tooling & Routing",
+            "Authentication, State & Integrations"
+        ],
+        description: "An online marketplace for audio samples and foley sounds.",
+        tags: [
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Mongoose",
+            "React",
+            "Vite",
+            "React Router",
+            "JWT",
+            "Cloudflare R2"
+        ],
         image: "/assets/screenshots/warbleHome.jpg",
         github: "https://github.com/eric-laudrum/warble",
+        website: "https://warble-music.onrender.com",
         component: Warble,
     },
     {
-        title: "Loop-In",
+        title: "Trial By Fire",
+        sections: [
+            "Overview",
+            "Frontend Core & UI",
+            "Backend & Database",
+            "Asset Storage & Content Delivery",
+            "E-Commerce & Authentication",
+            "Hosting & Infrastructure"
+        ],
+        description: "An artist store showcase featuring PayPal checkout.",
+        tags: [
+            "React",
+            "Vite",
+            "React Router",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Mongoose",
+            "Cloudflare R2",
+            "Cloudinary",
+            "PayPal SDK",
+            "JWT"
+        ],
+        image: "/assets/screenshots/trialbyfire.jpeg",
+        github: "https://github.com/eric-laudrum/trial-by-fire",
+        component: TrialByFire,
+    },
+    {
+        title: "Trinket Magazine",
         sections: ["Overview", "Tech Stack", "Architecture & Design", "Roadmap"],
-        description: "A blog style forum to discuss and track the development of different audio sampling tools.",
-        tags: ["React", "Vite", "Node.js", "MongoDB", "Firebase", "Express"],
-        image: "/assets/screenshots/loopInHome.jpg",
-        github: "https://github.com/eric-laudrum/LoopIn",
-        component: LoopIn, 
+        description: "Digital publication platform and online magazine.",
+        tags: ["React", "TypeScript", "Node.js", "Express"],
+        image: "/assets/screenshots/trinketmag.jpg",
+        github: "https://github.com/eric-laudrum/trinket-magazine",
+        component: Trinket || Warble,
     },
 ];
 

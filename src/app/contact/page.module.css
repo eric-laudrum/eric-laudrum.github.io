@@ -1,0 +1,153 @@
+
+.sectionContainer {
+    display: grid;
+
+    grid-template-columns: 0.5fr 4fr 0.5fr;
+
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    min-height: 70vh;
+    box-sizing: border-box;
+}
+
+/* Left Column */
+.leftContact {
+    flex: 0 0 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+.sectionTitle {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-weight: bold;
+    color: #151d08;
+    font-family: "Bookman", serif;
+    margin: 0;
+}
+
+.linkGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.resumeLink {
+    color: #151d08;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: opacity 0.2s ease;
+}
+
+.resumeLink:hover {
+    opacity: 0.6;
+}
+
+/* Right Column: Form */
+.rightContact {
+    flex: 1;
+    max-width: 800px;
+
+
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(140, 132, 86, 0.08);
+    padding: 2.5rem;
+    border-radius: 2px;
+    border: 1px solid rgba(140, 132, 86, 0.2);
+    box-shadow: 0 4px 20px rgba(140, 132, 86, 0.08);
+    box-sizing: border-box;
+}
+
+.formCol {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+}
+
+.label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.formField {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid rgba(140, 132, 86, 0.5);
+    border-radius: 2px;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: #ffffff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.formField:focus {
+    outline: none;
+    border-color: #2a769c;
+    box-shadow: 0 0 0 3px rgba(42, 118, 156, 0.1);
+}
+
+.commentField {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submitButton {
+    align-self: center;
+    background-color: #171717;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 200px;
+    padding: 0.8rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.submitButton:hover {
+    background-color: #2a769c;
+    transform: translateY(-1px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .sectionContainer {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .leftContact {
+        flex: initial;
+    }
+
+    .rightContact {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contactForm {
+        padding: 1.5rem;
+    }
+
+    .submitButton {
+        max-width: 100%;
+    }
+}

@@ -1,4 +1,4 @@
-import styles from '../app/projects/projects.module.css';
+import styles from '../app/projects/page.module.css';
 
 
 interface SidebarProps {
@@ -14,10 +14,10 @@ interface SidebarProps {
 
 export default function Sidebar({ title, sections, customClassName, prefix, repo, repoText, resumeUrl }: SidebarProps) {
   return (
-    <div className={`left-sidebar ${customClassName || ''}`} id="project-toc">
-      <h2 className="section-title">{title}</h2>
+    <div className={`leftSidebar ${customClassName || ''}`} id="project-toc">
 
-      <div className="sidebar-nav">
+
+      <div className={styles.sidebarNav}>
         {sections?.map((section) => {
           
           // Clean up section titles

@@ -1,0 +1,114 @@
+.featuredAlbums {
+    background-color: var(--primary-cream);
+    width: 100%;
+
+    border: none;
+}
+
+.sectionTitle {
+    color: var(--primary-dark);
+    padding: 2rem 0 2rem 4rem;
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.albumScroll {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 3em;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 1rem 0 2.5rem 0;
+    margin-bottom: 2rem;
+
+}
+
+.albumScroll::-webkit-scrollbar {
+    display: none;
+}
+
+
+.albumScroll > :first-child {
+    margin-left: 4em;
+}
+
+.albumScroll > :last-child {
+    margin-right: 4em;
+}
+
+.navLink {
+    text-decoration: none;
+}
+
+
+/* Project Card */
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: flex-start;
+
+
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: -1px 5px 5px 0 rgba(0, 0, 0, 0.54);
+    transition: transform 0.9s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.projectCard:hover {
+    transform: translateY(-0.6em) scale(1.05);
+    box-shadow: -2px 15px 10px 0 rgba(0, 0, 0, 0.54);
+
+}
+
+
+
+.projectImageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 400px;
+    aspect-ratio: 1;
+
+    border-radius: 2px 2px 0 0;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+
+.projectImage {
+    width: 100%;
+
+    object-fit: fill;
+}
+
+.cardTitle {
+    color: var(--primary-dark);
+    font-family: var(--secondary-font);
+    font-size: 1.25rem;
+    padding: 0.75rem 0 0.5rem 2rem;
+    margin: 0;
+
+    align-self: start;
+
+}
+
+.projectDescription {
+    color: teal;
+    text-align: start;
+    padding: 0 1.5em 1.5em 2em;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: var(--secondary-font);
+    font-size: 1rem;
+
+
+}

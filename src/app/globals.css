@@ -4,9 +4,11 @@
   --background: #ffffff;
   --foreground: #171717;
   --primary: rgb(140, 132, 86);
-  --primary-dark: #685c0d;
+  --primary-dark: #4c430b;
   --primary-cream: #f0ede9;
   --secondary-cream: #c0ba9e;
+    --link: rgba(0, 95, 238, 0.8);
+    --active-link: #005fee;
 
   --primary-font:"Bookmen", serif;
   --secondary-font:"Bookmen", sans-serif;
@@ -46,16 +48,11 @@ main{
   justify-content: flex-start;
   width: 100%;
   padding: 0;
-  background-color: var(--primary-cream);
+
 
 }
 
-.banner-title {
-    margin: 0;
-    display: block;
-    height: auto;
-    width: fit-content;
-}
+
 
 .title {
     display: block;
@@ -80,45 +77,6 @@ main{
   border: 5px solid transparent;
 }
 
-.header{
-  display: flex;
-  position: sticky;
-  top: 0;
-  height: 120px;
-  flex-direction: row;
-
-  width: 100%;
-  align-content: center;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 6em;
-  z-index: 1000;
-  background-color: var(--primary);
-
-}
-
-.nav-bar{
-  display: flex;
-  flex-direction: row;
-  gap: 1.5rem;
-
-
-}
-
-.nav-link{
-  margin-right: 1em;
-  font-size: 1rem;
-  color: white;
-}
-
-.nav-link:hover{
-  transition: 0.3s;
-  transform: translateY(-5px);
-  font-weight: 510;
-  text-shadow: 4px 3px  rgba(15, 20, 20, 0.2);
-
-
-}
 
 .section-container{
   padding: 2rem 4rem;
@@ -157,7 +115,7 @@ main{
     display: inline-block;
     color: var(--primary);
     font-weight: 500;
-    border: 10px solid red;
+
 }
 
 .project-header{
@@ -215,7 +173,6 @@ main{
 
   box-sizing: border-box;
   border-radius: 20px;
-  background-color: rgba(240, 248, 255, 0.434);
   padding: 1.5rem;
   transition: transform 0.3s ease, box-shadow 0.2s ease;
   border: 1px solid rgba(0, 0, 0, 0.09);
@@ -455,91 +412,6 @@ main{
 
 
 
-/* Contact Form */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  width: 100%; 
-  max-width: 600px; 
-  min-width: 50rem;
-
-  border: 1px solid rgba(42, 118, 156, 0.1);
-  box-shadow: 0 4px 20px rgba(42, 118, 156, 0.08);
-  background-color: #f8fbff;
-  padding: 3rem;
-  border-radius: 12px;
-}
-
-.left-contact{
-  flex: 1;
-}
-
-.right-contact{
-  flex: 1;
-  display: flex;
-  justify-content: center;
-
-}
-
-
-.form-col {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: 1.5rem;
-}
-
-.form-col label {
-  margin-bottom: 0.5rem;
-  font-weight: 600; 
-  font-size: 0.9rem;
-  color: #333;
-}
-
-.form-field {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 12px;
-  border: 1px solid #d1d9e0;
-  border-radius: 6px;
-  background-color: white;
-  font-size: 1rem;
-  transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.form-field:focus {
-  outline: none;
-  border-color: #2a769c;
-  box-shadow: 0 0 0 3px rgba(42, 118, 156, 0.1);
-}
-
-.form-field#comment-field {
-  min-height: 150px;
-  resize: vertical;
-}
-
-.submit-button {
-  background-color: #171717;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  width: 100%;
-  max-width: 200px;
-  padding: 0.8rem;
-  align-self: center;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s, transform 0.1s;
-}
-
-.submit-button:hover {
-  background-color: #333;
-  transform: translateY(-1px);
-}
-
-.submit-button:active {
-  transform: translateY(0);
-}
 
 
 
@@ -773,11 +645,7 @@ button.view-doc{
   border-radius: 0;
 }
 
-.sidebar-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
+
 
 
 
@@ -908,11 +776,6 @@ button.view-doc{
         width: 100% !important;
         text-align: center;
         justify-content: center;
-    }
-
-    .left-contact .section-title {
-        font-size: 2.2rem;
-
     }
 
     .left-contact {

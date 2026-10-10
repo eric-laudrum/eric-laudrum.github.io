@@ -1,0 +1,32 @@
+
+.header{
+    display: flex;
+
+    top: 0;
+    height: 120px;
+    flex-direction: row;
+
+    width: 100%;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4em 6em;
+    z-index: 1000;
+
+}
+
+.bannerTitle {
+    margin: 0;
+    display: block;
+    height: auto;
+    width: fit-content;
+}
+
+
+.headerImage{
+
+    color: red;
+    margin: 10px;
+    background-color: var(--primary);
+
+}
