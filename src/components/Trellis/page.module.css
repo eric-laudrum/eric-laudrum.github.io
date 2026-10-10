@@ -1,57 +1,78 @@
 .sectionContainer {
-  padding: 2rem 4rem;
-  margin: 0 20px 20px;
-  min-height: 70vh;
+    padding: 0 4rem 2rem 4rem;
+    margin: 0 20px 20px;
 
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.073);
-  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.005);
-
-  border: 10px solid none;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.073);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.005);
 }
 
 
 .projectImageContainer{
-  width: 400px;
-  border: 5px solid none;
+    width: 100%;
+
+
+
 }
 
 .projectImage{
-  border-radius: 8px;
+    border-radius: 8px;
 
-  border: 2px solid none;
 }
 
 .projectContainer {
-  display: flex;
-  gap: 4rem;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2em;
+
+}
+
+.websiteLink{
+    font-size: 1.3rem;
+    color: var(--link);
+    transition: 0.6s;
+}
+.websiteLink:hover{
+    color: var(--active-link);
 }
 
 .leftContainer {
-  flex: 1;
+    flex: 1;
+
 }
 
 .projectTitle{
     font-size: 1.5rem;
+
 }
 
 .projectTagline{
     font-size: 1.5rem;
     margin: 1rem 0;
+
 }
 
 .projectDescription{
-  font-family: var(--secondary-font);
+    text-align: left;
+
+
+    font-family: var(--secondary-font);
     font-size: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1.3;
+
 }
+
+
 
 .badgeContainer {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
     margin: 1.5rem 0;
+
 }
 
 .techBadge {
@@ -105,10 +126,16 @@
 }
 
 
+.listHeader{
+    font-family: var(--secondary-font);
+    font-size: 1.1rem;
+    font-weight: 800;
+}
 .listItem{
-  font-family: var(--secondary-font);
+    font-family: var(--secondary-font);
 
 }
+
 
 
 
@@ -148,39 +175,26 @@
     width: 100%;
     margin: 0 auto;
   }
+
+    .sectionContainer{
+        justify-content: center;
+
+    }
+
+
+
+    .projectImage{
+        width: 100%;
+        justify-self: center;
+
+    }
+
+    .projectDescription {
+        text-align: left;
+        padding: 1em;
+
+        border: none;
+    }
 }
 
 
-
-
-/* ------------------- Mobile ------------------ */
-
-.sectionContainer{
-  justify-content: center;
-
-  border: 5px solid none;
-}
-
-
-.projectImageContainer{
-  width: fit-content;
-
-  border: 5px solid none;
-}
-.projectImage{
-  width: 100%;
-  justify-self: center;
-  margin: none;
-  padding: none;
-
-  border: 5px solid none;
-}
-
-.projectDescription{
-  text-align: start;
-  padding: 1em;
-
-
-  border: 5px solid none;
-
-}

@@ -1,25 +1,17 @@
-import projects, { ProjectComponentProps } from '@/components/Data/ProjectsData';
-import styles from './page.module.css'
+"use client";
+
+import React from 'react';
 import Badge from '@/components/Badge';
-
-interface TrellisProps {
-    techStack?: string[];
-    tags?: string[];
-}
-
-
+import { ProjectComponentProps } from '@/components/Data/ProjectsData';
+import styles from './page.module.css';
 
 export default function TrellisSequencer({ techStack }: ProjectComponentProps) {
-
-    console.log("TechStack in Trellis:", techStack);
-
-    return(
+    return (
         <div className={styles.sectionContainer}>
             <div className={styles.videoContainer}>
                 <iframe
                     src="https://www.youtube.com/embed/xl6ijl_q9w4"
                     title="YouTube video player"
-            
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
                 >
@@ -28,126 +20,74 @@ export default function TrellisSequencer({ techStack }: ProjectComponentProps) {
 
             <div className={styles.projectContainer}>
                 <div className={styles.leftContainer}>
-
-
+                    <a className={styles.websiteLink} href={"https://trellis-sequencer-client-beta.vercel.app/"} >Visit website</a>
                     <h4 className={styles.projectTagline}>
-                        A real-time 16-step sequencer
+                        A real-time web sequencer
                     </h4>
 
                     <p className={styles.projectDescription}>
-                        Trellis is a collaborative, real-time 16-step sequencer engineered to eliminate the latency barriers that plague web-based music production. 
-                    </p>
-                    <p className={styles.projectDescription}>While most browser-based DAWs suffer from synchronization drift, Trellis provides a solid timing environment where multiple users can manipulate a shared grid in perfect lock-step.</p>
-                </div>
+                        The Trellis sequencer was designed to foster collaboration and creativity.
+                        Multiple users can work on the same sequencer in perfect lock-step.
 
-                
+                    </p>
+                    <p className={styles.listHeader}>
+                        Features
+                    </p>
+                    <ul>
+                        <li className={styles.listItem}>Sample Chopping</li>
+                        <li className={styles.listItem}>Hold-sound</li>
+                        <li className={styles.listItem}>Record from Mic</li>
+                        <li className={styles.listItem}>Upload audio samples</li>
+                        <li className={styles.listItem}>Tap BPM</li>
+                        <li className={styles.listItem}>Real time waveform visualizer</li>
+                        <li className={styles.listItem}>Room Chat</li>
+                        <li className={styles.listItem}>Choke Groups</li>
+
+                    </ul>
+
+                </div>
 
                 <div className={styles.rightContainer}>
                     <div className={styles.projectImageContainer}>
-                        <img 
-                            className={styles.projectImage} 
-                            src="/assets/screenshots/trellis-sequencer.jpg" 
+                        <img
+                            className={styles.projectImage}
+                            src="/assets/screenshots/trellis-sequencer.jpg"
                             alt="Trellis About"
                         />
-
                     </div>
                 </div>
             </div>
 
-            <hr style={{margin:"3rem 0"}}/>
+            <hr style={{margin: "3rem 0"}}/>
 
-
-            <div className={styles.projectContainer} id="trellis_tech-stack">
+            <div className={styles.projectContainer} id="trellis_technology">
                 <div className={styles.leftContainer}>
-                    <h2 className={styles.projectTitle}>Tech Stack</h2>
-                    
+                    <h2 className={styles.projectTitle}>Tech</h2>
+
                     <div className={styles.badgeContainer}>
                         {techStack?.map((tech) => (
-                            <Badge key={tech} text={tech} />
+                            <Badge key={tech} text={tech}/>
                         ))}
                     </div>
-                    
+
                     <ul>
-                        <li className={styles.listItem}><strong>Next.js & TypeScript:</strong> Modern, type-safe frontend architecture for a predictable state.</li>
-                        <li className={styles.listItem}><strong>Socket.io:</strong> Low-latency, bi-directional communication for instant grid updates across all connected clients.</li>
-                        <li className={styles.listItem}><strong>Tone.js:</strong> A sophisticated web-audio framework that handles scheduling and synthesis with sub-millisecond precision.</li>
-                        <li className={styles.listItem}><strong>Node.js:</strong> A lightweight, event-driven backend acting as the central relay for sequencer state.</li>
-                    </ul>
-               </div>
-            </div>
-
-
-            <hr style={{margin:"3rem 0"}}/>
-
-            <div className={styles.projectContainer} id="trellis_architecture-design">
-                <div className={styles.leftContainer}>
-                    <h2 className={styles.projectTitle}>Architecture & Design</h2>
-                
-                    
-                    <ul>
-                        <li className={styles.listItem}><strong>State-Sync Relay Architecture:</strong></li>
-                        <li> 
-                            Rather than streaming audio, which is bandwidth-heavy and prone to lag, 
-                            Trellis transmits only the "Step Data" (small JSON packets) via WebSockets.
+                        <li className={styles.listItem}>
+                            <strong>React:</strong> Manages the 16-step grid and updates the
+                            screen instantly when users place a beat.
                         </li>
-                    </ul>
-
-                    <ul>
-                        <li className={styles.listItem}><strong>Decoupled Audio Clock:</strong></li>
-                        <li>
-                            The audio engine runs on a separate timing thread from the UI, ensuring that even if the browser is under heavy load, the beat never drops.
+                        <li className={styles.listItem}>
+                            <strong>Web Audio API:</strong> Handles the audio timing to ensure the
+                            music never cuts out, even under heavy browser load.
                         </li>
-                        <li className={styles.listItem}><strong>Optimistic UI Updates:</strong></li>
-                        <li> 
-                            The interface reflects user changes instantly while the server validates and broadcasts the state in the background to maintain a single source of origin.
+                        <li className={styles.listItem}>
+                            <strong>Node.js & Socket.io:</strong> Syncs changes instantly
+                            between all connected users without relying on heavy audio streaming.
                         </li>
                     </ul>
                 </div>
             </div>
-
-
-            <hr style={{margin:"3rem 0"}}/>
-
-            <div className={styles.projectContainer} id="trellis_prototype">
-                <div className={styles.leftContainer}>
-                    <h2 className={styles.projectTitle}>Prototype</h2>
-                
-                    
-                    <p className={styles.projectDescription}>
-                       The initial phase involved mapping out the Audio-Visual Latency Gap. 
-                       Early wireframes focused on a "Mobile-First" 4x4 grid, which eventually evolved into the current 16-step desktop-optimized interface. 
-                       The prototype phase was critical in testing how many simultaneous users the Node.js relay could handle before packet collision occurred.
-                    </p>
-
-                </div>
-            </div>
-
-
-
-        
-            <hr style={{margin:"3rem 0"}}/>
-
-            <div className={styles.projectContainer} id="trellis_roadmap">
-                <div className={styles.leftContainer}>
-                    <h2 className={styles.projectTitle}>Roadmap</h2>
-                
-                    
-                    <ul>
-
-                        <li className={styles.listItem}><strong>User Attribution:</strong></li>
-                        <li className={styles.listItem}>Instead of simple on/off toggles, the grid will track individual contributions. Every pad placed will be tagged with a unique color or name to allow collaborators to see exactly who is building the beat in real-time.</li>
-                        <li className={styles.listItem}><strong>Private Rooms:</strong></li>
-                        <li className={styles.listItem}>Moving beyond public rooms to a tiered access model. Users will be able to lock their sessions with unique keys, ensuring that your collaborative sketches stay private and accessible only to those with an invite link.</li>
-                        <li className={styles.listItem}><strong>Audio Export: </strong></li>
-                        <li className={styles.listItem}>A dedicated recording engine that allows you to capture your live session. Simply set the number of loops, hit record, and download a high-quality .wav file of your arrangement to use in your own DAW.</li>
-                    </ul>
-
-                </div>
-            </div>
-
-
 
 
         </div>
-    )
+    );
 }

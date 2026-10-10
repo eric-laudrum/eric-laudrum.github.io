@@ -32,6 +32,7 @@ export default async function SingleProjectPage({ params }: SingleProjectPagePro
         <main className={styles.projectsContainer}>
             <section className={styles.projectMainContent}>
                 <div className={styles.projectContentArea}>
+                    <h1 className={styles.projectTitle}>{currentProject.title}</h1>
                     <ProjectComponent
                         website={currentProject.website}
                         techStack={currentProject.tags}

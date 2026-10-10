@@ -13,7 +13,7 @@ export default function FeaturedProjects({ excludeTitle }: FeaturedProjectsProps
 
     return (
         <div className={styles.featuredAlbums}>
-            <h3 className={styles.sectionTitle}>More Projects</h3>
+            <h3 className={styles.sectionTitle}>Featured Projects</h3>
 
             <div className={styles.albumScroll}>
                 {displayProjects.map((project, index) => {
@@ -24,7 +24,7 @@ export default function FeaturedProjects({ excludeTitle }: FeaturedProjectsProps
                             <div className={styles.projectCard}>
                                 <div className={styles.projectImageWrapper}>
                                     <img
-                                        src="./assets/img"
+                                        src={project.image}
                                         className={styles.projectImage}
                                         alt={project.title}
                                     />

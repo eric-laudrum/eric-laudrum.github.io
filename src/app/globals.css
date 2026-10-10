@@ -7,6 +7,8 @@
   --primary-dark: #4c430b;
   --primary-cream: #f0ede9;
   --secondary-cream: #c0ba9e;
+    --link: rgba(0, 95, 238, 0.8);
+    --active-link: #005fee;
 
   --primary-font:"Bookmen", serif;
   --secondary-font:"Bookmen", sans-serif;
@@ -49,6 +51,7 @@ main{
 
 
 }
+
 
 
 .title {
