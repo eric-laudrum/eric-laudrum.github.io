@@ -194,10 +194,10 @@ h1.projectTitle {
 
 
 .project-toc{
-    border: 2px solid red;
+
 }
 .leftSidebar{
-    border: 2px solid orange;
+
 
 }
 
@@ -262,7 +262,6 @@ h1.projectTitle {
     .projectsContainer {
         padding: 120px 1rem 2rem 1rem;
 
-        border: 10px dotted red;
     }
 
     .projectLayout {

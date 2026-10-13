@@ -23,7 +23,7 @@
     min-width: 0;
     max-width: 100% ;
 
-    padding: 1rem 6rem;
+    padding: 1rem 6rem 0;
 
 
 
@@ -48,15 +48,13 @@
     align-items: flex-start;
 
 
-    margin-bottom: 3em;
+
 
 }
 
 .aboutParagraph {
     display: flex;
     flex: 1;
-
-    /*font-size: clamp(1rem, 1.2vw, 1.1rem);*/
 
     font-family: sans-serif;
     line-height: 1.4;
