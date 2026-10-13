@@ -23,8 +23,9 @@ export default function FeaturedProjects({ excludeTitle }: FeaturedProjectsProps
                         <Link key={index} className={styles.navLink} href={`/projects/${slug}`}>
                             <div className={styles.projectCard}>
                                 <div className={styles.projectImageWrapper}>
+
                                     <img
-                                        src={project.image}
+                                        src={project.imageFeatured}
                                         className={styles.projectImage}
                                         alt={project.title}
                                     />

@@ -15,13 +15,15 @@ export interface Project {
     sections: string[];
     description: string;
     tags: string[];
-    image: string;
+    imagePrimary: string;
+    imageFeatured: string;
     github: string;
     website?: string;
     component: React.ComponentType<ProjectComponentProps>;
 }
 
 const projects: Project[] = [
+    /* ------------------ Trellis ------------------ */
     {
         title: "Trellis",
         sections: [
@@ -41,11 +43,14 @@ const projects: Project[] = [
             "Express",
             "CSS"
         ],
-        image: "/assets/screenshots/trellis-sequencer.jpg",
+        imagePrimary: "/assets/screenshots/trellis-sequencer.jpg",
+        imageFeatured: "/assets/screenshots/trellis-square.jpeg",
+
         github: "https://github.com/eric-laudrum/trellis-sequencer",
         website: "https://trellis-sequencer.vercel.app",
         component: Trellis,
     },
+    /* ------------------ Warble ------------------ */
     {
         title: "Warble",
         sections: [
@@ -66,11 +71,13 @@ const projects: Project[] = [
             "JWT",
             "Cloudflare R2"
         ],
-        image: "/assets/screenshots/warbleHome.jpg",
+        imagePrimary: "/assets/screenshots/warbleHome.jpg",
+        imageFeatured: "/assets/screenshots/warble-square.jpeg",
         github: "https://github.com/eric-laudrum/warble",
         website: "https://warble-music.onrender.com",
         component: Warble,
     },
+    /* ------------------ TrialByFire ------------------ */
     {
         title: "Trial By Fire",
         sections: [
@@ -95,18 +102,22 @@ const projects: Project[] = [
             "PayPal SDK",
             "JWT"
         ],
-        image: "/assets/screenshots/trialbyfire.jpeg",
+        imagePrimary: "/assets/screenshots/trialbyfire.jpeg",
+        imageFeatured: "/assets/screenshots/trialbyfire.jpeg",
         github: "https://github.com/eric-laudrum/trial-by-fire",
         component: TrialByFire,
     },
+
+    /* ------------------ Trinket Magazine ------------------ */
     {
         title: "Trinket Magazine",
         sections: ["Overview", "Tech Stack", "Architecture & Design", "Roadmap"],
         description: "Digital publication platform and online magazine.",
         tags: ["React", "TypeScript", "Node.js", "Express"],
-        image: "/assets/screenshots/trinketmag.jpg",
+        imagePrimary: "/assets/screenshots/trinketmag.jpg",
+        imageFeatured: "/assets/screenshots/trinketmag.jpg",
         github: "https://github.com/eric-laudrum/trinket-magazine",
-        component: Trinket || Warble,
+        component: Trinket,
     },
 ];
 
