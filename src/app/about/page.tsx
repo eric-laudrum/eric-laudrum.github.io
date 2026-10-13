@@ -29,16 +29,16 @@ export default function AboutPage() {
                                 Full Stack Developer | Logistics Specialist
                             </li>
                             <li className={styles.aboutParagraph}>
-                                I'm a full-stack developer who turns complex ideas into simple, intuitive products
-                                that work cleanly and feel effortless to use.
+                                I build tailored web, mobile, and desktop solutions designed to fix real issues.
+                                With a background in sociology, my approach is deeply community-oriented. I believe
+                                technology should make people's lives easier.
                             </li>
                             <li className={styles.aboutParagraph}>
-                                I work across Java, C#, Python, React, and Node.js, blending technical logic with a
-                                background in sociology.
+                                If a tool is missing, create it. Recently I have been focusing on React development, but will always use the tools best suited to the task.
                             </li>
                             <li className={styles.aboutParagraph}>
-                                I believe that good design should be invisible, and the best tools are the ones that
-                                stay out of the user's way.
+                                Coming from a place of strong customer care and collaboration, I work from the principle that no
+                                role is too small and no person is insignificant.
                             </li>
                         </ul>
                     </div>
@@ -47,7 +47,6 @@ export default function AboutPage() {
             </div>
 
         </main>
-        <FeaturedProjects />
         </>
     );
 }

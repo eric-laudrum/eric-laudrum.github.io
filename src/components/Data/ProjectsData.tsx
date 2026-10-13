@@ -109,6 +109,7 @@ const projects: Project[] = [
     },
 
     /* ------------------ Trinket Magazine ------------------ */
+    /*
     {
         title: "Trinket Magazine",
         sections: ["Overview", "Tech Stack", "Architecture & Design", "Roadmap"],
@@ -118,7 +119,7 @@ const projects: Project[] = [
         imageFeatured: "/assets/screenshots/trinketmag.jpg",
         github: "https://github.com/eric-laudrum/trinket-magazine",
         component: Trinket,
-    },
+    },*/
 ];
 
 export default projects;
