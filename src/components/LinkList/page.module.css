@@ -1,0 +1,10 @@
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    height: 25rem;
+
+}
+
+.sectionContainer{
+    border: 5px solid red;
+}

@@ -12,7 +12,7 @@ export default function FeaturedProjects({ excludeTitle }: FeaturedProjectsProps
     );
 
     return (
-        <div className={styles.featuredAlbums}>
+        <div className={styles.featuredProjects}>
             <h3 className={styles.sectionTitle}>Featured Projects</h3>
 
             <div className={styles.albumScroll}>

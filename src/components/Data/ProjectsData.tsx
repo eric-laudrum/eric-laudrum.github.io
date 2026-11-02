@@ -4,6 +4,7 @@ import Trellis from "../Trellis/Trellis";
 import Warble from "../Warble/Warble";
 import TrialByFire from "../TrialByFire/TrialByFire";
 import Trinket from "../Trinket/Trinket";
+import LinkList from "../LinkList/LinkList";
 
 export interface ProjectComponentProps {
     techStack?: string[];
@@ -120,6 +121,37 @@ const projects: Project[] = [
         github: "https://github.com/eric-laudrum/trinket-magazine",
         component: Trinket,
     },*/
+
+
+    /* ------------------ Link List ------------------ */
+    {
+        title: "Link List",
+        sections: [
+            "Overview",
+            "Frontend Core & UI",
+            "Backend & Database",
+            "Real-Time Collaboration",
+            "State & Dictionary Management",
+            "Hosting & Infrastructure"
+        ],
+        description: "A real-time, collaborative Progressive Web App (PWA) for smart grocery shopping.",
+        tags: [
+            "TypeScript",
+            "React",
+            "Vite",
+            "React Router",
+            "Socket.io",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Mongoose",
+            "PWA"
+        ],
+        imagePrimary: "/assets/screenshots/linklist_temp.jpeg",
+        imageFeatured: "/assets/screenshots/linklist_temp.jpeg",
+        github: "https://github.com/eric-laudrum/link-list",
+        component: LinkList,
+    },
 ];
 
 export default projects;

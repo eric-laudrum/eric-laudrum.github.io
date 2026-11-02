@@ -10,8 +10,9 @@
     align-content: center;
     justify-content: space-between;
     align-items: center;
-    padding: 4em 6em;
+    padding: 2em 6em;
     z-index: 1000;
+
 
 }
 
@@ -26,7 +27,6 @@
 .headerImage{
 
     color: red;
-    margin: 10px;
     background-color: var(--primary);
 
 }

@@ -40,7 +40,7 @@
 
 /* ---------------- About Text ---------------- */
 
-.mainText {
+.heroSection {
     flex: 1 1 350px;
     max-width: 520px;
     display: flex;
@@ -97,7 +97,7 @@
         max-width: 240px;
     }
 
-    .mainText {
+    .heroSection {
         width: 100%;
         max-width: 100%;
     }

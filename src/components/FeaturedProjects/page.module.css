@@ -1,8 +1,8 @@
-.featuredAlbums {
+.featuredProjects {
     background-color: var(--primary-cream);
     width: 100%;
 
-    border: none;
+    border: 1px solid red;
 }
 
 .sectionTitle {
