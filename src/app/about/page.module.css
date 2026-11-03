@@ -96,7 +96,7 @@
     font-size: clamp(10px, 1vw * 1.5, 20px);
     font-family: sans-serif;
     line-height: 1.6;
-    color: #333333;
+    color: var(--primary-black);
     margin: 0;
 }
 
@@ -123,7 +123,7 @@
 
 }
 .contactButton:hover {
-    color: #333333;
+    color: var(--primary-black);
 }
 
 /* ---------------------- Mobile --------------------- */
