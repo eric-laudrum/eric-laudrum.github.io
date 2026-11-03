@@ -41,7 +41,7 @@ export default function LinkList({ techStack }: ProjectComponentProps) {{
                     <div className={styles.projectImageContainer}>
                         <img
                             className={styles.projectImage}
-                            src="/assets/screenshots/trellis-sequencer.jpg"
+                            src="/assets/images/LinkList-AllSceens.png"
                             alt="LinkList About"
                         />
                     </div>
