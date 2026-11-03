@@ -3,6 +3,7 @@ import styles from "@/app/page.module.css";
 
 import FeaturedProjects from "@/components/FeaturedProjects/FeaturedProjects";
 import AboutPage from "@/app/about/page";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -53,7 +54,10 @@ export default function Home() {
 
           </div>
 
-          <h2 className={styles.featuredTitle}>Get in touch! I'd love to work together.</h2>
+          <h2 className={styles.featuredTitle}>
+              <Link className={styles.contactButton} href='/contact'>Get in touch! </Link>
+              I'd love to work together.
+          </h2>
       </main>
   );
 }

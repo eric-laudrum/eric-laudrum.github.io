@@ -23,7 +23,7 @@ export default function AboutPage() {
                                     Full Stack Developer
                                 </li>
                                 <li className={styles.aboutParagraph}>
-                                    I build tailored web, mobile, and desktop solutions designed to fix real issues.
+                                    I build web, mobile, and desktop solutions designed to fix real issues.
                                     With a background in sociology, my approach is deeply community-oriented. I believe
                                     technology should make people's lives easier.
                                 </li>
