@@ -13,9 +13,9 @@ export default function FeaturedProjects({ excludeTitle }: FeaturedProjectsProps
 
     return (
         <div className={styles.featuredProjects}>
-            <h3 className={styles.sectionTitle}>Featured Projects</h3>
 
-            <div className={styles.albumScroll}>
+            <h2 className={styles.featuredTitle}>some of my projects</h2>
+            <div className={styles.projectScroll}>
                 {displayProjects.map((project, index) => {
                     const slug = project.title.toLowerCase().replace(/\s+/g, '-');
 

@@ -1,17 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --primary: rgb(140, 132, 86);
-  --primary-dark: #4c430b;
-  --primary-cream: #f0ede9;
-  --secondary-cream: #c0ba9e;
+    --background: #ffffff;
+    --foreground: #171717;
+    --primary: rgb(140, 132, 86);
+    --primary-dark: #4c430b;
+    --primary-cream: #f0ede9;
+    --secondary-cream: #c0ba9e;
     --link: rgba(0, 95, 238, 0.8);
     --active-link: #005fee;
 
-  --primary-font:"Bookmen", serif;
-  --secondary-font:"Bookmen", sans-serif;
+    --bg-blue:#c0d8d8;
+    --font-blue :#4aa5a5;
+
+  --primary-font:"Avenir", serif;
+  --secondary-font:"Avenir", sans-serif;
 
   
   
@@ -66,8 +69,6 @@ main{
     display: block;
     max-width: none;
 }
-
-
 
 
 #about-section {

@@ -51,6 +51,37 @@ const projects: Project[] = [
         website: "https://trellis-sequencer.vercel.app",
         component: Trellis,
     },
+
+    /* ------------------ Link List ------------------ */
+    {
+        title: "Link List",
+        sections: [
+            "Overview",
+            "Frontend Core & UI",
+            "Backend & Database",
+            "Real-Time Collaboration",
+            "State & Dictionary Management",
+            "Hosting & Infrastructure"
+        ],
+        description: "A real-time, collaborative Progressive Web App (PWA) for smart grocery shopping.",
+        tags: [
+            "TypeScript",
+            "React",
+            "Vite",
+            "React Router",
+            "Socket.io",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Mongoose",
+            "PWA"
+        ],
+        imagePrimary: "/assets/images/LinkList-Mockup.jpg",
+        imageFeatured: "/assets/images/LinkList-Mockup.jpg",
+        github: "https://github.com/eric-laudrum/link-list",
+        component: LinkList,
+    },
+
     /* ------------------ Warble ------------------ */
     {
         title: "Warble",
@@ -123,35 +154,7 @@ const projects: Project[] = [
     },*/
 
 
-    /* ------------------ Link List ------------------ */
-    {
-        title: "Link List",
-        sections: [
-            "Overview",
-            "Frontend Core & UI",
-            "Backend & Database",
-            "Real-Time Collaboration",
-            "State & Dictionary Management",
-            "Hosting & Infrastructure"
-        ],
-        description: "A real-time, collaborative Progressive Web App (PWA) for smart grocery shopping.",
-        tags: [
-            "TypeScript",
-            "React",
-            "Vite",
-            "React Router",
-            "Socket.io",
-            "Node.js",
-            "Express",
-            "MongoDB",
-            "Mongoose",
-            "PWA"
-        ],
-        imagePrimary: "/assets/screenshots/linklist_temp.jpeg",
-        imageFeatured: "/assets/screenshots/linklist_temp.jpeg",
-        github: "https://github.com/eric-laudrum/link-list",
-        component: LinkList,
-    },
+
 ];
 
 export default projects;
