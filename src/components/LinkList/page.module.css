@@ -1,19 +1,35 @@
-.imageContainer{
-    display: flex;
-    justify-content: center;
-    height: 25rem;
-
-}
 
 .sectionContainer {
-    padding: 2rem 4rem;
+    padding: 0 4rem 2rem;
     margin: 0 20px;
     min-height: 70vh;
 
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.073);
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.005);
+
 }
+
+.fullImageContainer{
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+
+.fullImageContainer img,  .projectImage{
+    border-radius: 10px;
+}
+
+.fullImageContainer img{
+
+}
+.projectImage{
+
+}
+
+
+
+
 
 
 .projectImageContainer{
@@ -23,10 +39,6 @@
 
 }
 
-.projectImage{
-    border-radius: 8px;
-
-}
 
 .projectContainer {
     display: flex;
@@ -48,6 +60,7 @@
 
 .leftContainer {
     flex: 1;
+    text-align: start;
 
 }
 

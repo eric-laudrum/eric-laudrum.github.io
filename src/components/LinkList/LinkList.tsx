@@ -9,13 +9,22 @@ export default function LinkList({ techStack }: ProjectComponentProps) {{
     return (
         <div className={styles.sectionContainer}>
 
-            <div className={styles.imageContainer}>
+            <div className={styles.fullImageContainer}>
                 <img src={'/assets/images/LinkList-BigHero.jpg'}/>
+            </div>
+            <div className={styles.imageContainer} style={{marginTop: '20px'}}>
+                <img
+                    className={styles.projectImage}
+                    src="/assets/images/LinkList-AllSceens.png"
+                    alt="LinkList About"
+                />
             </div>
 
             <div className={styles.projectContainer}>
+
+
                 <div className={styles.leftContainer}>
-                    <a className={styles.websiteLink} href={"https://link-list.vercel.app/"} >Visit website</a>
+                    <a className={styles.websiteLink} href={"https://link-list.vercel.app/"}>Visit website</a>
                     <h4 className={styles.projectTagline}>
                         A smarter grocery list
                     </h4>
@@ -36,19 +45,9 @@ export default function LinkList({ techStack }: ProjectComponentProps) {{
                     </ul>
 
                 </div>
-
-                <div className={styles.rightContainer}>
-                    <div className={styles.projectImageContainer}>
-                        <img
-                            className={styles.projectImage}
-                            src="/assets/images/LinkList-AllSceens.png"
-                            alt="LinkList About"
-                        />
-                    </div>
-                </div>
             </div>
 
-            <hr style={{margin: "3rem 0"}}/>
+            <hr style={{margin: "4rem 0 2rem"}}/>
 
             <div className={styles.projectContainer} id="trellis_technology">
                 <div className={styles.leftContainer}>
@@ -72,7 +71,10 @@ export default function LinkList({ techStack }: ProjectComponentProps) {{
                 </div>
             </div>
 
+            <hr style={{margin: "4rem 0 0"}}/>
+
 
         </div>
     );
-}}
+}
+}
