@@ -15,7 +15,7 @@ export default function Warble({ techStack }: WarbleProps) {
                 <div className={styles.imageContainer}>
                     <div className={styles.projectImageContainer}>
                         <img
-                            className={styles.projectImage}
+                            className={styles.heroImage}
                             src="/assets/screenshots/warbleHome.jpg"
                             alt="Warble About"
                         />
@@ -23,8 +23,7 @@ export default function Warble({ techStack }: WarbleProps) {
                 </div>
 
                 <div className={styles.contentContainer}>
-                    <a className={styles.websiteLink} href={"https://warbleaudio.vercel.app/"}>Visit
-                        website</a>
+                    <a className={styles.websiteLink} href={"https://warbleaudio.vercel.app/"}>Visit website</a>
                     <h4 className={styles.projectTagline}>
                         Professional E-commerce for Sound Designers
                     </h4>

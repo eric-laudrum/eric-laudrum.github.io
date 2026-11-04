@@ -2,6 +2,7 @@
 import styles from "@/app/page.module.css";
 import FeaturedProjects from "@/components/FeaturedProjects/FeaturedProjects";
 import AboutPage from "@/app/about/page";
+
 import Link from "next/link";
 
 export default function Home() {
@@ -15,8 +16,15 @@ export default function Home() {
                 </div>
             </div>
 
+
+
+
             <AboutPage />
+
             <FeaturedProjects />
+
+
+
             {/*
             <div className={styles.futureSection}>
                 <h2 className={styles.featuredTitle}>things I'm working on</h2>

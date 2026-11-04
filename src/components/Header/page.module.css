@@ -31,16 +31,21 @@
     display: block;
 }
 
-.swoop {
+.swoopContainer {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #d0e4e2;
-    clip-path: ellipse(150% 70% at 20% 0%);
     z-index: -1;
     pointer-events: none;
+}
+
+.swoopSvg {
+    width: 100%;
+    height: 100%;
+    /* Smooths the path updates between scroll frames */
+    transition: all 0.1s ease-out;
 }
 
 @media (max-width: 768px) {

@@ -1,9 +1,8 @@
 .sectionContainer {
-    padding: 0 4rem 2rem 4rem;
+    padding: 0 3rem;
     margin: 0 20px 20px;
     border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.073);
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.005);
+
 }
 
 .projectImageContainer {
@@ -22,11 +21,11 @@
 
 .projectContainer {
     display: flex;
-    flex-direction: column;
+    gap: 4rem;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
-    scroll-margin-top: 10rem;
+    padding-top: 2em;
+
 }
 
 .contentContainer {

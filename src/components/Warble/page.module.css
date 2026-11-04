@@ -1,20 +1,18 @@
 .sectionContainer {
-    padding: 2rem 4rem;
-    margin: 0 20px;
-    min-height: 70vh;
-
+    padding: 0 3rem;
+    margin: 0 20px 20px;
     border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.073);
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.005);
+
 }
 
 .projectContainer {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    gap: 2rem;
+    align-items: center;
     justify-content: center;
-    gap: 4rem;
-    scroll-margin-top: 200px;
+    padding-top: 2em;
+
 }
 
 .horizontalRule {
@@ -73,14 +71,11 @@
     width: 100%;
 }
 
-.projectImage {
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    display: block;
-    object-fit: contain;
+.heroImage {
+
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
 }
 
 .projectDescription strong,

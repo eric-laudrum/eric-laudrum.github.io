@@ -5,17 +5,10 @@ import Link from "next/link";
 
 export default function AboutPage() {
     return (
-        <>
-        <main className={styles.sectionContainer} id={styles.aboutSection}>
-
-
+        <section id={styles.aboutSection}>
             <div className={styles.aboutCard}>
-
                 <div className={styles.leftSide}>
                     <div className={styles.aboutBody}>
-
-
-                        {/* Text Content */}
                         <div className={styles.mainText} id="about">
                             <ul className={styles.paragraphList}>
                                 <li className={styles.aboutParagraphHeader}>
@@ -37,13 +30,10 @@ export default function AboutPage() {
                                 </li>
                                 <Link className={styles.contactButton} href='/contact'>Get in touch!</Link>
                             </ul>
-
                         </div>
-
                     </div>
                 </div>
                 <div className={styles.rightSide}>
-                    {/* Headshot */}
                     <div className={styles.imageWrapper}>
                         <img
                             className={styles.headshotImg}
@@ -54,12 +44,7 @@ export default function AboutPage() {
                         />
                     </div>
                 </div>
-
-
             </div>
-
-
-        </main>
-        </>
+        </section>
     );
 }
