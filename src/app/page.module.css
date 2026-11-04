@@ -51,7 +51,7 @@
 
 .post {
     margin: 1rem 0 2rem auto;
-    max-width: 600px;
+    max-width: 640px;
     font-size: clamp(1rem, 1vw + 0.5rem, 2rem);
 
 
@@ -105,12 +105,19 @@
 
 
 @media (max-width: 965px) {
+
     .heroText{
-        letter-spacing: -3px;
+        letter-spacing: -4px;
     }
+    .post {
+
+        margin: 1rem 0 2rem 20vw;
+    }
+}
+
+@media (max-width: 768px) {
     .post {
         margin: 1rem 0 2rem 0;
         max-width: 100%;
-        padding-right: 2rem;
     }
 }
