@@ -9,15 +9,15 @@ export default function Home() {
         <main className={styles.sectionContainer}>
             <div className={styles.heroSection}>
                 <div className={styles.paragraphList}>
-                    <p className={`${styles.subHeader} ${styles.pre}`}>I like to make things</p>
+                    <p className={`${styles.subHeader} ${styles.pre}`}>I build technology that brings <span>people and ideas together</span></p>
                     <h1 className={styles.heroText}>Let's build your <span>next big idea.</span></h1>
-                    <p className={`${styles.subHeader} ${styles.post}`}>web, mobile, and desktop solutions designed to fix real challenges. have something in mind?</p>
+                    <p className={`${styles.subHeader} ${styles.post}`}>Whether it's building a collaborative tool for musicians, making everyday tasks easier, or bringing an online business to life, I love turning an idea into something tangible. I'm naturally curous, always eager to learn, and believe the best solutions start with understanding the people they're build for.</p>
                 </div>
             </div>
 
             <AboutPage />
             <FeaturedProjects />
-
+            {/*
             <div className={styles.futureSection}>
                 <h2 className={styles.featuredTitle}>things I'm working on</h2>
 
@@ -35,6 +35,8 @@ export default function Home() {
                     <li className={styles.futureThing}>Loop</li>
                 </ul>
             </div>
+
+            */}
 
             <h2 className={styles.contactFooter}>
                 <Link className={styles.contactButton} href='/contact'>Get in touch! </Link>

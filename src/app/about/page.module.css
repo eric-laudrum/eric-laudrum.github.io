@@ -15,6 +15,7 @@
     padding: clamp(2rem, 4vw, 3rem);
     border-radius: 20px;
     background-color: var(--bg-blue);
+
 }
 
 .leftSide {
@@ -23,21 +24,23 @@
     flex: 1;
     justify-content: center;
     margin-right: clamp(2rem, 4vw, 4rem);
+
 }
 
 .aboutBody {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     gap: 3rem;
     width: 100%;
+
 }
 
 .mainText {
     flex: 1 1 350px;
-    max-width: 520px;
+
     display: flex;
     flex-direction: column;
 }
@@ -73,7 +76,7 @@
     font-family: Avenir, sans-serif;
     line-height: 1.6;
     color: var(--font-blue);
-    margin-right: 1em;
+
     font-weight: 700;
     width: fit-content;
     align-self: flex-end;

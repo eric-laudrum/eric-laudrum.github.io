@@ -10,12 +10,12 @@
 .heroSection {
     position: relative;
     z-index: 2;
-    padding: clamp(2rem, 5vw, 6rem) clamp(1.5rem, 5vw, 6rem) 0;
+    padding: clamp(1rem, 3vw, 5rem) clamp(1.5rem, 5vw, 6rem) 0;
 }
 
 .heroText {
-    font-size: clamp(2.5rem, 8vw + 1rem, 8rem);
-    letter-spacing: -4px;
+    font-size: clamp(2.5rem, 7vw + 1rem, 8rem);
+    letter-spacing: -7px;
     color: var(--primary-black);
     font-family: Avenir, sans-serif;
     font-weight: 600;
@@ -25,25 +25,34 @@
 
 .heroText span {
     display: block;
+    margin-top: -5px;
 }
 
 .subHeader {
     font-family: Avenir, sans-serif;
-    font-size: clamp(1.25rem, 2vw + 0.5rem, 2.5rem);
+    font-size: clamp(1.25rem, 1.5vw + 0.5rem, 2.5rem);
     line-height: 1.5;
-    font-weight: 500;
+    font-weight: 550;
     letter-spacing: -1px;
     color: var(--font-blue);
-    max-width: 600px;
-}
-
-.pre {
     text-align: left;
 }
 
+.subHeader span{
+    display: block;
+    color: inherit;
+    line-height: 30px;
+}
+
+.pre {
+
+}
+
 .post {
-    text-align: right;
     margin: 1rem 0 2rem auto;
+    max-width: 775px;
+
+
 }
 
 .paragraphList {

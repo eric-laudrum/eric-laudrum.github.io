@@ -3,13 +3,32 @@
     display: flex;
     position: relative;
     width: 100%;
-    height: 120px;
+    height: 90px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem clamp(1rem, 5vw, 6rem);
     z-index: 1000;
     background-color: transparent;
+
+}
+
+
+.headerImage{
+    margin: 0;
+    width: 180px;
+}
+
+.logoLink{
+    display: block;
+    width: 100%;
+}
+
+
+.headerLogo{
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .swoop {
@@ -30,6 +49,10 @@
         align-items: center;
         gap: 1rem;
         height: auto;
+    }
+
+    .headerImage {
+        width: 140px;
     }
 
     .navBar {

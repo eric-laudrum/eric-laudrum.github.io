@@ -7,13 +7,12 @@ const Header = () => {
         <>
             <div className={styles.swoop}></div>
             <div className={styles.header}>
-                <h1 className={styles.bannerTitle}>
-                    <Link className="title" href="/">
-                        <img className={styles.headerImage} src="/assets/eric-nameplate.png" alt="Eric Laudrum"/>
+                <h1 className={styles.headerImage}>
+                    <Link className={styles.logoLink} href="/">
+                        <img className={styles.headerLogo} src="/assets/images/EricLaudrum-Logo.svg"
+                             alt="Eric Laudrum"/>
                     </Link>
                 </h1>
-
-
                 <NavBar/>
             </div>
         </>
