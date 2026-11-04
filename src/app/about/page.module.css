@@ -111,19 +111,38 @@
 
 @media (max-width: 640px) {
     .aboutCard {
-        width: 92vw;
+        width: 80vw;
         max-width: 500px;
         margin: 0 auto;
         flex-direction: column-reverse;
         align-items: center;
-        text-align: center;
+
         gap: 2rem;
-        padding: 2rem 1.5rem;
+        padding: 2rem;
         border-radius: 20px;
+        box-sizing: border-box;
     }
 
     .leftSide {
         margin-right: 0;
         width: 100%;
+    }
+
+    .mainText {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+
+
+    .rightSide {
+        width: 100%;
+    }
+
+    .imageWrapper {
+        flex: 1 1 auto;
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
     }
 }

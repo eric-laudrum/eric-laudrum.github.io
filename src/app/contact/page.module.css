@@ -129,22 +129,40 @@
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .sectionContainer {
+        display: flex;
         flex-direction: column;
-        gap: 2rem;
-        padding: 2rem 1.5rem;
+        padding: 2rem 1.25rem;
+        min-height: auto;
+        gap: 0;
+
+
     }
 
     .leftContact {
-        flex: initial;
+        width: 100%;
+        text-align: center;
+
+        height: fit-content;
+        flex:1;
+    }
+
+    .linkGroup {
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+
     }
 
     .rightContact {
         width: 100%;
         max-width: 100%;
+
     }
 
     .contactForm {
         padding: 1.5rem;
+        box-shadow: none;
     }
 
     .submitButton {

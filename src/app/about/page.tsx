@@ -1,7 +1,6 @@
 'use client';
 
 import styles from './page.module.css';
-import FeaturedProjects from '../../components/FeaturedProjects/FeaturedProjects';
 import Link from "next/link";
 
 export default function AboutPage() {
