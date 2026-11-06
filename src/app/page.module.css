@@ -1,4 +1,3 @@
-/* -- app/page.module.css -- */
 .sectionContainer {
     position: relative;
     display: flex;
@@ -18,18 +17,10 @@
     background: transparent;
 }
 
-.headerSwoop {
+.headerSwoop, .midPageSwoop {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    pointer-events: none;
-}
-
-.midPageSwoop {
-    position: absolute;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -65,32 +56,44 @@
     margin-top: -5px;
 }
 
-.subHeader {
-    font-family: Avenir, sans-serif;
-    font-size: clamp(1.25rem, 1.25vw + 0.5rem, 2.5rem);
-    line-height: 1.5;
-    font-weight: 550;
-    letter-spacing: -1px;
+.featuredTitle, .contactFooter {
+    font-family: sans-serif;
+    font-size: clamp(1.75rem, 4vw + 0.5rem, 3rem);
+    font-weight: 700;
     color: var(--font-blue);
-    text-align: left;
+    line-height: 1.3;
+    letter-spacing: -1px;
 }
 
-.subHeader span{
+.title {
+    font-size: clamp(1.5rem, 3vw + 0.5rem, 2rem);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.subHeader, .subtitle {
+    font-family: Avenir, sans-serif;
+    font-size: clamp(1.25rem, 2vw + 0.5rem, 1.75rem);
+    font-weight: 550;
+    letter-spacing: -0.5px;
+    color: var(--font-blue);
+    line-height: 1.5;
+}
+
+.subHeader span {
     display: block;
     color: inherit;
-    line-height: 30px;
+    line-height: 1.2;
 }
 
-.pre {
-
+.post, .futureThing:not(.title):not(.subtitle), .bulletList {
+    font-size: clamp(1rem, 1.5vw + 0.5rem, 1.25rem);
+    line-height: 1.6;
 }
 
 .post {
     margin: 1rem 0 2rem auto;
     max-width: 640px;
-    font-size: clamp(1rem, 1vw + 0.5rem, 2rem);
-
-
 }
 
 .paragraphList {
@@ -98,40 +101,24 @@
     flex-direction: column;
 }
 
-.featuredTitle {
-    font-size: clamp(1.5rem, 4vw, 3rem);
-    font-weight: 700;
-    color: var(--font-blue);
-    font-family: sans-serif;
-    line-height: 1.3;
-    letter-spacing: -1px;
-
-
-}
-
-.ongoingSection{
+.ongoingSection {
     display: flex;
     flex-direction: column;
     gap: 4rem;
-
-    padding: 4rem;
-
+    padding: 4rem clamp(1.5rem, 5vw, 6rem);
 }
 
 .ongoingItem {
     display: flex;
     flex-direction: row;
-
-
     gap: 2rem;
 }
 
-.futureThings{
+.futureThings {
     display: flex;
     flex-direction: column;
-
     gap: 20px;
-    padding: 2rem clamp(1.5rem, 5vw, 6rem);
+    padding: 2rem;
     border: 0.5px solid white;
     list-style: none;
     border-radius: 20px;
@@ -139,51 +126,27 @@
     width: 80%;
 }
 
-.futureThing {
-    font-size: clamp(1rem, 2vw + 0.5rem, 1.5rem);
-}
-
 .logos {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
     width: 50%;
-
-}
-
-.logo{
-
-
 }
 
 .bulletList {
     margin-top: 1rem;
-    list-style-type: disc;
-    padding-left: 2rem;
-    font-size: clamp(0.75rem, 1.75vw + 0.5rem, 1.25rem);
+    list-style-type: "- ";
+    padding-left: 1.5rem;
 }
 
-.horizontalRule{
+.horizontalRule {
     justify-self: center;
     width: 30%;
-
     margin: 2rem 0 1rem;
     border: 10px solid var(--bg-blue);
 }
 
-.subtitle{
-  font-weight: 500;
-}
-
-.title {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
 .contactFooter {
-    font-size: clamp(1.5rem, 4vw, 3rem);
     padding: 2rem clamp(1.5rem, 5vw, 6rem);
 }
 
@@ -196,15 +159,35 @@
     color: var(--primary-black);
 }
 
-
 @media (max-width: 965px) {
-
-    .heroText{
+    .heroText {
         letter-spacing: -4px;
     }
-    .post {
 
+    .post {
         margin: 1rem 0 2rem 20vw;
+    }
+
+    .ongoingItem {
+        flex-direction: column;
+    }
+
+    .futureThings {
+        width: 100%;
+    }
+
+    .logos {
+        width: 100%;
+        order: -1;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .logo {
+        max-width: 45%;
+        height: auto;
     }
 }
 

@@ -3,7 +3,7 @@ import styles from "../../app/page.module.css";
 export default function ongoing(){
     return (
         <div className={styles.ongoingSection}>
-            <h2 className={styles.featuredTitle}>Currently Underway</h2>
+            <h2 className={styles.featuredTitle}>Currently underway</h2>
 
             {/* One Million Neighbours */}
             <div className={styles.ongoingItem}>
@@ -31,8 +31,8 @@ export default function ongoing(){
 
                 </ul>
                 <div className={styles.logos}>
-                    <img className={styles.logo} src={'./images'} alt={"One Million Neighbours"}/>
-                    <img className={styles.logo} src={'./images'} alt={"CIVIC TECH WR"}/>
+                    <img className={styles.logo} src={'./assets/images/OneMillionNeighbours-Logo.png'} alt={"One Million Neighbours"}/>
+                    <img className={styles.logo} src={'./assets/images/CivicTechWR-Logo.png'} alt={"CIVIC TECH WR"}/>
                 </div>
 
             </div>
@@ -41,7 +41,7 @@ export default function ongoing(){
             {/* Trinket Mag */}
             <div className={styles.ongoingItem}>
                 <div className={styles.logos}>
-                    <img className={styles.logo} src={'./images'} alt={"One Million Neighbours"}/>
+                    <img className={styles.logo} src={'./assets/images/TrinketMag-Logo.svg'} alt={"TRINKET MAG"}/>
                 </div>
                 <ul className={styles.futureThings}>
                     <li className={`${styles.futureThing} ${styles.title}`}>
