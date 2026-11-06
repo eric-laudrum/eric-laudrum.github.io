@@ -61,12 +61,13 @@
 .contactForm {
     display: flex;
     flex-direction: column;
-    background-color: rgba(140, 132, 86, 0.08);
+
     padding: 2.5rem;
-    border-radius: 2px;
-    border: 1px solid rgba(140, 132, 86, 0.2);
-    box-shadow: 0 4px 20px rgba(140, 132, 86, 0.08);
+    border-radius: 8px;
+    border: 1px solid var(--bg-blue);
+    box-shadow: 0 4px 20px var(--bg-blue);
     box-sizing: border-box;
+
 }
 
 .formCol {
@@ -86,7 +87,7 @@
     width: 100%;
     box-sizing: border-box;
     padding: 12px;
-    border: 1px solid rgba(140, 132, 86, 0.5);
+    border: 1px solid var(--bg-blue);
     border-radius: 2px;
     font-size: 1rem;
     font-family: inherit;

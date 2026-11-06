@@ -1,0 +1,24 @@
+.footer {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.socialLinks a {
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+}
+
+.socialLinks a:hover {
+    opacity: 0.6;
+}
