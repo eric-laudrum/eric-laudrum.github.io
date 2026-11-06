@@ -101,6 +101,15 @@
     flex-direction: column;
 }
 
+.paragraph{
+    font-size: clamp(0.95rem, 1.2vw + 0.3rem, 20px);
+    font-family: Avenir, sans-serif;
+    font-weight: 475;
+    line-height: 1.6;
+    color: var(--primary-black);
+    margin: 0;
+}
+
 .ongoingSection {
     display: flex;
     flex-direction: column;
@@ -131,6 +140,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 50%;
+}
+
+.logo{
+    width: 80%;
 }
 
 .bulletList {

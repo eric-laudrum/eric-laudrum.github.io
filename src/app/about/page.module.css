@@ -59,14 +59,15 @@
     font-size: clamp(1.5rem, 3.5vw, 4rem);
     font-weight: 700;
     color: #151d08;
-    font-family: sans-serif;
+    font-family: Avenir, sans-serif;
     line-height: 1.3;
     letter-spacing: -2px;
 }
 
 .aboutParagraph {
     font-size: clamp(0.95rem, 1.2vw + 0.3rem, 20px);
-    font-family: sans-serif;
+    font-family: Avenir, sans-serif;
+    font-weight: 475;
     line-height: 1.6;
     color: var(--primary-black);
     margin: 0;
