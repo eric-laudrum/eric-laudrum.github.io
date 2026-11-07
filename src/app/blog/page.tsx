@@ -27,9 +27,8 @@ const initialPosts: BlogPost[] = [
         content: [
             { type: 'text', value: 'Mapping resources accurately is a major challenge for community initiatives.' },
             { type: 'text', value: 'This custom implementation allows users to draw freehand boundaries over the dissemination area to pull localized census data seamlessly.' },
-            { type: 'image', value: '/images/lasso-tool-demo.png', alt: 'Lasso tool in action' }
+            { type: 'image', value: '/assets/images/CivicTechWR-Logo.png', alt: 'Lasso tool in action' }
         ],
-        relatedProjectLink: '/projects/one-million-neighbours'
     },
     {
         id: '2',
@@ -38,19 +37,11 @@ const initialPosts: BlogPost[] = [
         category: 'Music Tech',
         content: [
             { type: 'text', value: 'Syncing real-time audio across different devices introduces significant timing drift. Relying on standard WebSocket emissions without accounting for local client audio clocks leads to a messy sequence.' },
-            { type: 'youtube', value: 'https://www.youtube-nocookie.com/embed/VIDEO_ID](https://www.youtube-nocookie.com/embed/VIDEO_ID' }
+            { type: 'youtube', value: 'https://www.youtube-nocookie.com/embed/VIDEO_ID' }
         ],
         relatedProjectLink: '/projects/trellis'
     },
-    {
-        id: '3',
-        title: 'Trinket Mag: Designing a Draggable E-Commerce Experience',
-        date: '2026-09-22',
-        category: 'Web Development',
-        content: [
-            { type: 'text', value: 'Standard grid layouts for e-commerce can feel sterile. For Trinket Mag, the goal was to mimic the physical act of sorting through a collection on a desk.' }
-        ]
-    }
+
 ];
 
 export default function Page() {
@@ -125,6 +116,9 @@ export default function Page() {
                                             src={block.value}
                                             alt={block.alt}
                                             className={styles.postImage}
+                                            style={{
+                                                width: '15rem',
+                                            }}
                                         />
                                     );
                                 }
