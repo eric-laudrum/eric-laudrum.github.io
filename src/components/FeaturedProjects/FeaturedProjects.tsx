@@ -1,5 +1,5 @@
 import styles from "./page.module.css";
-import ProjectData from "../Data/ProjectsData";
+import ProjectData from '../data/ProjectsData';
 import Link from "next/link";
 
 interface FeaturedProjectsProps {

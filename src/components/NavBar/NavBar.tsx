@@ -10,6 +10,8 @@ const NavBar = () => {
 
                 <Link className={styles.navLink} href='/about'>About</Link>
 
+                <Link className={styles.navLink} href='/blog'>Blog</Link>
+
                 <Link className={styles.navLink} href='/contact'>Contact</Link>
             </div>
         </nav>

@@ -26,7 +26,8 @@
     gap: clamp(1.5rem, 3vw, 3rem);
     overflow-x: auto;
     scrollbar-width: none;
-    padding: 0 clamp(1.5rem, 5vw, 6rem);
+    padding-left: clamp(1.5rem, 5vw, 6rem);
+    padding-right: clamp(1.5rem, 5vw, 6rem);
 }
 
 .projectScroll::-webkit-scrollbar {

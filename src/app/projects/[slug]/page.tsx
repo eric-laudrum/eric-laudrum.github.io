@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import projects from "@/components/Data/ProjectsData";
+import projects from "@/components/data/ProjectsData";
 import FeaturedProjects from "@/components/FeaturedProjects/FeaturedProjects";
 import styles from "../page.module.css";
 

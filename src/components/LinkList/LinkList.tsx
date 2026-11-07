@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Badge from '@/components/Badge';
-import { ProjectComponentProps } from '@/components/Data/ProjectsData';
+import { ProjectComponentProps } from '@/components/data/ProjectsData';
 import styles from "@/components/LinkList/page.module.css";
 
 export default function LinkList({ techStack }: ProjectComponentProps) {{
