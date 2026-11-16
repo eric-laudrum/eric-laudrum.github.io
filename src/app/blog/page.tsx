@@ -27,7 +27,7 @@ const initialPosts: BlogPost[] = [
         content: [
             { type: 'text', value: 'Mapping resources accurately is a major challenge for community initiatives.' },
             { type: 'text', value: 'This custom implementation allows users to draw freehand boundaries over the dissemination area to pull localized census data seamlessly.' },
-            { type: 'image', value: '/assets/images/CivicTechWR-Logo.png', alt: 'Lasso tool in action' }
+            { type: 'image', value: '/assets/images/CivicTechWR-Logo.png', alt: 'Lasso tool' }
         ],
     },
     {
@@ -142,7 +142,7 @@ export default function Page() {
 
                         {post.relatedProjectLink && (
                             <Link href={post.relatedProjectLink} className={styles.projectLink}>
-                                View Related Project →
+                                View Project →
                             </Link>
                         )}
                     </article>

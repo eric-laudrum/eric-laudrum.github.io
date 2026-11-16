@@ -14,19 +14,18 @@ export default function AboutPage() {
                                 <li className={styles.aboutParagraphHeader}>
                                     Full Stack Developer
                                 </li>
-                                <li className={styles.aboutParagraph}>
-                                    I build web, mobile, and desktop solutions designed to fix real issues.
-                                    With a background in sociology, my approach is deeply community-oriented. I believe
-                                    technology should make people's lives easier.
+                                <li>
+
                                 </li>
                                 <li className={styles.aboutParagraph}>
-                                    If a tool is missing, create it. Recently I have been focusing on React development,
-                                    but will always use the tools best suited to the task.
+                                    I'm Eric, full-stack developer and open source creator.
+                                </li>
+                                <li className={styles.aboutParagraph}>
+                                    The first thing I programmed was a drum machine.
                                 </li>
                                 <li className={styles.aboutParagraph}>
                                     Coming from a place of strong customer care and collaboration, I work from the
-                                    principle that no
-                                    role is too small and no person is insignificant.
+                                    principle that no role is too small and no person is insignificant.
                                 </li>
                                 <Link className={styles.contactButton} href='/contact'>Get in touch!</Link>
                             </ul>

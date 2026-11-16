@@ -13,7 +13,7 @@ export default function Home() {
                 <div className={styles.paragraphList}>
                     <p className={`${styles.subHeader} ${styles.pre}`}>I build technology that brings <span>people and ideas together</span></p>
                     <h1 className={styles.heroText}>Let's build your <span>next big idea.</span></h1>
-                    <p className={`${styles.subHeader} ${styles.post}`}>Whether it's building a collaborative tool for musicians, making everyday tasks easier, or bringing an online business to life, I love turning an idea into something tangible. I'm naturally curous, always eager to learn, and believe the best solutions start with understanding the people they're build for.</p>
+                    <p className={`${styles.subHeader} ${styles.post}`}>Whether it's building a collaborative tool for musicians, making everyday tasks easier, or bringing an online business to life, I love turning an idea into something tangible. I'm naturally curious, always eager to learn, and believe the best solutions start with understanding the people they're build for.</p>
                 </div>
             </div>
 
